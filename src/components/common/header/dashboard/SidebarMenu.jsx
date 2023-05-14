@@ -40,7 +40,7 @@ const SidebarMenu = () => {
           <Link href="/">
             <a>
               <img
-                src="/assets/images/logo-mob.png"
+                src="/assets/images/logo-mob.svg"
                 alt="header-logo2.png"
               />
             

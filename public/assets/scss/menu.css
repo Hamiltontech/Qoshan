@@ -330,7 +330,7 @@ header.stylehome1.home4 a {
   bottom: auto;
 }
 .mm-listitem_vertical .mm-listitem:last-child:after {
-  border-color: transparent;
+  border-color: #404041;
 }
 .mm-listitem_opened > .mm-listitem__btn:after {
   -webkit-transform: rotate(225deg);

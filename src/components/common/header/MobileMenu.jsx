@@ -10,7 +10,7 @@ const MobileMenu = () => {
           <div className="main_logo_home2 text-center">
             <img
               className="nav_logo_img img-fluid mt20"
-              src="/assets/images/logo-mob.png"
+              src="/assets/images/logo-mob.svg"
               alt="header-logo2.png"
             />
             
