@@ -25,7 +25,7 @@
   z-index: 1;
 }
 .header.stylehome1.home5 {
-  background-color: #ffffff !important;
+  background-color: #c2b49a !important;
   position: relative;
   z-index: 1;
 }
@@ -69,7 +69,7 @@ header.stylehome1.home4 a {
 }
 .header,
 .footer {
-  background: #777;
+  background: #54594f ;
   font-size: 16px;
   font-weight: bold;
   color: #484848;
@@ -105,12 +105,12 @@ header.stylehome1.home4 a {
 .header a:before {
   content: "";
   display: block;
-  background: #484848;
+  background: #54594f ;
   height: 2px;
   width: 15px;
 }
 .header a span {
-  background: #484848;
+  background: #54594f ;
   display: block;
   height: 2px;
   margin: 6px 0;
@@ -119,7 +119,7 @@ header.stylehome1.home4 a {
 .header a:after {
   content: "";
   display: block;
-  background: #484848;
+  background: #54594f ;
   height: 2px;
   width: 20px;
 }
@@ -128,7 +128,7 @@ header.stylehome1.home4 a {
   display: none;
 }
 .header li.list_s a span {
-  background-color: transparent;
+  background-color: #54594f ;
 }
 .menu_bar_home2 li.list-inline-item:first-child {
   position: absolute;
