@@ -13,11 +13,7 @@ Tag: advanced custom search, agency, agent, business, clean, corporate, director
 @import url(../scss/font-awesome.min.css);
 @import url(../scss/font-awesome-animation.min.css);
 @import url(../scss/flaticon.css);
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap');
-
-* {
-  font-family: 'Changa', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 /* Table of contents */
 
@@ -123,26 +119,12 @@ Tag: advanced custom search, agency, agent, business, clean, corporate, director
 html {
   font-size: 100%;
 }
-.social-icons a i,
-.phone-number a i {
-  font-size: 18px;
-  color: #c2b49a;
-}
-.social-icons a i,
-.phone-number a i {
-  color: #c2b49a; /* replace with your desired color */
-}
-.phone-number a i {
-  transform: scaleX(-1);
-}
-
-
 
 body {
   background-attachment: fixed;
   background-color: #ffffff;
   color: #777777;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   line-height: 1.642;
   overflow-x: hidden;
@@ -263,7 +245,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.2;
   color: #484848;
 }
@@ -373,8 +355,8 @@ address {
   margin: 0 0 10px;
 }
 
-.ff-Changa {
-  font-family: "Changa", sans-serif;
+.ff-Nunito {
+  font-family: "Nunito", sans-serif;
 }
 
 .ff-fontawesome {
@@ -452,7 +434,7 @@ address {
 .sign_up_tab li.nav-item .nav-link {
   border: none;
   color: #484848;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -558,7 +540,7 @@ address {
 
 .dropdown_content .list_content a p {
   color: #484848;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
@@ -872,7 +854,7 @@ address {
 .home4_header_top_contact li a,
 ul.sign_up_btn.home4 li a,
 ul.sign_up_btn.home6 a {
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   line-height: initial;
 }
@@ -903,7 +885,7 @@ ul.sign_up_btn.home6 a {
 
 .header_top.home7 .header_top_lang_widget_home6 button.btn.dropdown-toggle {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgba(255, 255, 255, 0.502);
   height: auto;
   line-height: 1.2;
@@ -915,7 +897,7 @@ ul.sign_up_btn.home6 a {
 
 ul.sign_up_btn.home7 a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
 }
 
 .light_white,
@@ -940,7 +922,7 @@ ul.sign_up_btn.home7 a {
 
 .header_search_widget .mailchimp_form input[type="text"].form-control::-webkit-input-placeholder {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -1004,7 +986,7 @@ ul.sign_up_btn.home7 a {
 
 .ht_right_widget ul li a,
 .home3_header_top_contact li a {
-  font-family: "Changa";
+  font-family: "Nunito";
 }
 
 header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.home3 .header_top_lang_widget {
@@ -1135,7 +1117,7 @@ header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.hom
 }
 
 .cd-dropdown-content .cd-secondary-dropdown a {
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 li.has-children a {
@@ -1243,7 +1225,7 @@ header.header-nav.menu_style_home_one.home9 ul.ace-responsive-menu li.add_listin
 }
 
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing a {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: var(--color-primary);
   line-height: 1.2;
   top: 0 !important;
@@ -1599,7 +1581,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_six .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_seven .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_eight .ace-responsive-menu > li > a {
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   padding: 38px 16px 30px 10px;
 }
 
@@ -1639,7 +1621,7 @@ header.header-nav.menu_style_home_one.style2 a.navbar_brand {
 
 header.header-nav.menu_style_home_one.style2 a.navbar_brand span {
   color: #484848;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
@@ -1666,7 +1648,7 @@ header.header-nav.menu_style_home_one.style2.home10 .ace-responsive-menu > li > 
 
 header.header-nav.menu_style_home_one.style2 .ace-responsive-menu li a {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #c2b49a;
   line-height: 1.2;
 }
@@ -1712,7 +1694,7 @@ header.header-nav.menu_style_home_one.style3 ul.ace-responsive-menu li.add_listi
 
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.add_listing a {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 1;
 }
@@ -1767,7 +1749,7 @@ header.header-nav.home2.style_one ul.sign_up_btn li:first-child:before {
 
 header.header-nav.home2.style_one ul.sign_up_btn li a {
   color: #a4a4a4;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 14px;
   line-height: 1.2;
 }
@@ -1872,7 +1854,7 @@ header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu:nth-
 header.header-nav.menu_style_home_three .ace-responsive-menu li a,
 header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1918,7 +1900,7 @@ header.header-nav.menu_style_home_three a.navbar_brand:before {
 }
 
 .sign_up_btn.home3 .btn {
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 14px;
   line-height: 1.2;
 }
@@ -2091,7 +2073,7 @@ header.header-nav.menu_style_home_four .ace-responsive-menu > li {
 
 header.header-nav.menu_style_home_four .ace-responsive-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 header.header-nav.menu_style_home_four .sign_up_btn .btn {
@@ -2216,7 +2198,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu li a {
 
 header.header-nav.menu_style_home_five .ace-responsive-menu li a {
   padding-top: 27px;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-transform: capitalize;
 }
 
@@ -2357,7 +2339,7 @@ header.header-nav.menu_style_home_six .ace-responsive-menu > li {
 
 header.header-nav.menu_style_home_six .ace-responsive-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 header.header-nav.menu_style_home_six .sign_up_btn .btn {
@@ -2478,7 +2460,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li {
 
 header.header-nav.menu_style_home_seven .ace-responsive-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   padding: 18px 20px 18px 15px;
 }
 
@@ -2648,7 +2630,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   }
 }
 .home_content .home-text.home5 h4 {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-style: italic;
   line-height: 1.2;
@@ -2672,7 +2654,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
 
 .icon_home5 p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 0;
@@ -2881,7 +2863,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   background-color: #ffffff;
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.2;
 }
 
@@ -2895,7 +2877,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
 .home5_advanced_search_form .form-group input[type="text"].form-control::-webkit-input-placeholder {
   color: #006c70;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.2;
 }
 
@@ -3058,7 +3040,7 @@ input.amount4 {
   box-shadow: none;
   color: #006c70;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   width: 48%;
@@ -3260,7 +3242,7 @@ form.home5_advanced_search_form .search_option_two .dropdown-menu {
 
 .home1-advnc-search .search_option_two .dropdown-menu button.btn {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -3341,7 +3323,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 50px;
   line-height: 2.5;
   width: 180px;
@@ -3592,7 +3574,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .home10-mainslider .banner-style-one .banner-title {
   font-size: 45px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -3652,14 +3634,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home-text.home6 h2 {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .home-text.home6 p {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -4077,7 +4059,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home3_home_content h1 {
   font-size: 55px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -4090,7 +4072,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home3_home_content h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 26px;
 }
@@ -4179,7 +4161,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home-five .home-text p {
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   line-height: 30px;
   max-width: 495px;
@@ -4401,7 +4383,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .home4_iconbox .icon p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 3;
   margin-bottom: 0;
@@ -4579,7 +4561,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .img_hvr_box.home7 .overlay .details h4 {
   color: #ffffff;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -4695,7 +4677,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .cs_row_one .cs_title {
   font-size: 26px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
 }
@@ -4842,7 +4824,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .cs_row_two .cs_overview .title {
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   font-size: 20px;
   color: #484848;
   line-height: 1.2;
@@ -4850,7 +4832,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .cs_row_two .cs_overview h4 {
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 18px;
   color: rgb(59, 59, 59);
   line-height: 1.333;
@@ -4917,7 +4899,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .cs_row_three .course_content h4.title {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   float: left;
   line-height: 1.2;
@@ -4935,7 +4917,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .cs_row_three .course_content .details .cc_tab h4.panel-title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(59, 59, 59);
   line-height: 1.7;
   border-radius: 5px;
@@ -5007,7 +4989,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_four .about_ins_container .aii_title,
 .cs_row_five .student_feedback_container .aii_title {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   margin-bottom: 25px;
   line-height: 1.2;
@@ -5023,7 +5005,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .cs_row_four .about_ins_container .details h4 {
   font-size: 20px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   margin-bottom: 0;
   line-height: 1.5;
@@ -5167,7 +5149,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .cs_row_five .student_feedback_container .aii_average_review .av_content h2 {
   font-size: 50px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 0.6;
 }
@@ -5189,7 +5171,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .r_course_title {
   font-size: 26px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -5257,7 +5239,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: var(--color-primary);
   border-radius: 3px;
   color: rgb(254, 254, 254);
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 14px;
   height: 25px;
   line-height: 25px;
@@ -5330,7 +5312,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property.home8 ul.tag li a,
 .feat_property.list ul.tag li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #fefefe;
   line-height: 1.2;
 }
@@ -5388,7 +5370,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .thumb .thmb_cntnt a.fp_price {
   bottom: 15px;
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   left: 20px;
@@ -5444,7 +5426,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property.list .dtls_headr a.fp_price {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -5487,7 +5469,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 3px;
   background-color: rgb(255, 90, 95);
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(254, 254, 254);
   height: 25px;
   line-height: 1.2;
@@ -5499,7 +5481,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 3px;
   background-color: rgb(57, 218, 138);
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(254, 254, 254);
   height: 25px;
   line-height: 20px;
@@ -5511,7 +5493,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 3px;
   background-color: rgb(253, 57, 122);
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(254, 254, 254);
   height: 25px;
   line-height: 20px;
@@ -5535,7 +5517,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   color: var(--color-primary);
   float: left;
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   margin-top: 0;
@@ -5556,14 +5538,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property .details .tc_content p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 20px;
 }
 
 .feat_property .details .tc_content h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -5584,7 +5566,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property .details .tc_content .prop_details li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -5595,7 +5577,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property.home2 .details .tc_content h5 {
   color: #484848;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.333;
 }
 
@@ -5627,7 +5609,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property .details .fp_footer .fp_meta li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #777777;
   line-height: 1.2;
 }
@@ -5642,7 +5624,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property .details .fp_footer .fp_pdate {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #777777;
   line-height: 1.2;
   margin-top: 15px;
@@ -5852,7 +5834,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .properti_city.home6 .overlay .details h4 a {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -5864,7 +5846,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .properti_city.home6 .details a.fp_price {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 2;
@@ -5952,14 +5934,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .for_blog.feat_property .details .tc_content .bpg_meta li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(119, 119, 119);
   line-height: 1.2;
 }
 
 .for_blog.feat_property .details .tc_content p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   text-transform: capitalize;
@@ -6036,7 +6018,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .properti_city .overlay .details h4 {
   color: #ffffff;
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
 }
@@ -6069,7 +6051,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .properti_city.home5 .overlay .details .left h4 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 2.3;
@@ -6100,7 +6082,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .properti_city .overlay .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 1.2;
 }
@@ -6173,14 +6155,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .modern_apertment .title {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .modern_apertment .subtitle {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -6189,7 +6171,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .modern_apertment p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.429;
   margin-bottom: 30px;
@@ -6203,7 +6185,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 35px;
@@ -6217,7 +6199,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .properti_city.home7 .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgba(119, 119, 119, 0.8);
   line-height: 1.2;
 }
@@ -6230,7 +6212,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .search_smart_property h2 {
   font-size: 30px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -6238,7 +6220,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .search_smart_property p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.875;
   margin-bottom: 30px;
@@ -6253,7 +6235,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   color: #484848;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   height: 60px;
   line-height: 1.2;
@@ -6334,7 +6316,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   cursor: pointer;
   display: block;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 45px;
   line-height: 2.1;
   outline: none;
@@ -6376,7 +6358,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .single_property_social_share h2 {
   font-size: 30px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -6448,7 +6430,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .spls_style_two .overlay .title {
   font-size: 26px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1;
@@ -6611,7 +6593,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .lsd_list li a {
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   line-height: 1.2;
 }
@@ -6685,7 +6667,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .additional_details ul li p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   line-height: 2.857;
   margin-bottom: 0;
@@ -6693,7 +6675,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .additional_details ul li p span {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 2.857;
@@ -6748,7 +6730,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .icon_box_area .details h5 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.5;
@@ -6757,7 +6739,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .icon_box_area .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   margin-bottom: 0;
 }
@@ -6765,7 +6747,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .walkscore_area .more_info {
   color: rgb(72, 72, 72);
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.714;
   text-decoration: underline;
 }
@@ -6785,7 +6767,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .education_distance h5 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 2;
@@ -6809,7 +6791,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .single_line .para {
   color: rgb(72, 72, 72);
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   float: left;
   line-height: 2.143;
   margin-bottom: 0;
@@ -6838,7 +6820,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .single_line .review span.total_rive_count {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(118, 118, 118);
   line-height: 2.143;
 }
@@ -6931,7 +6913,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .sticky-nav-tabs-container li a {
   background-color: #fff;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
 }
@@ -6994,7 +6976,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .listing_single_property_compare ul li p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   line-height: 1.857;
   margin-bottom: 0;
@@ -7044,14 +7026,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .why_chose_us .details h4 {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
 }
 
 .why_chose_us .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.714;
 }
 
@@ -7264,7 +7246,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .our_hotoffer h2 {
   font-size: 30px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -7272,7 +7254,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .our_hotoffer p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -7287,7 +7269,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
   color: #ffffff;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   height: 50px;
   line-height: 1.2;
@@ -7333,7 +7315,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .testimonial_grid .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 1.429;
   margin-bottom: 0;
@@ -7625,7 +7607,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .my_course_content_list .mc_content_list .details .mc_footer ul.mc_review li.fp_pdate {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(199, 85, 51);
   font-weight: bold;
   line-height: 1.2;
@@ -7662,7 +7644,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .my_course_content_list .mc_content_list .details .mc_content .subtitle .title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(10, 10, 10);
   line-height: 1.333;
 }
@@ -7716,7 +7698,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .my_profile_setting_input label,
 .my_profile_setting_textarea label {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.5;
@@ -7734,7 +7716,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .my_profile_setting_input .form-control::placeholder {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   line-height: 1.2;
 }
@@ -7752,7 +7734,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 90, 95);
   font-weight: bold;
   line-height: 1.2;
@@ -7775,7 +7757,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
@@ -7798,7 +7780,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
@@ -7827,7 +7809,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   background-color: rgb(236, 236, 236);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -7922,7 +7904,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .original_price {
   font-size: 13px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(126, 126, 126);
   line-height: 1.2;
 }
@@ -8048,7 +8030,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .hvr_img_box_container .overlay .details h5 {
   color: #484848;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   font-size: 18px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -8111,7 +8093,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .funfact_one .details .timer,
 .funfact_one .details ul li {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 30px;
   font-weight: bold;
   margin-right: -2px;
@@ -8353,7 +8335,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .copyright-widget p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #8a99b3;
   line-height: 2.143;
   margin-bottom: 0;
@@ -8422,7 +8404,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 /*== Footer Widget ==*/
 .footer_about_widget p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #8a99b3;
   line-height: 2.143;
   margin-bottom: 0;
@@ -8490,7 +8472,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .home6 .footer_contact_widget h4,
 .home6 .footer_social_widget h4,
 .home6 .footer_apps_widget h4 {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.333;
@@ -8504,7 +8486,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .footer_qlink_widget li a,
 .footer_contact_widget li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #8a99b3;
   line-height: 2.429;
   -webkit-transition: all 0.3s ease 0s;
@@ -8589,7 +8571,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .logo-widget span {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 22px;
   font-weight: bold;
   padding-left: 15px;
@@ -8620,7 +8602,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .footer_menu_widget ul li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #8a99b3;
   line-height: 2.143;
 }
@@ -8831,7 +8813,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .inner_page_breadcrumb .breadcrumb_title {
   font-size: 40px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -8904,7 +8886,7 @@ ul.ab_counting li:last-child {
 
 .about_counting .details h3 {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   margin-bottom: 0;
@@ -8912,7 +8894,7 @@ ul.ab_counting li:last-child {
 
 .about_counting .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
 }
 
@@ -9160,7 +9142,7 @@ ul.ab_counting li:last-child {
 
 .about_box_home6 .details h3 {
   font-size: 26px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   margin-bottom: 20px;
 }
 
@@ -9212,7 +9194,7 @@ ul.ab_counting li:last-child {
 
 .smp_icon_box .details h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -9433,7 +9415,7 @@ ul.ab_counting li:last-child {
 }
 
 .testimonial_item .details h4 {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -9442,13 +9424,13 @@ ul.ab_counting li:last-child {
 
 .testimonial_item .details .small {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.5;
 }
 
 .testimonial_item .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(119, 119, 119);
   font-style: italic;
   line-height: 1.714;
@@ -9595,7 +9577,7 @@ li.slick-slide.slick-active:nth-child(8) img {
 
 .testimonial_post .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 22px;
@@ -9793,7 +9775,7 @@ li.slick-slide.slick-active:nth-child(8) img {
 .blog_post_home2 .bph2_header .bph2_date_meta span,
 .blog_post.one .thumb .post_date span {
   color: #484848;
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: bold;
   display: table-caption;
@@ -10228,7 +10210,7 @@ ul.mc_parent_list .membership_header .thumb a span {
 ul.mc_parent_list .membership_header .thumb .price {
   bottom: 15px;
   color: #ffffff;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 22px;
   font-weight: bold;
   left: 0;
@@ -10244,7 +10226,7 @@ ul.mc_parent_list .membership_header .details {
 
 ul.mc_parent_list .membership_header .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: var(--color-primary);
   line-height: 1.2;
 }
@@ -10265,7 +10247,7 @@ ul.mc_parent_list ul.mc_child_list.four li {
   border-bottom: 1px solid #ebebeb;
   color: #484848;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 3.333;
 }
 
@@ -10295,7 +10277,7 @@ ul.mc_parent_list ul.mc_child_list.four li:last-child {
 
 ul.mc_parent_list ul.mc_child_list .membership_header h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.333;
   margin: 0;
@@ -10380,7 +10362,7 @@ ul.mc_parent_list ul.mc_child_list .membership_header h4 {
 
 .erro_code h1 {
   font-size: 45px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10396,7 +10378,7 @@ ul.mc_parent_list ul.mc_child_list .membership_header h4 {
 
 .error_page.footer_apps_widget p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
 }
@@ -10422,7 +10404,7 @@ a.btn.btn_error {
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 50px;
   line-height: 35px;
   width: 200px;
@@ -10497,7 +10479,7 @@ a.btn.btn_error {
 
 .pricing_table .pricing_header h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.444;
@@ -10505,7 +10487,7 @@ a.btn.btn_error {
 
 .pricing_table .pricing_content ul li {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 3.571;
 }
@@ -10520,7 +10502,7 @@ a.btn.btn_error {
   border-radius: 8px;
   color: var(--color-primary);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 30px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
@@ -10586,7 +10568,7 @@ a.btn.btn_error {
 .login_form .btn-fpswd {
   color: #8b91dd;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 2.214;
 }
 
@@ -10682,13 +10664,13 @@ a.btn.btn_error {
 
 .sign_up_form .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 3;
 }
 
 .login_form .heading h4 {
-  font-family: "Changa", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .login_form.inner_page .heading p {
@@ -10715,7 +10697,7 @@ a.btn.btn_error {
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 52px;
   line-height: 1.2;
 }
@@ -10744,7 +10726,7 @@ a.btn.btn_error {
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   color: #ffffff;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 16px;
   font-weight: bold;
   height: 50px;
@@ -10805,7 +10787,7 @@ a.btn.btn_error {
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   color: #ffffff;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 50px;
 }
 
@@ -10841,7 +10823,7 @@ a.btn.btn_error {
 .shortcode_widget_progressbar h4,
 .shortcode_form_title h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10868,7 +10850,7 @@ a.btn.btn_error {
 
 .faq_according .panel .panel-body h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(59, 59, 59);
   line-height: 1.333;
 }
@@ -10882,7 +10864,7 @@ a.btn.btn_error {
 }
 
 .faq_according .panel-heading .panel-title {
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 16px;
   font-weight: bold;
   line-height: 3;
@@ -10921,7 +10903,7 @@ a.btn.btn_error {
 
 .faq_according .accordion .card .btn-link {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
 }
@@ -10965,7 +10947,7 @@ a.btn.btn_error {
 
 .faq_according .accordion .card .card-body {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   padding: 10px 0 30px;
@@ -10973,7 +10955,7 @@ a.btn.btn_error {
 
 .faq_according .accordion .card .card-body p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
 }
@@ -10993,7 +10975,7 @@ a.btn.btn_error {
 
 .terms_condition_grid .grids p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
 }
@@ -11017,7 +10999,7 @@ a.btn.btn_error {
 
 .terms_condition_widget ul li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 2.857;
   -webkit-transition: all 0.3s ease;
@@ -11083,7 +11065,7 @@ a.btn.btn_error {
 
 .ui_kit_tab .tab-content .tab-pane p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.857;
   margin-bottom: 0;
@@ -11251,7 +11233,7 @@ a.btn.btn_error {
 .ui_kit_radiobox .radio label {
   cursor: pointer;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   line-height: 25px;
@@ -11396,7 +11378,7 @@ legend span {
 /*== SwithcBox Widget UI Page ==*/
 .ui_kit_whitchbox .custom-control-label {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   line-height: 2;
@@ -11477,7 +11459,7 @@ legend span {
 
 .ui_page_heading .blockquote p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-style: italic;
   line-height: 1.714;
@@ -11500,7 +11482,7 @@ legend span {
 
 .order_list li {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 2.857;
 }
@@ -11519,7 +11501,7 @@ legend span {
 
 .ui_page_headings h1 {
   font-size: 45px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1;
@@ -11528,7 +11510,7 @@ legend span {
 
 .ui_page_headings h2 {
   font-size: 35px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 0.686;
@@ -11537,7 +11519,7 @@ legend span {
 
 .ui_page_headings h3 {
   font-size: 30px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 0.8;
@@ -11546,7 +11528,7 @@ legend span {
 
 .ui_page_headings h4 {
   font-size: 26px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 0.923;
@@ -11555,7 +11537,7 @@ legend span {
 
 .ui_page_headings h5 {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.091;
@@ -11564,7 +11546,7 @@ legend span {
 
 .ui_page_headings h6 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.333;
@@ -11583,7 +11565,7 @@ legend span {
 
 .ui_kit_multi_select_box .bootstrap-select.show-tick .dropdown-menu li a span.text {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 2.5;
 }
@@ -11598,7 +11580,7 @@ legend span {
 
 .ui_kit_select_search .bootstrap-select .dropdown-menu li a span.text {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 2.5;
 }
@@ -11667,14 +11649,14 @@ legend span {
 
 .blog_sp_tag a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #fefefe;
   line-height: 1.2;
 }
 
 .blog_sp_title {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -11707,7 +11689,7 @@ legend span {
 
 .main_blog_post_content .mbp_thumb_post .details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
 }
@@ -11747,7 +11729,7 @@ legend span {
   border: 1px solid #ebebeb;
   border-radius: 50%;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #777777;
   height: 45px;
   overflow: hidden;
@@ -11804,7 +11786,7 @@ legend span {
 .event_counter_plugin_content ul li span {
   display: block;
   font-size: 26px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   line-height: 1.2;
 }
@@ -11857,20 +11839,20 @@ legend span {
 
 .blog_grid_post .thumb .post_date h2 {
   font-size: 50px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   margin-bottom: 0;
 }
 
 .blog_grid_post .thumb .post_date span {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
 }
 
 .blog_grid_post .details h3 {
   font-size: 26px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -11954,7 +11936,7 @@ legend span {
 
 .blog_grid_post.style2.event_lists .details h3 {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.091;
 }
@@ -11992,7 +11974,7 @@ legend span {
 
 .event_participator_tile {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 50px;
@@ -12005,7 +11987,7 @@ legend span {
 
 .participator_team .details h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.333;
   margin-bottom: 0;
@@ -12038,7 +12020,7 @@ legend span {
 .sidebar_recent_product .title,
 .sidebar_feature_listing .title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12065,7 +12047,7 @@ legend span {
 .sidebar_recent_product .media .media-body .post_title,
 .sidebar_feature_listing .media .media-body .post_title {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12084,7 +12066,7 @@ legend span {
 .sidebar_recent_product .media .media-body a,
 .sidebar_feature_listing .media .media-body a {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 90, 95);
   font-weight: bold;
   line-height: 1.2;
@@ -12092,7 +12074,7 @@ legend span {
 
 .sidebar_feature_listing .media .media-body ul li {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   margin-right: 0;
@@ -12145,7 +12127,7 @@ legend span {
 .blog_recent_post_widget .title,
 .blog_category_widget .title {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 0;
@@ -12188,7 +12170,7 @@ legend span {
 
 .event_details_widget .title {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -12248,7 +12230,7 @@ legend span {
 }
 
 .feature_course_widget h4 {
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   font-size: 20px;
   color: #484848;
   line-height: 1.2;
@@ -12293,7 +12275,7 @@ legend span {
 
 .instructor_pricing_widget .price {
   font-size: 30px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12406,7 +12388,7 @@ legend span {
 
 .blog_recent_post_widget .media-body .post_title {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #212121;
   line-height: 1.5;
   margin-bottom: 0;
@@ -12429,7 +12411,7 @@ legend span {
 
 .blog_tag_widget .title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12451,7 +12433,7 @@ legend span {
 
 .blog_tag_widget .tag_list li a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -12477,7 +12459,7 @@ legend span {
 
 .mbp_blockquote .blockquote span {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(187, 187, 187);
   font-style: italic;
   line-height: 0.333;
@@ -12485,7 +12467,7 @@ legend span {
 
 .mbp_blockquote .blockquote em {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-style: italic;
   line-height: 1.714;
@@ -12509,7 +12491,7 @@ legend span {
 
 .blog_post_share li:first-child a {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 2.5;
@@ -12535,7 +12517,7 @@ legend span {
 
 .blog_post_share li p {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(59, 59, 59);
   line-height: 1.333;
 }
@@ -12600,7 +12582,7 @@ legend span {
 .mbp_pagination_tab .pag_next .detls {
   display: inline-block;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.75;
   margin-bottom: 0;
@@ -12609,7 +12591,7 @@ legend span {
 .mbp_pagination_tab .pag_prev .detls h5,
 .mbp_pagination_tab .pag_next .detls h5 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 0;
@@ -12618,7 +12600,7 @@ legend span {
 .mbp_pagination_tab .pag_prev .detls p,
 .mbp_pagination_tab .pag_next .detls p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -12674,7 +12656,7 @@ legend span {
 
 .mbp_pagination_comments .mbp_first.media .media-body p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -12691,7 +12673,7 @@ legend span {
 .mbp_pagination_comments .mbp_first .media-body .sub_title {
   display: flex;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.5;
@@ -12705,7 +12687,7 @@ legend span {
 
 .mbp_pagination_comments a.write_review {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 90, 95);
   position: absolute;
   right: 30px;
@@ -12713,7 +12695,7 @@ legend span {
 
 .mbp_pagination_comments .tr_outoff {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(118, 118, 118);
 }
 
@@ -12789,7 +12771,7 @@ legend span {
 
 .breadcrumb_widgets .title {
   font-size: 22px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: rgb(10, 10, 10);
   line-height: 1.2;
   margin-bottom: 0;
@@ -12824,7 +12806,7 @@ legend span {
 
 .user_profile .media .media-body h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   padding-left: 30px;
@@ -12899,7 +12881,7 @@ legend span {
 
 .my_dashboard_review .review_content .review_title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12908,7 +12890,7 @@ legend span {
 
 .my_dashboard_review .review_content .review_date {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(118, 118, 118);
   line-height: 2.143;
 }
@@ -12942,7 +12924,7 @@ legend span {
   background-color: rgb(36, 50, 74);
   border: none;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 2.2;
@@ -12955,7 +12937,7 @@ legend span {
 .property_table .table td,
 .property_table .table th {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: 600;
   line-height: 3;
@@ -12970,7 +12952,7 @@ legend span {
 .savesearched_table td.para,
 .property_table td.para {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
 }
 
@@ -12982,7 +12964,7 @@ legend span {
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -13126,7 +13108,7 @@ legend span {
   border-bottom: 1px solid #dedede;
   color: #484848;
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.333;
   margin-bottom: 0;
   padding-bottom: 20px;
@@ -13265,7 +13247,7 @@ legend span {
 
 .user_setting .dropdown-menu .user_set_header p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -13283,7 +13265,7 @@ legend span {
 .user_setting .dropdown-menu .user_setting_content a {
   color: #484848;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 2.125 !important;
   padding-left: 0;
   -webkit-transition: all 0.3s ease 0s;
@@ -13453,14 +13435,14 @@ legend span {
 
 .grid_list_search_result .right_area ul li .filter-option-inner-inner {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
 }
 
 .grid_list_search_result .right_area ul li span.stts,
 .grid_list_search_result .right_area ul li span.shrtby {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
 }
@@ -13594,7 +13576,7 @@ legend span {
 
 .h1ads_1st_list.half_style input.form-control::placeholder {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -13711,7 +13693,7 @@ legend span {
 
 .sl_creator .media-body h5 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -13719,7 +13701,7 @@ legend span {
 
 .sl_creator .media-body p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   line-height: 1.5;
   margin-bottom: 0;
@@ -13727,7 +13709,7 @@ legend span {
 
 .sl_creator .media-body a {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
@@ -13742,7 +13724,7 @@ legend span {
   border: 1px solid rgb(235, 235, 235);
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -13791,7 +13773,7 @@ legend span {
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 52px;
   line-height: 42px;
   padding-left: 20px;
@@ -13823,7 +13805,7 @@ legend span {
 
 .sasw_list .panel-heading h4.panel-title {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -13941,7 +13923,7 @@ legend span {
 
 .portfolio_upload p {
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -14005,7 +13987,7 @@ legend span {
 
 .inbox_user_list .wrap .meta h5.name {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -14014,7 +13996,7 @@ legend span {
 
 .inbox_user_list .wrap .meta p.preview {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(119, 119, 119);
   line-height: 2;
   margin-bottom: 0;
@@ -14131,7 +14113,7 @@ legend span {
 
 .message_container .user_heading .wrap h5.name {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(10, 10, 10);
   line-height: 1.2;
   margin-bottom: 0;
@@ -14241,7 +14223,7 @@ legend span {
 }
 .message_container .message_input form input.form-control::placeholder {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
 }
@@ -14353,14 +14335,14 @@ legend span {
 
 .ff_one .detais .timer {
   font-size: 36px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
 
 .ff_one .detais p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(119, 119, 119);
   margin-bottom: 0;
 }
@@ -14388,7 +14370,7 @@ legend span {
 }
 
 .application_statics h4 {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -14406,7 +14388,7 @@ legend span {
 .recent_job_activity h4 {
   color: #484848;
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -14437,7 +14419,7 @@ legend span {
 
 .recent_job_activity .grid ul li p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -14496,7 +14478,7 @@ legend span {
   color: rgb(138, 153, 179);
   display: block;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 3.571;
   padding: 0 15px;
 }
@@ -14535,7 +14517,7 @@ legend span {
 .sidebar-menu li.header {
   background-color: #24324a;
   color: #ffffff;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
@@ -14585,7 +14567,7 @@ legend span {
   color: rgb(138, 153, 179);
   display: block;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 2.5;
   padding-left: 30px;
 }
@@ -14610,7 +14592,7 @@ legend span {
 
 .sidebar-menu .title {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(96, 112, 140);
   line-height: 1.5;
   margin-top: 30px;
@@ -14623,7 +14605,7 @@ legend span {
 /*== sidebar about widget ==*/
 .siderbar_contact_widget h4 {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   margin-bottom: 15px;
   line-height: 1.2;
@@ -14768,7 +14750,7 @@ legend span {
   bottom: 20px;
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 2.2;
   height: 50px;
   left: 20px;
@@ -14828,7 +14810,7 @@ legend span {
   background-color: rgb(29, 41, 62);
   cursor: pointer;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 30px;
@@ -14930,7 +14912,7 @@ legend span {
   cursor: pointer;
   display: block;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   height: 50px;
   line-height: 50px;
   margin-top: 0;
@@ -15131,7 +15113,7 @@ legend span {
 
 .blog_post_home2 .details h4 {
   color: #fafafa;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
@@ -15237,7 +15219,7 @@ legend span {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -15252,7 +15234,7 @@ legend span {
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -15271,7 +15253,7 @@ legend span {
 
 .contact_localtion h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -15280,7 +15262,7 @@ legend span {
 
 .contact_localtion p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 20px;
@@ -15288,7 +15270,7 @@ legend span {
 
 .contact_localtion .content_list h5 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.5;
@@ -15353,14 +15335,14 @@ legend span {
 .maxtext h1 {
   color: #ffffff;
   font-size: 50px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 .maxtext p {
   color: #ffffff;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-size: 18px;
   line-height: 1.2;
 }
@@ -17456,7 +17438,7 @@ section {
 
 .main-title h2 {
   color: #484848;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.2;
   margin-bottom: 10px;
   margin-top: 0;
@@ -17470,7 +17452,7 @@ section {
 
 .main-title p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(119, 119, 119);
   line-height: 1.2;
   margin-bottom: 0;
@@ -18059,7 +18041,7 @@ canvas {
 
 .selected_filter_widget.style2 .accordion .link {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
 }
@@ -18274,7 +18256,7 @@ canvas {
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   height: 50px;
   left: auto;
@@ -18430,7 +18412,7 @@ canvas {
   border-radius: 3px;
   background-color: var(--color-primary);
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #fefefe;
   height: 25px;
   left: 10px;
@@ -18447,7 +18429,7 @@ canvas {
 }
 
 .shop_grid .details h4.item-tile {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.444;
@@ -18455,7 +18437,7 @@ canvas {
 }
 
 .shop_grid .details h4.item-tile .price {
-  font-family: "Changa";
+  font-family: "Nunito";
   color: var(--color-primary);
   font-weight: bold;
   float: right;
@@ -18468,7 +18450,7 @@ canvas {
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   height: 45px;
@@ -18487,7 +18469,7 @@ canvas {
 
 .shop_order_box .main_title {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -18515,7 +18497,7 @@ canvas {
 
 .shop_order_box .order_list_raw ul li h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.333;
   margin-bottom: 4px;
@@ -18530,7 +18512,7 @@ canvas {
 
 .shop_order_box .order_details .title {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -18538,7 +18520,7 @@ canvas {
 
 .shop_order_box .order_details .title2 {
   font-size: 20px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -18558,7 +18540,7 @@ canvas {
 
 .shop_order_box .order_details .od_content .tamount {
   font-size: 18px;
-  font-family: "Changa SemiBold";
+  font-family: "Nunito SemiBold";
   color: rgb(255, 16, 83);
   line-height: 1.333;
 }
@@ -18577,7 +18559,7 @@ canvas {
 
 .checkout_form.style2 .heading p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -18595,7 +18577,7 @@ canvas {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -18605,7 +18587,7 @@ canvas {
 
 .checkout_form .checkout_coupon form label {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.75;
@@ -18616,7 +18598,7 @@ canvas {
   border: 1px solid #ebebeb;
   border-radius: 5px;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -18628,7 +18610,7 @@ canvas {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   padding: 25px;
@@ -18643,7 +18625,7 @@ canvas {
   -o-box-shadow: 0px 1px 4px 0px rgba(62, 76, 102, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(62, 76, 102, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   height: 50px;
   line-height: 1.2;
@@ -18670,7 +18652,7 @@ canvas {
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   height: 50px;
@@ -18708,7 +18690,7 @@ canvas {
 
 .checkout_form .checkout_coupon .form2 .ai_title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -18718,7 +18700,7 @@ canvas {
 
 .checkout_form .checkout_coupon .form2 p {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.75;
@@ -18739,7 +18721,7 @@ canvas {
 .order_sidebar_widget .title {
   color: #484848;
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -18752,7 +18734,7 @@ canvas {
 .order_sidebar_widget .subtitle p {
   color: #484848;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
 }
 
@@ -18760,7 +18742,7 @@ canvas {
 .order_sidebar_widget .subtitle .totals {
   color: var(--color-primary);
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
 }
 
 .payment_widget {
@@ -18784,7 +18766,7 @@ canvas {
 
 .payment_widget .bt_details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -18843,7 +18825,7 @@ canvas {
   border: none;
   color: #484848;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 2.2;
   padding-left: 20px;
@@ -18920,7 +18902,7 @@ canvas {
 
 .cart_page_form tbody.table_body th .cart_list .cart_title {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.444;
@@ -18936,7 +18918,7 @@ canvas {
   border-radius: 8px;
   background-color: #efefef;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   height: 50px;
@@ -18950,7 +18932,7 @@ canvas {
 
 .order_key_status li {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(10, 10, 10);
   line-height: 2.222;
 }
@@ -18991,7 +18973,7 @@ canvas {
 
 .single_product_grid .sps_content .content .shop_single_product_details p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
 }
@@ -19060,7 +19042,7 @@ canvas {
 .shop_single_product_details h4 {
   color: #484848;
   font-size: 22px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.182;
   margin-bottom: 15px;
@@ -19071,7 +19053,7 @@ canvas {
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -19082,7 +19064,7 @@ canvas {
 
 .shop_single_product_details .sspd_price {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: var(--color-primary);
   font-weight: bold;
   line-height: 1.2;
@@ -19100,7 +19082,7 @@ canvas {
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   border-radius: 8px;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
   color: #ffffff;
@@ -19123,7 +19105,7 @@ canvas {
 
 .shop_single_product_details .sspd_social_icon li:first-child {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: rgb(59, 59, 59);
   line-height: 1.333;
   padding-right: 10px;
@@ -19146,7 +19128,7 @@ canvas {
 
 .product_single_content .mbp_pagination_comments .mbp_first.media .media-body p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.857;
   margin-bottom: 0;
@@ -19178,7 +19160,7 @@ canvas {
 .cs_rwo_tabs.csv2 .nav-tabs .nav-link {
   border: 1px solid transparent;
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   height: 64px;
   line-height: 2.5;
@@ -19265,7 +19247,7 @@ ul.total_reivew_view {
 
 ul.total_reivew_view li.sub_titles {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -19274,14 +19256,14 @@ ul.total_reivew_view li.sub_titles {
 
 ul.total_reivew_view li.avrg_review {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #767676;
   line-height: 2.143;
 }
 
 ul.total_reivew_view li.write_review {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: var(--color-primary);
   line-height: 2.57;
   position: absolute;
@@ -19314,7 +19296,7 @@ ul.total_reivew_view .star_list li:last-child a {
 .shop_single_tab_content .nav-tabs .nav-link {
   border: none;
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -19341,7 +19323,7 @@ ul.total_reivew_view .star_list li:last-child a {
 .mbp_comment_form.style2 h4,
 .bsp_reveiw_wrt h4 {
   font-size: 18px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -19355,7 +19337,7 @@ ul.total_reivew_view .star_list li:last-child a {
 .mbp_comment_form.style2 .sspd_review .review_rating_para,
 .review_star li p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.714;
   padding-left: 10px;
@@ -19392,7 +19374,7 @@ ul.total_reivew_view .star_list li:last-child a {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -19407,7 +19389,7 @@ ul.total_reivew_view .star_list li:last-child a {
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   line-height: 1.2;
   margin-bottom: 20px;
   padding: 20px;
@@ -19423,7 +19405,7 @@ ul.total_reivew_view .star_list li:last-child a {
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   color: #ffffff;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   height: 50px;
   line-height: 35px;
@@ -19464,7 +19446,7 @@ ul.total_reivew_view .star_list li:last-child a {
 
 .become_instructor_container .titles {
   color: #484848;
-  font-family: Changa;
+  font-family: Nunito;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.3;
@@ -19538,14 +19520,14 @@ button.gm-ui-hover-effect:focus {
 
 .gm-style-iw-d h5 {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: var(--color-primary);
   line-height: 1.2;
 }
 
 .gm-style-iw-d h4 {
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -19553,7 +19535,7 @@ button.gm-ui-hover-effect:focus {
 
 .gm-style-iw-d p {
   font-size: 14px;
-  font-family: "Changa";
+  font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
 }
@@ -19567,7 +19549,7 @@ button.gm-ui-hover-effect:focus {
 #slider-range-value2 {
   color: #006c70;
   font-size: 16px;
-  font-family: "Changa";
+  font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
 }
