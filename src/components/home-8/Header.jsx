@@ -18,43 +18,44 @@ const Header = () => {
   }, []);
 
   return (
+    
     <header
-      className={`header-nav menu_style_home_one style2 home8  navbar-scrolltofixed stricky main-menu  ${
+      className={`header-nav menu_style_home_one style2 home8  navbar-scrolltofixed stricky main-menu rtl ${
         navbar ? "stricky-fixed " : ""
       }`}
     >
-      <div className="container-fluid p0">
-        {/* <!-- Ace Responsive Menu --> */}
-
-     
+      <div className="container-fluid p-0">
         {/* site logo brand */}
-
-        <nav>
-          <HeaderMenuContent float="float-start" />
-        </nav>
-           <Link href="/">
-          <a className="float-end">
-            <img
-              className="logo1 img-fluid"
-              src="assets/images/header-logo2.svg"
-              alt="header-logo2.svg"
-            />
-            {/* <img
-              className="logo2 img-fluid"
-              src="assets/images/header-logo2.svg"
-              alt="header-logo2.svg"
-            /> */}
-            <img
-              className="logo img-fluid"
-              src="assets/images/winner.webp"
-              alt="header-logo2.svg"
-            />
-          </a>
-        </Link>
+        <div className="d-flex align-items-center justify-content-between px-3">
+          <div className="d-flex align-items-center">
+            <Link href="/">
+              <a className="me-3">
+                <img
+                  className="logo1 img-fluid"
+                  src="assets/images/header-logo2.svg"
+                  alt="header-logo2.svg"
+                  style={{ height: 80 }}
+                />
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="position-relative" style={{ zIndex: 1000, marginBottom: -130, paddingLeft: 40, paddingRight: 40,}}>
+                <img
+                  className="logo img-fluid winner"
+                  src="assets/images/winner.webp"
+                  alt="header-logo2.svg"
+                  style={{ height: 200}}
+                />
+              </a>
+            </Link>
+          </div>
+          <nav className="d-flex align-items-center justify-content-center" style={{ flex: 1 }}>
+            <HeaderMenuContent />
+          </nav>
+        </div>
         {/* End .navbar */}
       </div>
     </header>
-    // {/* <!-- /.theme-main-menu --> */}
   );
 };
 
