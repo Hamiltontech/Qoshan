@@ -52,6 +52,19 @@ const Header = () => {
           <nav className="d-flex align-items-center justify-content-center" style={{ flex: 1 }}>
             <HeaderMenuContent />
           </nav>
+          <div className="d-flex align-items-center" style={{flexDirection: "column",}}>
+  <div className="social-icons me-3">
+    <a href="#"><i className="fa fa-facebook" style={{fontSize: '18px', color: '#c2b49a', marginRight: '10px'}}></i></a>
+    <a href="#"><i className="fa fa-instagram" style={{fontSize: '18px', color: '#c2b49a', marginRight: '10px'}}></i></a>
+    <a href="#"><i className="fa fa-twitter" style={{fontSize: '18px', color: '#c2b49a', marginRight: '10px'}}></i></a>
+  </div>
+  <div className="phone-number">
+    <a href="#"><i className="fa fa-phone" style={{fontSize: '18px', color: '#c2b49a', marginRight: '10px'}}></i> </a>
+    <span className="ms-2" style={{color: '#c2b49a'}}>0791929666</span>
+  </div>
+</div>
+
+
         </div>
         {/* End .navbar */}
       </div>

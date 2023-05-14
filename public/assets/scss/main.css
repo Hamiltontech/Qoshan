@@ -123,6 +123,20 @@ Tag: advanced custom search, agency, agent, business, clean, corporate, director
 html {
   font-size: 100%;
 }
+.social-icons a i,
+.phone-number a i {
+  font-size: 18px;
+  color: #c2b49a;
+}
+.social-icons a i,
+.phone-number a i {
+  color: #c2b49a; /* replace with your desired color */
+}
+.phone-number a i {
+  transform: scaleX(-1);
+}
+
+
 
 body {
   background-attachment: fixed;
