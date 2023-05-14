@@ -26,26 +26,31 @@ const Header = () => {
       <div className="container-fluid p0">
         {/* <!-- Ace Responsive Menu --> */}
 
-        <Link href="/">
-          <a className="navbar_brand float-start dn-smd">
+     
+        {/* site logo brand */}
+
+        <nav>
+          <HeaderMenuContent float="float-start" />
+        </nav>
+           <Link href="/">
+          <a className="float-end">
             <img
               className="logo1 img-fluid"
               src="assets/images/header-logo2.svg"
               alt="header-logo2.svg"
             />
-            <img
+            {/* <img
               className="logo2 img-fluid"
               src="assets/images/header-logo2.svg"
               alt="header-logo2.svg"
+            /> */}
+            <img
+              className="logo img-fluid"
+              src="assets/images/winner.webp"
+              alt="header-logo2.svg"
             />
-            <span>FindHouse</span>
           </a>
         </Link>
-        {/* site logo brand */}
-
-        <nav>
-          <HeaderMenuContent float="float-end" />
-        </nav>
         {/* End .navbar */}
       </div>
     </header>

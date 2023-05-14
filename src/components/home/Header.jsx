@@ -38,7 +38,6 @@ const Header = () => {
               src="/assets/images/header-logo2.svg"
               alt="header-logo2.svg"
             />
-            <span>FindHouse</span>
           </a>
         </Link>
         {/* site logo brand */}
