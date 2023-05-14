@@ -309,8 +309,8 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid mt20"
-                src="/assets/images/logo-mob.png"
-                alt="header-logo.png"
+                src="/assets/images/logo-mob.svg"
+                alt="header-logo.svg"
               />
               
             </a>

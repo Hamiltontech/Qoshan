@@ -11,7 +11,7 @@ const MobileMenu = () => {
             <img
               className="nav_logo_img img-fluid mt20"
               src="/assets/images/logo-mob.svg"
-              alt="header-logo2.png"
+              alt="header-logo2.svg"
             />
             
           </div>

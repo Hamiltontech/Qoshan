@@ -30,12 +30,12 @@ const Header = () => {
             <img
               className="logo1 img-fluid"
               src="/assets/images/logo-mob.svg"
-              alt="header-logo2.png"
+              alt="header-logo2.svg"
             />
             <img
               className="logo2 img-fluid"
               src="/assets/images/logo-mob.svg"
-              alt="header-logo2.png"
+              alt="header-logo2.svg"
             />
  
           </a>

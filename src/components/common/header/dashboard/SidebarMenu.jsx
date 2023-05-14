@@ -41,7 +41,7 @@ const SidebarMenu = () => {
             <a>
               <img
                 src="/assets/images/logo-mob.svg"
-                alt="header-logo2.png"
+                alt="header-logo2.svg"
               />
             
             </a>
