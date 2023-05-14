@@ -24,27 +24,30 @@ const Header = () => {
       }`}
     >
       <div className="container-fluid p0">
+
+      <nav>
+          <HeaderMenuContent />
+        </nav>
+
         {/* <!-- Menu Toggle btn--> */}
         <Link href="/">
           <a className="navbar_brand float-start dn-smd">
             <img
               className="logo1 img-fluid"
-              src="/assets/images/header-logo2.png"
+              src="/assets/images/logo-mob.svg"
               alt="header-logo2.png"
             />
             <img
               className="logo2 img-fluid"
-              src="/assets/images/header-logo2.png"
+              src="/assets/images/logo-mob.png"
               alt="header-logo2.png"
             />
-            <span>FindHouse</span>
+            
           </a>
         </Link>
         {/* site logo brand */}
 
-        <nav>
-          <HeaderMenuContent />
-        </nav>
+        
         {/* End .navbar */}
       </div>
     </header>

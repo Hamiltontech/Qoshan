@@ -309,10 +309,10 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid mt20"
-                src="/assets/images/header-logo2.png"
+                src="/assets/images/logo-mob.png"
                 alt="header-logo.png"
               />
-              <span className="brand-text">FindHouse</span>
+              
             </a>
           </Link>
           {/* End .logo */}
