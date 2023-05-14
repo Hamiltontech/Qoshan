@@ -39,7 +39,7 @@ const Header = () => {
             />
             <img
               className="logo2 img-fluid"
-              src="/assets/images/logo-mob.png"
+              src="/assets/images/logo-mob.svg"
               alt="header-logo2.png"
             />
             
