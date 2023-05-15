@@ -77,7 +77,7 @@ const FeaturedProperties = () => {
 
           <Link href={`/listing-details-v1/${item?.id}`}>
             <a className="fp_price">
-            {/* {item?.attributes?.Price?.slice(0,3)},{item?.attributes?.Price?.slice(3)} دينار أردني */}
+            {item?.attributes?.Price?.slice(0,3)},{item?.attributes?.Price?.slice(3)} دينار أردني
 
             </a>
           </Link>
