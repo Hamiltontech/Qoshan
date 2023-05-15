@@ -4,7 +4,7 @@ import properties from "../../data/properties";
 
 const FeaturedProperties = ({featured}) => {
 
-console.log(featured)
+
 
   const settings = {
     dots: false,
@@ -40,9 +40,11 @@ console.log(featured)
 
   return (
     <>
+
+    {/* should be featured.slice(0,12).map */}
       <Slider {...settings} arrows={true}>
-        {featured?.slice(0,12)?.map((item) => (
-          <div className="item" key={item.id} dir="rtl">
+        {featured?.map((item) => (
+          <div className="item" key={item?.id} dir="rtl">
             <div className="feat_property home3">
               <div className="thumb">
                 <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg" />
@@ -60,7 +62,7 @@ console.log(featured)
 
                   
 
-                  <Link href={`/listing-details-v1/${item.id}`}>
+                  <Link href={`/listing-details-v1/${item?.id}`}>
                     <a className="fp_price">
                     {item?.attributes?.Price?.slice(0,3)},{item?.attributes?.Price?.slice(3)} دينار أردني
 
@@ -73,7 +75,7 @@ console.log(featured)
                 <div className="tc_content">
                   {/* <p className="text-thm">{item.type}</p> */}
                   <h4>
-                    <Link href={`/listing-details-v1/${item.id}`}>
+                    <Link href={`/listing-details-v1/${item?.id}`}>
                       <a>{item?.attributes?.Name}</a>
                     </Link>
                   </h4>
