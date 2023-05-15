@@ -2,9 +2,22 @@ import Link from "next/link";
 import Slider from "react-slick";
 import properties from "../../data/properties";
 
-const FeaturedProperties = ({featured}) => {
 
-console.log(featured)
+// diala
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+const FeaturedProperties = () => {
+  const [featured, setFeatured] =  useState([])
+
+  useEffect(()=>{
+      axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((response)=>{
+        setFeatured(response.data.data)
+      }).catch((error)=>{
+        console.log(error)
+      })
+  }, [])
+
 
   const settings = {
     dots: false,
@@ -47,7 +60,7 @@ console.log(featured)
   <div className="item" key={item?.id} dir="rtl">
     <div className="feat_property home3">
       <div className="thumb">
-        <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg" />
+        {/* <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg" /> */}
         <div className="thmb_cntnt">
           {properties.map((it)=>(
             <ul className="tag mb0">
