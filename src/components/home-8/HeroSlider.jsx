@@ -142,19 +142,19 @@ console.log(arr)
                     <div className="main_title" style={{fontSize: '40px'}}>{singleItem?.attributes?.Name}</div>
                    
                   {/* details */}
-                  <div style={{display: 'flex', width: '60%'}}>
+                  <div style={{display: 'flex', justifyContent: 'start', gap: '20px'}}>
                     {/* location */}
-                  <div style={{display: 'flex', gap: '2px', width: '110px'}}>
+                  <div style={{display: 'flex', gap: '2px', }}>
                   <span className="flaticon-maps-and-flags" /> <p style={{color: 'white', fontSize: '16px'}}>{singleItem?.attributes?.areas?.data?.attributes?.Name}</p>
                   </div>
 
                     {/* bathrooms */}
-                  <div style={{display: 'flex', gap: '2px', width: '110px'}}>
+                  <div style={{display: 'flex', gap: '2px', }}>
                   <BiBath size={20}/> <p style={{color: 'white', fontSize: '16px'}}>حمامات:  {singleItem?.attributes?.Bathrooms}</p>
                   </div>  
 
                     {/* bedrooms */}
-                  <div style={{display: 'flex', gap: '2px', width: '110px'}}>
+                  <div style={{display: 'flex', gap: '2px', }}>
                   <IoBedOutline size={20} /> <p style={{color: 'white', fontSize: '16px'}}>غرف نوم: {singleItem?.attributes?.Bedrooms}</p>
                   </div>
                   </div>
@@ -170,6 +170,8 @@ console.log(arr)
                   <p style={{fontSize: '22px', color: '#c2b49a', fontWeight: 'bold'}}>
                 {singleItem?.attributes?.Price?.slice(0,3)},{singleItem?.attributes?.Price?.slice(3)} دينار أردني
                 </p>      
+
+                <button className="btn btn-thm" type="submit">تفاصيل</button>
                             
                   </div>
                 </div>

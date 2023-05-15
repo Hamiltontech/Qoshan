@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Slider from "react-slick";
+import {TfiRulerAlt} from 'react-icons/tfi'
 
 
 const FeaturedProperties = ({featured}) => {
@@ -10,7 +11,7 @@ console.log(featured)
     dots: false,
     arrows: true,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: false,
     speed: 1200,
     responsive: [
@@ -18,21 +19,21 @@ console.log(featured)
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 520,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -68,7 +69,7 @@ console.log(featured)
             ))} */}
           
 
-          
+          {/* price */}
 
           <Link href={`/listing-details-v1/${item?.id}`}>
             <a className="fp_price">
@@ -81,20 +82,26 @@ console.log(featured)
 
       <div className="details">
         <div className="tc_content">
+          {/* type */}
           <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
           <h4>
             <Link href={`/listing-details-v1/${item?.id}`}>
               <a>{item?.attributes?.Name}</a>
             </Link>
           </h4>
+
+          {/* location */}
           <p>
-            <span className="flaticon-placeholder"></span>
+            <span className="flaticon-placeholder" style={{marginLeft: '5px'}}></span>
             {item?.attributes?.areas?.data?.attributes?.Name}
           </p>
 
+
+                {/* area */}
           <ul className="prop_details mb0">
               <li className="list-inline-item">
-                <a href="#">
+                <a href="#" style={{display: 'flex', gap: '5px'}}>
+                  <TfiRulerAlt size={15}/>
                   المساحة: {item?.attributes?.Area} متر مربع
                 </a>
               </li>

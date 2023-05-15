@@ -1238,7 +1238,7 @@ header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing a {
 
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing {
   background-color: var(--color-primary);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  box-shadow: 0px 1px 4px 0px #404041;
 }
 
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing a {
@@ -1678,18 +1678,18 @@ header.header-nav.menu_style_home_one.style2.home10 ul.ace-responsive-menu li.li
 
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.add_listing {
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
 }
 
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.add_listing.home2 {
   background-color: rgb(36, 50, 74);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
 }
 
 header.header-nav.menu_style_home_one.style3 ul.ace-responsive-menu li.add_listing.home6 {
@@ -2960,10 +2960,10 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
 .home1-advnc-search ul li .search_option_button button {
   border-radius: 8px;
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
@@ -6187,10 +6187,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .modern_apertment .booking_btn {
   border-radius: 8px;
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   color: #ffffff;
@@ -7427,10 +7427,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .parner_reg_btn a.btn {
   border-radius: 8px;
   background-color: rgb(255, 120, 124);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   height: 60px;
   line-height: 50px;
   width: 200px;
@@ -7736,10 +7736,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: rgba(255, 90, 95, 0);
   border: 2px solid rgb(255, 90, 95);
   border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   color: rgb(255, 90, 95);
@@ -7759,10 +7759,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: rgb(255, 90, 95);
   border: 2px solid rgb(255, 90, 95);
   border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   color: rgb(255, 255, 255);
@@ -7782,10 +7782,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: rgb(29, 41, 62);
   border: 2px solid rgb(29, 41, 62);
   border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   color: rgb(255, 255, 255);
@@ -10415,10 +10415,10 @@ a.btn.btn_error {
   height: 50px;
   line-height: 35px;
   width: 200px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
 }
 
 /*== Service Pages Style Code ==*/
@@ -10512,10 +10512,10 @@ a.btn.btn_error {
   font-family: "Changa";
   font-weight: bold;
   line-height: 30px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   height: 46px;
 }
 
@@ -10728,10 +10728,10 @@ a.btn.btn_error {
 .login_form .btn-log {
   border-radius: 8px;
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   color: #ffffff;
   font-family: "Changa";
   font-size: 16px;
@@ -10788,10 +10788,10 @@ a.btn.btn_error {
 .sign_up_form .btn-log {
   border-radius: 8px;
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   color: #ffffff;
   font-size: 16px;
   font-family: "Changa";
@@ -12966,10 +12966,10 @@ legend span {
 .pck_chng_btn .btn {
   border-radius: 8px;
   background-color: rgb(255, 90, 95);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   color: #ffffff;
@@ -15236,10 +15236,10 @@ legend span {
 .form_grid .contact_form button {
   border-radius: 8px;
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   color: #ffffff;
@@ -18279,7 +18279,7 @@ canvas {
   top: 38px;
   width: 170px;
   z-index: 2;
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  box-shadow: 0px 1px 4px 0px #404041;
 }
 
 #main2 .filter_open_btn {
@@ -18455,10 +18455,10 @@ canvas {
 
 .shop_grid .details .add_to_cart {
   border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   font-weight: bold;
@@ -18657,10 +18657,10 @@ canvas {
   background-color: var(--color-primary);
   border-radius: 8px;
   color: #ffffff;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   font-size: 16px;
   font-family: "Changa";
   font-weight: bold;
@@ -19086,10 +19086,10 @@ canvas {
 
 .shop_single_product_details .cart_btns button.btn {
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   border-radius: 8px;
   font-size: 16px;
   font-family: "Changa";
@@ -19409,10 +19409,10 @@ ul.total_reivew_view .star_list li:last-child a {
 .bsp_reveiw_wrt .comments_form button.btn {
   border-radius: 8px;
   background-color: var(--color-primary);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  -webkit-box-shadow: 0px 1px 4px 0px #404041;
+  -moz-box-shadow: 0px 1px 4px 0px #404041;
+  -o-box-shadow: 0px 1px 4px 0px #404041;
+  box-shadow: 0px 1px 4px 0px #404041;
   color: #ffffff;
   font-size: 16px;
   font-family: "Changa";
