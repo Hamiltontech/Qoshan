@@ -12,7 +12,25 @@ import PopupSignInUp from "../common/PopupSignInUp";
 import FeaturedProps from "./FeaturedProps";
 import HeroFilter from "./HeroFilter";
 
+
+
+
+// diala
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 const Home8 = () => {
+  const [data, setData] = useState([])
+
+  useEffect(()=>{
+    axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
+    setData(res.data.data)
+  }).catch((err)=>{
+    console.log(err)
+  })
+  }, [])
+
+  let featured = data?.filter((ele) => ele?.attributes?.Promoted === true) 
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -59,14 +77,14 @@ const Home8 = () => {
               <a className="float-start" href="#">
                   إعرض المزيد <span className="flaticon-back"></span>
                 </a>
-                عقارات مميزة لكم من فريق قوشان.{" "}
+                عقارات مميزة لكم من فريق قوشان.
                 
               </p>
             </div>
           </div>
           <div className="col-lg-12">
             <div className="feature_property_home3_slider gutter-x15">
-              <FeaturedProps />
+              <FeaturedProps featured={featured}/>
             </div>
           </div>
         </div>

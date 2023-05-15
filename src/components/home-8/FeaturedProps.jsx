@@ -2,7 +2,10 @@ import Link from "next/link";
 import Slider from "react-slick";
 import properties from "../../data/properties";
 
-const FeaturedProperties = () => {
+const FeaturedProperties = ({featured}) => {
+
+console.log(featured)
+
   const settings = {
     dots: false,
     arrows: true,
@@ -38,37 +41,29 @@ const FeaturedProperties = () => {
   return (
     <>
       <Slider {...settings} arrows={true}>
-        {properties.slice(0, 12).map((item) => (
-          <div className="item" key={item.id}>
+        {featured?.slice(0,12)?.map((item) => (
+          <div className="item" key={item.id} dir="rtl">
             <div className="feat_property home3">
               <div className="thumb">
-                <img className="img-whp" src={item.img} alt="fp1.jpg" />
+                <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg" />
                 <div className="thmb_cntnt">
-                  <ul className="tag mb0">
-                    {item.saleTag.map((val, i) => (
+                  {properties.map((it)=>(
+                    <ul className="tag mb0">
+                    {it.saleTag.map((val, i) => (
                       <li className="list-inline-item" key={i}>
                         <a href="#">{val}</a>
                       </li>
                     ))}
                   </ul>
+                    ))}
+                  
 
-                  <ul className="icon mb0">
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-transfer-1"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-heart"></span>
-                      </a>
-                    </li>
-                  </ul>
+                  
 
                   <Link href={`/listing-details-v1/${item.id}`}>
                     <a className="fp_price">
-                      ${item.price}
-                      <small>/mo</small>
+                    {item?.attributes?.Price.slice(0,3)},{item?.attributes?.Price.slice(3)} دينار أردني
+
                     </a>
                   </Link>
                 </div>
@@ -76,18 +71,18 @@ const FeaturedProperties = () => {
 
               <div className="details">
                 <div className="tc_content">
-                  <p className="text-thm">{item.type}</p>
+                  {/* <p className="text-thm">{item.type}</p> */}
                   <h4>
                     <Link href={`/listing-details-v1/${item.id}`}>
-                      <a>{item.title}</a>
+                      <a>{item?.attributes?.Name}</a>
                     </Link>
                   </h4>
                   <p>
                     <span className="flaticon-placeholder"></span>
-                    {item.location}
+                    {item?.attributes?.areas?.data?.attributes?.Name}
                   </p>
 
-                  <ul className="prop_details mb0">
+                  {/* <ul className="prop_details mb0">
                     {item.itemDetails.map((val, i) => (
                       <li className="list-inline-item" key={i}>
                         <a href="#">
@@ -95,7 +90,7 @@ const FeaturedProperties = () => {
                         </a>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
