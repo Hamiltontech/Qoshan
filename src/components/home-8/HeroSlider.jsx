@@ -168,7 +168,7 @@ console.log(arr)
 
                   {/* price */}
                   <p style={{fontSize: '22px', color: '#c2b49a', fontWeight: 'bold'}}>
-                {singleItem?.attributes?.Price.slice(0,3)},{singleItem?.attributes?.Price.slice(3)} دينار أردني
+                {singleItem?.attributes?.Price?.slice(0,3)},{singleItem?.attributes?.Price?.slice(3)} دينار أردني
                 </p>      
                             
                   </div>
