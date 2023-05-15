@@ -39,8 +39,7 @@ const Home8 = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Find Properties in These Cities</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2>عقارات حسب المنطقة</h2>
               </div>
             </div>
           </div>
@@ -50,25 +49,6 @@ const Home8 = () => {
             <FindProperties />
           </div>
           {/* End .row */}
-        </div>
-      </section>
-
-      {/* <!-- Feature Properties --> */}
-      <section id="feature-property" className="property-city pb30 bb1">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center mb40">
-                <h2>Featured Properties</h2>
-                <p>Handpicked properties by our team.</p>
-              </div>
-            </div>
-            <div className="col-lg-12">
-              <div className="feature_property_slider gutter-x15">
-                <FeaturedProperties />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

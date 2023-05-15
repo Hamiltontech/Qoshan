@@ -15,8 +15,6 @@ const HeroSlider = () => {
     {
       id: 1,
       bgImage: "slidebg-1",
-      title: "Find Your Dream Home",
-      subTitle: "From as low as $10 per day with limited time offer discounts",
       propertyList: [
         {
           id: 1,
@@ -26,15 +24,12 @@ const HeroSlider = () => {
           title: "Luxurious Apartment",
           location: `1421 San Pedro
           St, Los Angeles, CA 90015`,
-          saleTag: ["Featured", "For Sale"],
+          saleTag: ["مميز", "للبيع"],
           itemDetails: [
-            { name: "Beds", number: "4" },
-            { name: "Baths", number: "2" },
-            { name: "SqFt", number: "5280" },
+            { name: "غرف نوم", number: "4" },
+            { name: "حمامات", number: "2" },
+            { name: "المساحة", number: "5280" },
           ],
-          posterAvatar: "assets/images/property/pposter1.png",
-          posterName: "Ali Tufan",
-          postedYear: "1 year ago",
         },
       ],
     },
@@ -106,9 +101,7 @@ const HeroSlider = () => {
                   <div className="col-md-7 col-lg-8">
                     <div className="main_title">{singleItem.title}</div>
                     <p className="parag">{singleItem.subTitle}</p>
-                    <Link href="/listing-grid-v4">
-                      <a className="btn-booking mt-4">Book Now</a>
-                    </Link>
+                    
                   </div>
 
                   <div className="col-md-5 col-lg-4">
