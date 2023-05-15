@@ -14,11 +14,11 @@ const HeroSlider = () => {
   const sliderContent = [
     {
       id: 1,
-      bgImage: "slidebg-1",
+      bgImage: "https://batiment.imag.fr/files/imag.png",
       propertyList: [
         {
           id: 1,
-          img: "assets/images/property/fp1.jpg",
+          img: "https://batiment.imag.fr/files/imag.png",
           price: "1300",
           type: "Apartment",
           title: "Luxurious Apartment",
@@ -91,7 +91,7 @@ const HeroSlider = () => {
     <Slider {...settings} arrows={false}>
       {sliderContent.map((singleItem) => (
         <div
-          className={`bs_carousel_bg ${singleItem.bgImage} vh-100`}
+          className={`bs_carousel_bg "${singleItem.bgImage}" vh-100`}
           key={singleItem.id}
         >
           <div className="carousel-slide ">

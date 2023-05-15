@@ -21,7 +21,7 @@ const GlobalFilter = ({ className = "" }) => {
             <input
               type="text"
               className="form-control"
-              placeholder="Enter keyword..."
+              placeholder="أدخل كلمة للبحث"
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>
@@ -32,30 +32,42 @@ const GlobalFilter = ({ className = "" }) => {
           <div className="search_option_two">
             <div className="candidate_revew_select">
               <select className="selectpicker w100 form-select show-tick">
-                <option value="">Property Type</option>
-                <option>Apartment</option>
-                <option>Bungalow</option>
-                <option>Condo</option>
-                <option>House</option>
-                <option>Land</option>
-                <option>Single Family</option>
+                <option value="">نوع العقار</option>
+                <option>ستديوهات</option>
+                <option>برج سكني</option>
+                <option>شاليهات</option>
+                <option>شقق</option>
+                <option>شقق طابقية</option>
+                <option>فلل</option>
+                <option>فلل متلاصقة</option>
+                <option>قطع أراضي تجاري</option>
+                <option>قطع أراضي سكني</option>
+                <option>قطع أراضي صناعي</option>
+                <option>محلات</option>
+                <option>مشاريع سكنية</option>
+                <option>مشاريع قطع أراضي</option>
+                <option>مكاتب</option>
               </select>
             </div>
           </div>
         </li>
         {/* End li */}
 
+        
         <li className="list-inline-item">
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Location"
-              onChange={(e) => dispatch(addLocation(e.target.value))}
-            />
-            <label>
-              <span className="flaticon-maps-and-flags"></span>
-            </label>
+          <div className="search_option_two">
+            <div className="candidate_revew_select">
+              <select className="selectpicker w100 form-select show-tick">
+                <option value="">جميع المناطق</option>
+                <option>أم أذينة</option>
+                <option>عبدون</option>
+                <option>خلدا</option>
+                <option>أم السماق</option>
+                <option>أم الرمانة</option>
+                <option>أم زويبنة</option>
+                <option>البحيرة</option>
+              </select>
+            </div>
           </div>
         </li>
         {/* End li */}
@@ -69,7 +81,7 @@ const GlobalFilter = ({ className = "" }) => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              <span>Price</span>
+              <span>السعر</span>
               <label htmlFor="InputEmail2">
                 <span className="fa fa-angle-down"></span>
               </label>
@@ -92,13 +104,13 @@ const GlobalFilter = ({ className = "" }) => {
                 data-bs-auto-close="outside"
                 aria-expanded="false"
               >
-                Advanced <i className="flaticon-more pl10 flr-520"></i>
+                المزيد <i className="flaticon-more pl10 flr-520"></i>
               </span>
 
               <div className="dropdown-content dropdown-menu ">
                 <div className="row p15">
                   <div className="col-lg-12">
-                    <h4 className="text-thm3 mb-4">Amenities</h4>
+                    <h4 className="text-thm3 mb-4">مميزات العقار</h4>
                   </div>
 
                   <CheckBoxFilter />
@@ -127,7 +139,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="submit"
               className="btn btn-thm"
             >
-              Search
+              بحث
             </button>
           </div>
         </li>

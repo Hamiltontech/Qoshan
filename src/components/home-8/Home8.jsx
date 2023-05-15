@@ -9,6 +9,8 @@ import Partners from "../common/Partners";
 import Testimonials from "./Testimonials";
 import HeroSlider from "./HeroSlider";
 import PopupSignInUp from "../common/PopupSignInUp";
+import FeaturedProps from "./FeaturedProps";
+import HeroFilter from "./HeroFilter";
 
 const Home8 = () => {
   return (
@@ -32,7 +34,48 @@ const Home8 = () => {
           </div>
         </div>
       </section>
+      <section className="home-one home1-overlay home1_bgi1">
+      <div className="container">
+        <div className="row posr">
+          <div className="col-lg-12">
+            <HeroFilter />
+          </div>
+        </div>
+      </div>
+      {/* End .container */}
 
+      <div className="mouse_scroll">
+        <a href="#feature-property">
+          <div className="icon">
+            <h4>Scroll Down</h4>
+            <p>to discover more</p>
+          </div>
+          <div className="thumb">
+            <img src="assets/images/resource/mouse.png" alt="mouse.png" />
+          </div>
+        </a>
+      </div>
+    </section>
+      <section id="feature-property" className="feature-property "  style={{marginLeft: 30, marginRight: 30}}>
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="main-title mb40">
+              <h2>عقارات مميزة</h2>
+              <p>
+                عقارات مميزة لكم من فريق قوشان.{" "}
+                <a className="float-end" href="#">
+                  إعرض المزيد <span className="flaticon-next"></span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-12">
+            <div className="feature_property_home3_slider gutter-x15">
+              <FeaturedProps />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <!-- Property Cities --> */}
       <section id="property-city" className="property-city pb30 bb1">
         <div className="container">
