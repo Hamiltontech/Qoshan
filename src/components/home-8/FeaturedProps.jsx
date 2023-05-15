@@ -1,22 +1,9 @@
 import Link from "next/link";
 import Slider from "react-slick";
-import properties from "../../data/properties";
 
-
-// diala
-import { useEffect, useState } from "react";
-import axios from "axios";
 
 const FeaturedProperties = ({featured}) => {
-  // const [featured, setFeatured] =  useState([])
-
-  // useEffect(()=>{
-  //     axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((response)=>{
-  //       setFeatured(response.data.data)
-  //     }).catch((error)=>{
-  //       console.log(error)
-  //     })
-  // }, [])
+console.log(featured)
 
 
   const settings = {
@@ -63,7 +50,13 @@ const FeaturedProperties = ({featured}) => {
         <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg" />
         <div className="thmb_cntnt">
 
-        
+          {/* tags */}
+          <ul className="tag mb0">
+          <li className="list-inline-item">
+            <a href="#">!Tags Here</a>
+          </li>
+          </ul>
+
           {/* {properties.map((it)=>(
             <ul className="tag mb0">
             {it.saleTag.map((val, i) => (
@@ -88,7 +81,7 @@ const FeaturedProperties = ({featured}) => {
 
       <div className="details">
         <div className="tc_content">
-          {/* <p className="text-thm">{item.type}</p> */}
+          <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
           <h4>
             <Link href={`/listing-details-v1/${item?.id}`}>
               <a>{item?.attributes?.Name}</a>
@@ -99,15 +92,13 @@ const FeaturedProperties = ({featured}) => {
             {item?.attributes?.areas?.data?.attributes?.Name}
           </p>
 
-          {/* <ul className="prop_details mb0">
-            {item.itemDetails.map((val, i) => (
-              <li className="list-inline-item" key={i}>
+          <ul className="prop_details mb0">
+              <li className="list-inline-item">
                 <a href="#">
-                  {val.name}: {val.number}
+                  المساحة: {item?.attributes?.Area} متر مربع
                 </a>
               </li>
-            ))}
-          </ul> */}
+          </ul>
         </div>
       </div>
     </div>
