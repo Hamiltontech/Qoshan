@@ -1,7 +1,30 @@
 import Link from "next/link";
 import Slider from "react-slick";
 
+// diala
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+
+
 const HeroSlider = () => {
+// diala
+const [data, setData] = useState([])
+
+useEffect(()=>{
+  axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
+    setData(res.data.data)
+  }).catch((err)=>{
+    console.log(err)
+  })
+}, [])  
+
+
+// diala - to find only the featured then slice them to only 3
+let arr = data?.filter((ele) => ele?.attributes?.Slider === true) 
+// const ar = arr?.slice(Math.max(arr?.length - 3, 1))
+console.log(arr)
+
   const settings = {
     dots: true,
     arrow: false,
@@ -14,11 +37,11 @@ const HeroSlider = () => {
   const sliderContent = [
     {
       id: 1,
-      bgImage: "https://batiment.imag.fr/files/imag.png",
+      bgImage: "slidebg-1",
       propertyList: [
         {
           id: 1,
-          img: "https://batiment.imag.fr/files/imag.png",
+          img: "assets/images/property/fp1.jpg",
           price: "1300",
           type: "Apartment",
           title: "Luxurious Apartment",
@@ -89,23 +112,26 @@ const HeroSlider = () => {
 
   return (
     <Slider {...settings} arrows={false}>
-      {sliderContent.map((singleItem) => (
+      {arr.map((singleItem) => (
         <div
-          className={`bs_carousel_bg "${singleItem.bgImage}" vh-100`}
+        dir="rtl"
+          className={`bs_carousel_bg vh-100`}
           key={singleItem.id}
         >
+          <img className="vh-100 image-hero" src={'https://strapi-125841-0.cloudclusters.net' + singleItem?.attributes?.Featured?.data?.attributes?.formats?.large?.url} />
+          
           <div className="carousel-slide ">
             <div className="bs-caption">
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-7 col-lg-8">
-                    <div className="main_title">{singleItem.title}</div>
-                    <p className="parag">{singleItem.subTitle}</p>
+                    <div className="main_title">{singleItem?.attributes?.Name}</div>
+                     <p className="parag" dir="rtl">{singleItem?.attributes?.Description}</p>
                     
                   </div>
 
                   <div className="col-md-5 col-lg-4">
-                    {singleItem.propertyList.map((item) => (
+                    {sliderContent[0].propertyList.map((item) => (
                       <div className="item" key={item.id}>
                         <div className="feat_property home8">
                           <div className="details">
@@ -129,13 +155,22 @@ const HeroSlider = () => {
                               </p>
 
                               <ul className="prop_details ">
-                                {item.itemDetails.map((val, i) => (
-                                  <li className="list-inline-item" key={i}>
+                               
+                                  <li className="list-inline-item" key={singleItem?.id}>
                                     <a href="#">
-                                      {val.name}: {val.number}
+                                      المساحة: {singleItem?.attributes?.Area}
+                                    </a>
+                                      
+                                    <a href="#">
+                                    
+                                      حمامات: {singleItem?.attributes?.Bathrooms}
+                                    </a>
+
+                                    <a href="#">
+                                      غرف النوم: {singleItem?.attributes?.Bedrooms}
                                     </a>
                                   </li>
-                                ))}
+                              
                               </ul>
 
                               <ul className="icon mb0">
@@ -153,14 +188,14 @@ const HeroSlider = () => {
 
                               <Link href={`/listing-details-v1/${item.id}`}>
                                 <a className="fp_price">
-                                  ${item.price}
-                                  <small>/mo</small>
+                                  {singleItem?.attributes?.Price.slice(0,3)},{singleItem?.attributes?.Price.slice(3)} JOD
+                                  
                                 </a>
                               </Link>
                             </div>
                             <div className="fp_footer">
                               <ul className="fp_meta float-start mb0">
-                                <li className="list-inline-item">
+                                {/* <li className="list-inline-item">
                                   <Link href="/agent-v2">
                                     <a>
                                       <img
@@ -169,7 +204,7 @@ const HeroSlider = () => {
                                       />
                                     </a>
                                   </Link>
-                                </li>
+                                </li> */}
                                 <li className="list-inline-item">
                                   <Link href="/agent-v2">
                                     <a>{item.posterName}</a>
@@ -189,8 +224,14 @@ const HeroSlider = () => {
               </div>
               {/* End .container */}
             </div>
+        
+          
           </div>
         </div>
+
+
+
+        
       ))}
     </Slider>
   );
