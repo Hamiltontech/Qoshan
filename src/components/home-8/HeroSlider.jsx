@@ -4,8 +4,9 @@ import Slider from "react-slick";
 // diala
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-
+import {BiBath} from 'react-icons/bi'
+import {IoBedOutline} from 'react-icons/io5'
+import {TfiRulerAlt} from 'react-icons/tfi'
 
 const HeroSlider = () => {
 // diala
@@ -124,113 +125,59 @@ console.log(arr)
             <div className="bs-caption">
               <div className="container">
                 <div className="row align-items-center">
+                 
                   <div className="col-md-7 col-lg-8">
-                    <div className="main_title">{singleItem?.attributes?.Name}</div>
-                     <p className="parag" dir="rtl">{singleItem?.attributes?.Description}</p>
-                    
+
+                    {/* tags */}
+                  <ul className="tag">
+                    <li className="list-inline-item" style={{margin: '6px', backgroundColor: '#c2b49a', paddingLeft: '20px',paddingRight: '20px', borderRadius: '6px'}}>
+                      مميز
+                    </li>
+                    <li className="list-inline-item" style={{ backgroundColor: '#404041', paddingLeft: '20px',paddingRight: '20px' , borderRadius: '6px'}}>
+                      للبيع
+                    </li>
+                  </ul>
+
+                  {/* title */}
+                    <div className="main_title" style={{fontSize: '40px'}}>{singleItem?.attributes?.Name}</div>
+                   
+                  {/* details */}
+                  <div style={{display: 'flex', width: '60%'}}>
+                    {/* location */}
+                  <div style={{display: 'flex', gap: '2px', width: '110px'}}>
+                  <span className="flaticon-maps-and-flags" /> <p style={{color: 'white', fontSize: '16px'}}>{singleItem?.attributes?.areas?.data?.attributes?.Name}</p>
                   </div>
 
-                  <div className="col-md-5 col-lg-4">
-                    {sliderContent[0].propertyList.map((item) => (
-                      <div className="item" key={item.id}>
-                        <div className="feat_property home8">
-                          <div className="details">
-                            <div className="tc_content">
-                              <ul className="tag ">
-                                {item.saleTag.map((val, i) => (
-                                  <li className="list-inline-item" key={i}>
-                                    <a href="#">{val}</a>
-                                  </li>
-                                ))}
-                              </ul>
-                              <p className="text-thm">{item.type}</p>
-                              <h4>
-                                <Link href={`/listing-details-v2/${item.id}`}>
-                                  <a>{item.title}</a>
-                                </Link>
-                              </h4>
-                              <p>
-                                <span className="flaticon-placeholder"></span>
-                                {item.location}
-                              </p>
+                    {/* bathrooms */}
+                  <div style={{display: 'flex', gap: '2px', width: '110px'}}>
+                  <BiBath size={20}/> <p style={{color: 'white', fontSize: '16px'}}>حمامات:  {singleItem?.attributes?.Bathrooms}</p>
+                  </div>  
 
-                              <ul className="prop_details ">
-                               
-                                  <li className="list-inline-item" key={singleItem?.id}>
-                                    <a href="#">
-                                      المساحة: {singleItem?.attributes?.Area}
-                                    </a>
-                                      
-                                    <a href="#">
-                                    
-                                      حمامات: {singleItem?.attributes?.Bathrooms}
-                                    </a>
+                    {/* bedrooms */}
+                  <div style={{display: 'flex', gap: '2px', width: '110px'}}>
+                  <IoBedOutline size={20} /> <p style={{color: 'white', fontSize: '16px'}}>غرف نوم: {singleItem?.attributes?.Bedrooms}</p>
+                  </div>
+                  </div>
 
-                                    <a href="#">
-                                      غرف النوم: {singleItem?.attributes?.Bedrooms}
-                                    </a>
-                                  </li>
-                              
-                              </ul>
 
-                              <ul className="icon mb0">
-                                <li className="list-inline-item">
-                                  <a href="#">
-                                    <span className="flaticon-transfer-1"></span>
-                                  </a>
-                                </li>
-                                <li className="list-inline-item">
-                                  <a href="#">
-                                    <span className="flaticon-heart"></span>
-                                  </a>
-                                </li>
-                              </ul>
+                  {/* Area */}
+                  <div style={{display: 'flex', gap: '2px', }}>
+                  <TfiRulerAlt size={20} /> <p style={{color: 'white', fontSize: '16px'}}>المساحة: {singleItem?.attributes?.Area} متر مربع</p>
+                  </div>
+                  
 
-                              <Link href={`/listing-details-v1/${item.id}`}>
-                                <a className="fp_price">
-                                  {singleItem?.attributes?.Price.slice(0,3)},{singleItem?.attributes?.Price.slice(3)} JOD
-                                  
-                                </a>
-                              </Link>
-                            </div>
-                            <div className="fp_footer">
-                              <ul className="fp_meta float-start mb0">
-                                {/* <li className="list-inline-item">
-                                  <Link href="/agent-v2">
-                                    <a>
-                                      <img
-                                        src={item.posterAvatar}
-                                        alt="pposter1.png"
-                                      />
-                                    </a>
-                                  </Link>
-                                </li> */}
-                                <li className="list-inline-item">
-                                  <Link href="/agent-v2">
-                                    <a>{item.posterName}</a>
-                                  </Link>
-                                </li>
-                              </ul>
-                              <div className="fp_pdate float-end">
-                                {item.postedYear}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                  {/* price */}
+                  <p style={{fontSize: '22px', color: '#c2b49a', fontWeight: 'bold'}}>
+                {singleItem?.attributes?.Price.slice(0,3)},{singleItem?.attributes?.Price.slice(3)} دينار أردني
+                </p>      
+                            
                   </div>
                 </div>
               </div>
               {/* End .container */}
-            </div>
-        
-          
+            </div>    
           </div>
         </div>
-
-
-
         
       ))}
     </Slider>

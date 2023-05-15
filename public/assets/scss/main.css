@@ -19745,6 +19745,9 @@ button.gm-ui-hover-effect:focus {
   color: var(--color-primary);
 }
 
+
+
+
 /* nav active */
 .ui-active {
   color: var(--color-primary) !important;
@@ -19753,3 +19756,10 @@ button.gm-ui-hover-effect:focus {
 .pro-sidebar .pro-menu a.ui-active {
   color: var(--color-primary) !important;
 }
+
+
+.image-hero{
+object-fit: cover;
+  width: 100%;
+  
+  }
