@@ -106,7 +106,7 @@ const DetailsContent = () => {
 
       <div className="product_single_content">
         <div className="mbp_pagination_comments mt30">
-          <div className="total_review">
+          {/* <div className="total_review">
             <h4>896 Reviews</h4>
             <ul className="review_star_list mb0 pl10">
               <Ratings />
@@ -117,12 +117,12 @@ const DetailsContent = () => {
             <a className="write_review float-end fn-xsd" href="#">
               Write a Review
             </a>
-          </div>
+          </div> */}
           {/* End .total_review */}
-          <Comments />
-          <div className="custom_hr"></div>
+          {/* <Comments /> */}
+          {/* <div className="custom_hr"></div> */}
 
-          <div className="mbp_comment_form style2">
+          {/* <div className="mbp_comment_form style2">
             <h4>Write a Review</h4>
             <ul className="review_star">
               <li className="list-inline-item">
@@ -137,7 +137,7 @@ const DetailsContent = () => {
               </li>
             </ul>
             <ReviewBox />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* End review and comment area area */}
