@@ -67,7 +67,7 @@ const DetailsContent = () => {
       </div>
       {/* End .feature_area */}
 
-      <div className="application_statics mt30">
+      {/* <div className="application_statics mt30">
         <h4 className="mb30">
           Location{" "}
           <small className="float-end">
@@ -77,7 +77,7 @@ const DetailsContent = () => {
         <div className="property_video p0">
           <PropertyLocation />
         </div>
-      </div>
+      </div> */}
       {/* End .location_area */}
 
       <div className="application_statics mt30">
@@ -88,20 +88,20 @@ const DetailsContent = () => {
       </div>
       {/* End .floor_plane */}
 
-      <div className="shop_single_tab_content style2 mt30">
+      {/* <div className="shop_single_tab_content style2 mt30">
         <PropertyVideo />
-      </div>
+      </div> */}
       {/* End property-video  */}
 
-      <div className="walkscore_area mt30">
+      {/* <div className="walkscore_area mt30">
         <WalkScore />
-      </div>
+      </div> */}
       {/* End walkscore_area */}
 
-      <div className="whats_nearby mt30">
+      {/* <div className="whats_nearby mt30">
         <h4 className="mb10">What&apos;s Nearby</h4>
         <WhatsNearby />
-      </div>
+      </div> */}
       {/* End what's nearby area */}
 
       <div className="product_single_content">

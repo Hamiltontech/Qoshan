@@ -7,11 +7,11 @@ import FeatureProperties from "../common/listing/FeatureProperties";
 const Sidebar = () => {
   return (
     <>
-      <div className="sidebar_listing_list">
+      <div className="sidebar_listing_list" dir="rtl">
         <div className="sidebar_advanced_search_widget">
           <div className="sl_creator">
-            <h4 className="mb25">Listed By</h4>
-            <ListingCreator />
+            <h4 className="mb25">مهتم في العقار ؟</h4>
+            {/* <ListingCreator /> */}
           </div>
           {/* End .sl_creator */}
           <ContactWithAgent />
@@ -19,12 +19,14 @@ const Sidebar = () => {
       </div>
       {/* End .sidebar_listing_list */}
 
-      <div className="terms_condition_widget">
+      {/* <div className="terms_condition_widget">
         <h4 className="title">Featured Properties</h4>
         <div className="sidebar_feature_property_slider">
           <FeatureProperties />
         </div>
-      </div>
+      </div> */}
+
+
       {/* End .Featured Properties */}
 
       <div className="terms_condition_widget">
@@ -37,10 +39,11 @@ const Sidebar = () => {
       </div>
       {/* End .Categories Property */}
 
-      <div className="sidebar_feature_listing">
+      {/* <div className="sidebar_feature_listing">
         <h4 className="title">Recently Viewed</h4>
         <FeaturedListings />
-      </div>
+      </div> */}
+      
       {/* End .Recently Viewed */}
     </>
   );
