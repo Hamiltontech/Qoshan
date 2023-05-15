@@ -34,7 +34,7 @@ const Home8 = () => {
           </div>
         </div>
       </section>
-      <section className="home-one home1-overlay home1_bgi1">
+      <section className="property-search search-overlay">
       <div className="container">
         <div className="row posr">
           <div className="col-lg-12">
@@ -46,13 +46,7 @@ const Home8 = () => {
 
       <div className="mouse_scroll">
         <a href="#feature-property">
-          <div className="icon">
-            <h4>Scroll Down</h4>
-            <p>to discover more</p>
-          </div>
-          <div className="thumb">
-            <img src="assets/images/resource/mouse.png" alt="mouse.png" />
-          </div>
+          
         </a>
       </div>
     </section>
@@ -62,10 +56,11 @@ const Home8 = () => {
             <div className="main-title mb40">
               <h2>عقارات مميزة</h2>
               <p>
-                عقارات مميزة لكم من فريق قوشان.{" "}
-                <a className="float-end" href="#">
-                  إعرض المزيد <span className="flaticon-next"></span>
+              <a className="float-start" href="#">
+                  إعرض المزيد <span className="flaticon-back"></span>
                 </a>
+                عقارات مميزة لكم من فريق قوشان.{" "}
+                
               </p>
             </div>
           </div>

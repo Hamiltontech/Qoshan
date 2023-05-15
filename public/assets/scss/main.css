@@ -200,7 +200,19 @@ a img {
   box-shadow: none;
   outline: none;
 }
+.property-search{
+  color: #404041;
+  background-image: url("https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684146604/1-7_glnwhu.jpg");
+}
+.property-search-inner{
+  color: #404041;
+}
+.property-search-inner-text{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 
+}
 iframe {
   border: none;
 }
@@ -15356,11 +15368,13 @@ legend span {
 }
 
 .text-thm2 {
-  color: #ff787c !important;
+  color: #222222 !important;
 }
 
 .text-thm3 {
   color: #006c70 !important;
+  text-align: center !important;
+  color: #222222 !important;
 }
 
 .text-thm4 {
@@ -17429,6 +17443,7 @@ section {
 .main-title {
   position: relative;
   margin-bottom: 50px;
+  direction: rtl !important;
 }
 
 .main-title h2 {
