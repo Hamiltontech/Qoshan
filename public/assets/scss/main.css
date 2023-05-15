@@ -116,7 +116,7 @@ body {
   background-attachment: fixed;
   background-color: #ffffff;
   color: #777777;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 16px;
   line-height: 1.642;
   overflow-x: hidden;
@@ -237,7 +237,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   line-height: 1.2;
   color: #484848;
 }
@@ -348,7 +348,7 @@ address {
 }
 
 .ff-Changa {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
 }
 
 .ff-fontawesome {
@@ -426,7 +426,7 @@ address {
 .sign_up_tab li.nav-item .nav-link {
   border: none;
   color: #484848;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 18px;
   font-weight: bold;
 }
@@ -532,7 +532,7 @@ address {
 
 .dropdown_content .list_content a p {
   color: #484848;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   margin: 0;
 }
 
@@ -846,7 +846,7 @@ address {
 .home4_header_top_contact li a,
 ul.sign_up_btn.home4 li a,
 ul.sign_up_btn.home6 a {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 14px;
   line-height: initial;
 }
@@ -1109,7 +1109,7 @@ header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.hom
 }
 
 .cd-dropdown-content .cd-secondary-dropdown a {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
 }
 
 li.has-children a {
@@ -1573,7 +1573,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_six .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_seven .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_eight .ace-responsive-menu > li > a {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   padding: 38px 16px 30px 10px;
 }
 
@@ -1846,7 +1846,7 @@ header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu:nth-
 header.header-nav.menu_style_home_three .ace-responsive-menu li a,
 header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2065,7 +2065,7 @@ header.header-nav.menu_style_home_four .ace-responsive-menu > li {
 
 header.header-nav.menu_style_home_four .ace-responsive-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
 }
 
 header.header-nav.menu_style_home_four .sign_up_btn .btn {
@@ -2190,7 +2190,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu li a {
 
 header.header-nav.menu_style_home_five .ace-responsive-menu li a {
   padding-top: 27px;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   text-transform: capitalize;
 }
 
@@ -2331,7 +2331,7 @@ header.header-nav.menu_style_home_six .ace-responsive-menu > li {
 
 header.header-nav.menu_style_home_six .ace-responsive-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
 }
 
 header.header-nav.menu_style_home_six .sign_up_btn .btn {
@@ -2452,7 +2452,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li {
 
 header.header-nav.menu_style_home_seven .ace-responsive-menu li a {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   padding: 18px 20px 18px 15px;
 }
 
@@ -4156,7 +4156,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home-five .home-text p {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 18px;
   line-height: 30px;
   max-width: 495px;
@@ -8088,7 +8088,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .funfact_one .details .timer,
 .funfact_one .details ul li {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 30px;
   font-weight: bold;
   margin-right: -2px;
@@ -8566,7 +8566,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .logo-widget span {
   color: #ffffff;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 22px;
   font-weight: bold;
   padding-left: 15px;
@@ -9770,7 +9770,7 @@ li.slick-slide.slick-active:nth-child(8) img {
 .blog_post_home2 .bph2_header .bph2_date_meta span,
 .blog_post.one .thumb .post_date span {
   color: #484848;
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
   font-size: 18px;
   font-weight: bold;
   display: table-caption;
@@ -10665,7 +10665,7 @@ a.btn.btn_error {
 }
 
 .login_form .heading h4 {
-  font-family: "Changa", sans-serif;
+  font-family: "Changa", Changa;
 }
 
 .login_form.inner_page .heading p {
