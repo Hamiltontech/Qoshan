@@ -10,20 +10,8 @@ import SidebarListing2 from "../../common/listing/SidebarListing2";
 import PopupSignInUp from "../../common/PopupSignInUp";
 import BreadCrumb2 from "./BreadCrumb2";
 import FeaturedItem from "./FeaturedItem";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
 const index = () => {
-  const [data, setData] = useState([])
-  useEffect(()=>{
-    axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
-    setData(res?.data?.data)
-  }).catch((err)=>{
-    console.log(err)
-  })
-  }, [])
-
-  let featured = data?.filter((ele) => ele?.attributes?.Promoted === true) 
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -100,7 +88,7 @@ const index = () => {
               {/* End .row */}
 
               <div className="row">
-                <FeaturedItem featured={featured}/>
+                <FeaturedItem />
               </div>
               {/* End .row */}
 
