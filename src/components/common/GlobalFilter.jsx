@@ -33,15 +33,16 @@ const GlobalFilter = ({ className = "" }) => {
             <div className="candidate_revew_select">
               <select className="selectpicker w100 form-select show-tick">
                 <option value="">نوع العقار</option>
+
+                <option>شقق</option>
+                <option>شقق طابقية</option>
+                <option>فلل متلاصقة</option>
+                <option>فلل</option>
+                <option>قطع اراضي سكنية</option>
                 <option>ستديوهات</option>
                 <option>برج سكني</option>
                 <option>شاليهات</option>
-                <option>شقق</option>
-                <option>شقق طابقية</option>
-                <option>فلل</option>
-                <option>فلل متلاصقة</option>
                 <option>قطع أراضي تجاري</option>
-                <option>قطع أراضي سكني</option>
                 <option>قطع أراضي صناعي</option>
                 <option>محلات</option>
                 <option>مشاريع سكنية</option>
