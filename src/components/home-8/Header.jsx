@@ -36,7 +36,7 @@ const Header = () => {
                 <a className="me-3">
                   <img
                     className="logo1 img-fluid"
-                    src="assets/images/header-logo2.svg"
+                    src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257816/header-logo2_bawqi1.svg"
                     alt="header-logo2.svg"
                     style={{ height: 80 }}
                   />
@@ -46,7 +46,7 @@ const Header = () => {
                 <a className="position-relative" style={{ marginRight: 15, marginLeft: 15 }}>
                   <img
                     className="logo img-fluid winner"
-                    src="assets/images/winner-land.webp"
+                    src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp"
                     alt="header-logo2.svg"
                     style={{ height: 80 }}
                   />
