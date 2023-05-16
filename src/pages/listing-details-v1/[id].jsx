@@ -37,7 +37,7 @@ const ListingDynamicDetailsV1 = () => {
   return (
     <>
       {/* <!-- Main Header Nav --> */}
-      {/* <Header /> */}
+      <Header />
 
       {/* <!--  Mobile Menu --> */}
       <MobileMenu />
@@ -96,11 +96,11 @@ const ListingDynamicDetailsV1 = () => {
                       >
                         {({ ref, open }) => (
                           <div role="button" ref={ref} onClick={open}>
-                            {/* <img
+                            <img
                               className="img-fluid w100 cover lds-1"
-                              src={property.img}
+                              src={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
                               alt="1.jpg"
-                            /> */}
+                            />
                           </div>
                         )}
                       </Item>
@@ -112,12 +112,12 @@ const ListingDynamicDetailsV1 = () => {
 
               <div className="col-sm-5 col-lg-4">
                 <div className="row">
-                  {/* {property?.imgList?.map((val, i) => (
+                  {property?.attributes?.Gallery?.data?.map((val, i) => (
                     <div className="col-6" key={i}>
                       <div className="spls_style_two img-gallery-box mb24">
                         <Item
-                          original={val}
-                          thumbnail={val}
+                          original={'https://strapi-125841-0.cloudclusters.net' + val?.attributes?.url}
+                          thumbnail={'https://strapi-125841-0.cloudclusters.net' + val?.attributes?.url}
                           width={752}
                           height={450}
                         >
@@ -125,7 +125,7 @@ const ListingDynamicDetailsV1 = () => {
                             <div role="button" ref={ref} onClick={open}>
                               <img
                                 className="img-fluid w100"
-                                src={val}
+                                src={'https://strapi-125841-0.cloudclusters.net' + val?.attributes?.url}
                                 alt="2.jpg"
                               />
                             </div>
@@ -133,7 +133,7 @@ const ListingDynamicDetailsV1 = () => {
                         </Item>
                       </div>
                     </div>
-                  ))} */}
+                  ))}
                 </div>
               </div>
               {/* End  col-sm-5 col-lg-4 */}
@@ -144,7 +144,7 @@ const ListingDynamicDetailsV1 = () => {
       </section>
 
       {/* <!-- Agent Single Grid View --> */}
-      <section className="our-agent-single bgc-f7 pb30-991">
+      <section className="our-agent-single bgc-f7 pb30-991" dir="rtl">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-8">

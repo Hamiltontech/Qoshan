@@ -37,32 +37,32 @@ const DetailsContent = ({property}) => {
       </div>
       {/* End .additional_details */}
 
-      <div className="additional_details">
+      {/* <div className="additional_details">
         <div className="row">
           <div className="col-lg-12">
             <h4 className="mb15">Additional details</h4>
           </div>
           <AdditionalDetails />
         </div>
-      </div>
+      </div> */}
       {/* End .additional_details */}
 
-      <div className="property_attachment_area">
+      {/* <div className="property_attachment_area">
         <h4 className="mb30">Property Attachments</h4>
         <div className="iba_container style2">
           <Attachments />
         </div>
-      </div>
+      </div> */}
       {/* End .property_attachment_area */}
 
-      <div className="application_statics mt30" dir="rtl">
+      <div className="application_statics " dir="rtl">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb10">مميزات</h4>
+            <h4 className="">مميزات</h4>
           </div>
           {/* End .col */}
 
-          <PropertyFeatures />
+          <PropertyFeatures property={property} />
         </div>
       </div>
       {/* End .feature_area */}
