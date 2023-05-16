@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addLength } from "../../../features/properties/propertiesSlice";
 import properties from "../../../data/properties";
 
-const FeaturedItem = ({featured}) => {
+const FeaturedItem = () => {
   const {
     keyword,
     location,
@@ -18,7 +18,7 @@ const FeaturedItem = ({featured}) => {
     area,
     amenities,
   } = useSelector((state) => state.properties);
-  const { statusType, isGridOrList } = useSelector(
+  const { statusType, featured, isGridOrList } = useSelector(
     (state) => state.filter
   );
 
@@ -94,6 +94,7 @@ const FeaturedItem = ({featured}) => {
     return true;
   };
 
+  // status filter
   const statusTypeHandler = (a, b) => {
     if (statusType === "recent") {
       return a.created_at + b.created_at;
@@ -104,6 +105,7 @@ const FeaturedItem = ({featured}) => {
     }
   };
 
+  // featured handler
   const featuredHandler = (item) => {
     if (featured !== "") {
       if (featured === "featured-all") {
@@ -129,8 +131,8 @@ const FeaturedItem = ({featured}) => {
     ?.filter(areaHandler)
     ?.filter(advanceHandler)
     ?.sort(statusTypeHandler)
-      {featured?.slice(0,12)?.map((item) => (
-
+    ?.filter(featuredHandler)
+    .map((item) => (
       <div
         className={`${
           isGridOrList ? "col-12 feature-list" : "col-md-6 col-lg-6"
@@ -146,9 +148,11 @@ const FeaturedItem = ({featured}) => {
             <img className="img-whp" src={item.img} alt="fp1.jpg" />
             <div className="thmb_cntnt">
               <ul className="tag mb0">
+                {item.saleTag.map((val, i) => (
                   <li className="list-inline-item" key={i}>
                     <a href="#">{val}</a>
                   </li>
+                ))}
               </ul>
               <ul className="icon mb0">
                 <li className="list-inline-item">
@@ -217,7 +221,7 @@ const FeaturedItem = ({featured}) => {
           </div>
         </div>
       </div>
-      ))}
+    ));
 
   // add length of filter items
   useEffect(() => {
