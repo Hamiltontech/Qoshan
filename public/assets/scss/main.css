@@ -8786,6 +8786,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .inner_page_breadcrumb {
   background-image: url(https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684269734/Untitled-1_y2etq0.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 370px;
   margin-top: 88px;
   position: relative;
