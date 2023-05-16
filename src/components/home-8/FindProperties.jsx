@@ -4,7 +4,7 @@ import findProperties from "../../data/findProperties";
 const FindProperties = () => {
   return (
     <>
-      {findProperties.slice(4, 9).map((item) => (
+      {findProperties.slice(0, 9).map((item) => (
         <div className={`col-lg-4 ${item.column}`} key={item.id}>
           <Link href="/listing-grid-v2">
             <a className="properti_city d-block">
