@@ -4,7 +4,7 @@ import HomeMain from "./home-8"
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Home-8" />
+      <Seo pageTitle="قوشان مستشارك العقاري" />
       <HomeMain />
     </>
   );
