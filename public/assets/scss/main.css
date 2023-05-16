@@ -576,7 +576,10 @@ address {
   border: 1px solid transparent;
   margin-right: 10px;
 }
-
+.about-section{
+  background-color: #404041;
+  color: white;
+}
 .dropdown_content .list_content .cart_btns:hover {
   background-color: #2ac4ea;
   border: 1px solid #2ac4ea;
@@ -8781,11 +8784,12 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 /*== Inner Pages Breadcrumb ==*/
 .inner_page_breadcrumb {
-  background-image: url(../images/background/inner-pagebg.jpg);
+  background-image: url(https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684269734/Untitled-1_y2etq0.jpg);
   background-repeat: no-repeat;
   height: 370px;
   margin-top: 88px;
   position: relative;
+  direction: rtl;
 }
 @media (max-width: 576px) {
   .inner_page_breadcrumb {
@@ -8828,12 +8832,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .inner_page_breadcrumb .breadcrumb_title {
   font-size: 40px;
   font-family: "Changa";
-  color: #ffffff;
+  color: #C2B49A;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
 }
-
+.about-platform{
+  color: #C2B49A !important;
+}
 .inner_page_breadcrumb .breadcrumb_title li:first-child {
   color: #7f7f7f;
 }
@@ -8862,7 +8868,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 /*== About Page About Content ==*/
 .about_content p.large {
-  color: #484848;
+  color: white;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
