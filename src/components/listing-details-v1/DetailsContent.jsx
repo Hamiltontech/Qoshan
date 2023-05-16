@@ -13,26 +13,26 @@ import PropertyVideo from "../common/listing-details/PropertyVideo";
 import WalkScore from "../common/listing-details/WalkScore";
 import WhatsNearby from "../common/listing-details/WhatsNearby";
 
-const DetailsContent = () => {
+const DetailsContent = ({property}) => {
   return (
     <>
-      <div className="listing_single_description">
+      <div className="listing_single_description" dir="rtl">
         <div className="lsd_list">
-          <PropertyItem />
+          <PropertyItem property={property}/>
         </div>
         {/* End .lsd_list */}
 
-        <h4 className="mb30">Description</h4>
-        <PropertyDescriptions />
+        <h4 className="mb30">وصف العقار</h4>
+        <PropertyDescriptions  property={property}/>
       </div>
       {/* End .listing_single_description */}
 
-      <div className="additional_details">
+      <div className="additional_details" dir="rtl">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb15">Property Details</h4>
+            <h4 className="mb15">تفاصيل العقار</h4>
           </div>
-          <PropertyDetails />
+          <PropertyDetails property={property}/>
         </div>
       </div>
       {/* End .additional_details */}
@@ -55,10 +55,10 @@ const DetailsContent = () => {
       </div>
       {/* End .property_attachment_area */}
 
-      <div className="application_statics mt30">
+      <div className="application_statics mt30" dir="rtl">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb10">Features</h4>
+            <h4 className="mb10">مميزات</h4>
           </div>
           {/* End .col */}
 

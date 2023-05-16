@@ -89,8 +89,8 @@ const ListingDynamicDetailsV1 = () => {
                   <div className="col-lg-12">
                     <div className="spls_style_two mb30-520">
                       <Item
-                        // original={property?.img}
-                        // thumbnail={property?.img}
+                        original={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
+                        thumbnail={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
                         width={752}
                         height={450}
                       >
@@ -148,7 +148,7 @@ const ListingDynamicDetailsV1 = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-8">
-              <DetailsContent />
+              <DetailsContent property={property}/>
             </div>
             {/* End details content .col-lg-8 */}
 
