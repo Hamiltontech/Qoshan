@@ -31,13 +31,13 @@ const ListingDynamicDetailsV1 = () => {
      }).catch((error)=>{
        console.log(error)
      })
-   }, [])
-
+   }, [id])
+  
 
   return (
     <>
       {/* <!-- Main Header Nav --> */}
-      <Header />
+      {/* <Header /> */}
 
       {/* <!--  Mobile Menu --> */}
       <MobileMenu />
