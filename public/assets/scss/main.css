@@ -282,6 +282,7 @@ h6 .small,
   line-height: 1;
   color: #484848;
   font-weight: 400;
+  font-family: "Changa", Changa;
 }
 
 h1 a,
@@ -298,6 +299,7 @@ h6 a,
 .h6 a {
   color: #484848;
   font-weight: 400;
+  font-family: "Changa", Changa;
 }
 
 h1,
@@ -316,6 +318,7 @@ h6,
 .h5,
 .h6 {
   font-weight: bold;
+  font-family: "Changa", Changa;
 }
 
 h1,
@@ -357,6 +360,7 @@ dd,
 blockquote,
 address {
   margin: 0 0 10px;
+  font-family: "Changa", Changa;
 }
 
 .ff-Changa {
@@ -3007,6 +3011,9 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   border: 1px solid var(--color-primary);
 }
 
+select {
+  font-family: "Changa", Changa !important;
+}
 .home1-advnc-search.home3 ul li .search_option_button button:hover {
   background-color: #ffffff;
   border: 1px solid #3e4c66;
@@ -3021,6 +3028,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   border-radius: 8px;
   border: 1px solid rgb(255, 101, 101);
   color: #ffffff;
+  font-family: "Changa", Changa;
   height: 50px;
 }
 

@@ -41,7 +41,7 @@ const FilterTopBar = () => {
             {length !== 0 ? (
               "Search results"
             ) : (
-              <span className="text-danger">Not found results</span>
+              <span className="text-danger">نتائج</span>
             )}
           </p>
         </div>
@@ -51,7 +51,7 @@ const FilterTopBar = () => {
       <div className="col-sm-12 col-md-8 col-lg-8 col-xl-7">
         <div className="right_area text-end tac-xsd">
           <ul>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <span className="stts">Status:</span>
               <select
                 className="selectpicker show-tick"
@@ -62,17 +62,17 @@ const FilterTopBar = () => {
                 <option value="old">Old</option>
                 <option value="recent">Recent</option>
               </select>
-            </li>
+            </li> */}
             <li className="list-inline-item">
-              <span className="shrtby">Sort by:</span>
+              <span className="shrtby">ترتيب حسب:</span>
               <select
                 className="selectpicker show-tick"
                 onChange={(e) => setFeatured(e.target.value)}
                 value={getFeatured}
               >
-                <option value="">Featured All</option>
-                <option value="sale">Sale</option>
-                <option value="rent">Rent</option>
+                <option value="">المميزة</option>
+                <option value="sale">للبيع</option>
+                <option value="rent">للايجار</option>
               </select>
             </li>
           </ul>

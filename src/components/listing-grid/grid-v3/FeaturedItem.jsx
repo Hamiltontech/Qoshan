@@ -1,10 +1,24 @@
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addLength } from "../../../features/properties/propertiesSlice";
 import properties from "../../../data/properties";
+import axios from "axios";
 
 const FeaturedItem = () => {
+
+
+  // diala
+const [property, setProeprty] = useState([])
+
+useEffect(()=>{
+  axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
+    setProeprty(res?.data?.data)
+}).catch((err)=>{
+  console.log(err)
+})
+}, [])
+
   const {
     keyword,
     location,
@@ -117,7 +131,7 @@ const FeaturedItem = () => {
   };
 
   // status handler
-  let content = properties
+  let content = property
     ?.slice(10, 16)
     ?.filter(keywordHandler)
     ?.filter(locationHandler)
@@ -145,7 +159,7 @@ const FeaturedItem = () => {
           }`}
         >
           <div className="thumb">
-            <img className="img-whp" src={item.img} alt="fp1.jpg" />
+            {/* <img className="img-whp" src={item.img} alt="fp1.jpg" /> */}
             <div className="thmb_cntnt">
               <ul className="tag mb0">
                 {item.saleTag.map((val, i) => (
@@ -167,9 +181,9 @@ const FeaturedItem = () => {
                 </li>
               </ul>
 
-              <Link href={`/listing-details-v1/${item.id}`}>
+              <Link href={`/details/${item?.attributes?.URL}`}>
                 <a className="fp_price">
-                  ${item.price}
+                  ${item?.attributes?.Price}
                   <small>/mo</small>
                 </a>
               </Link>
@@ -177,18 +191,18 @@ const FeaturedItem = () => {
           </div>
           <div className="details">
             <div className="tc_content">
-              <p className="text-thm">{item.type}</p>
+              {/* <p className="text-thm">{item.type}</p> */}
               <h4>
-                <Link href={`/listing-details-v1/${item.id}`}>
-                  <a>{item.title}</a>
+                <Link href={`/details/${item?.attributes?.URL}`}>
+                  <a>{item?.attributes?.Name}</a>
                 </Link>
               </h4>
               <p>
                 <span className="flaticon-placeholder"></span>
-                {item.location}
+                {item?.attributes?.Area}
               </p>
 
-              <ul className="prop_details mb0">
+              {/* <ul className="prop_details mb0">
                 {item.itemDetails.map((val, i) => (
                   <li className="list-inline-item" key={i}>
                     <a href="#">
@@ -196,7 +210,7 @@ const FeaturedItem = () => {
                     </a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
             {/* End .tc_content */}
 
@@ -205,17 +219,17 @@ const FeaturedItem = () => {
                 <li className="list-inline-item">
                   <Link href="/agent-v1">
                     <a>
-                      <img src={item.posterAvatar} alt="pposter1.png" />
+                      {/* <img src={item.posterAvatar} alt="pposter1.png" /> */}
                     </a>
                   </Link>
                 </li>
                 <li className="list-inline-item">
                   <Link href="/agent-v1">
-                    <a>{item.posterName}</a>
+                    {/* <a>{item.posterName}</a> */}
                   </Link>
                 </li>
               </ul>
-              <div className="fp_pdate float-end">{item.postedYear}</div>
+              {/* <div className="fp_pdate float-end">{item.postedYear}</div> */}
             </div>
             {/* End .fp_footer */}
           </div>
