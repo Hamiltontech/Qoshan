@@ -15217,6 +15217,7 @@ legend span {
   border-radius: 8px;
   border: 1px solid #ebebeb;
   padding: 30px;
+  direction: rtl;
 }
 
 .form_grid h4 {
@@ -15278,6 +15279,7 @@ legend span {
   border-radius: 8px;
   padding: 30px;
   position: relative;
+  direction: rtl;
 }
 
 .contact_localtion h4 {
