@@ -80,12 +80,12 @@ const DetailsContent = ({property}) => {
       </div> */}
       {/* End .location_area */}
 
-      <div className="application_statics mt30">
+      {/* <div className="application_statics mt30">
         <h4 className="mb30">Floor plans</h4>
         <div className="faq_according style2">
           <FloorPlans />
         </div>
-      </div>
+      </div> */}
       {/* End .floor_plane */}
 
       {/* <div className="shop_single_tab_content style2 mt30">

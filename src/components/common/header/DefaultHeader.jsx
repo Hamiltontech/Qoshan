@@ -34,12 +34,12 @@ const Header = () => {
           <a className="navbar_brand float-start dn-smd">
             <img
               className="logo1 img-fluid"
-              src="/assets/images/header-logo2.svg"
+              src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257816/header-logo2_bawqi1.svg"
               alt="header-logo2.svg"
             />
             <img
               className="logo2 img-fluid"
-              src="/assets/images/header-logo2.svg"
+              src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp"
               alt="header-logo2.svg"
             />
             

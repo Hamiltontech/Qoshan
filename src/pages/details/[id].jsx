@@ -4,10 +4,8 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import Footer from "../../components/common/footer/Footer";
-import Header from "../../components/common/header/DefaultHeader";
+import Header from "../../components/home-8/Header";
 import MobileMenu from "../../components/common/header/MobileMenu";
-import PopupSignInUp from "../../components/common/PopupSignInUp";
-// import properties from "../../data/properties";
 import DetailsContent from "../../components/listing-details-v1/DetailsContent";
 import Sidebar from "../../components/listing-details-v1/Sidebar";
 import axios from "axios";
@@ -38,13 +36,10 @@ const ListingDynamicDetailsV1 = () => {
     <>
       {/* <!-- Main Header Nav --> */}
       {/* <Header /> */}
-
       {/* <!--  Mobile Menu --> */}
+      
+      <Header/>
       <MobileMenu />
-
-      {/* <!-- Modal --> */}
-      <PopupSignInUp />
-
       {/* <!-- Listing Single Property --> */}
       <section className="listing-title-area mt85 md-mt0" dir="rtl">
         <div className="container">

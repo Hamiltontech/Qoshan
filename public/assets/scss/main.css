@@ -202,7 +202,7 @@ a img {
 }
 .property-search{
   color: #404041;
-  background-image: url("https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684146604/1-7_glnwhu.jpg");
+  background-image: url("https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684258724/1-7_glnwhu_tvustj.webp");
 }
 .property-search-inner{
   color: #404041;
@@ -468,7 +468,10 @@ address {
   flex-shrink: 0;
   position: relative;
 }
-
+.pro-sidebar > .pro-sidebar-inner > .pro-sidebar-layout .pro-sidebar-content {
+  flex-grow: 1;
+  text-align: right;
+}
 .cart > li:hover .dropdown_content {
   opacity: 1;
   visibility: visible;
@@ -573,7 +576,10 @@ address {
   border: 1px solid transparent;
   margin-right: 10px;
 }
-
+.about-section{
+  background-color: #404041;
+  color: white;
+}
 .dropdown_content .list_content .cart_btns:hover {
   background-color: #2ac4ea;
   border: 1px solid #2ac4ea;
@@ -1171,12 +1177,12 @@ nav button {
 }
 
 header.header-nav {
-  padding: 30px 0px;
+  padding: 9px 0px;
   direction: rtl;;
 }
 
 header.header-nav.dashbord_pages {
-  padding: 0 5px 0 15px;
+  padding: 0 8px 0 15px;
 }
 
 header.header-nav a.navbar_brand {
@@ -3985,6 +3991,9 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 @media (max-width: 767px) {
   .home-seven {
     height: auto;
+  }
+  header.header-nav.menu_style_home_one.style2{
+    display: none !important;
   }
 }
 .home-nine {
@@ -8775,11 +8784,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 /*== Inner Pages Breadcrumb ==*/
 .inner_page_breadcrumb {
-  background-image: url(../images/background/inner-pagebg.jpg);
+  background-image: url(https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684269734/Untitled-1_y2etq0.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 370px;
   margin-top: 88px;
   position: relative;
+  direction: rtl;
 }
 @media (max-width: 576px) {
   .inner_page_breadcrumb {
@@ -8822,12 +8833,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .inner_page_breadcrumb .breadcrumb_title {
   font-size: 40px;
   font-family: "Changa";
-  color: #ffffff;
+  color: #C2B49A;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
 }
-
+.about-platform{
+  color: #C2B49A !important;
+}
 .inner_page_breadcrumb .breadcrumb_title li:first-child {
   color: #7f7f7f;
 }
@@ -8856,7 +8869,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 /*== About Page About Content ==*/
 .about_content p.large {
-  color: #484848;
+  color: white;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
