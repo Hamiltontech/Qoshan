@@ -292,9 +292,9 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/contact">
+        <Link href="/faq">
           <a
-            className={route.pathname === "/contact" ? "ui-active" : undefined}
+            className={route.pathname === "/faq" ? "ui-active" : undefined}
           >
 آعلن عن عقارك          </a>
         </Link>

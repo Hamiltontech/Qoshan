@@ -10864,6 +10864,7 @@ a.btn.btn_error {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   padding: 30px;
+  direction: rtl;
 }
 
 .faq_according .panel .panel-body {

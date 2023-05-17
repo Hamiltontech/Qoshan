@@ -1,10 +1,12 @@
+import CallToAction from "../common/CallToAction";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
 import Header from "../home-8/Header";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
+import AddressSidebar from "./AddressSidebar";
 import BreadCrumbBanner from "./BreadCrumbBanner";
-import FaqContent from "./Form";
+import Form from "./Form";
 
 const index = () => {
   return (
@@ -16,39 +18,37 @@ const index = () => {
       <MobileMenu />
 
       {/* <!-- Modal --> */}
-      <PopupSignInUp />
-
       {/* <!-- Inner Page Breadcrumb --> */}
       <BreadCrumbBanner />
 
-      {/* <!-- Our FAQ --> */}
-      <section className="our-faq bgc-f7">
+      {/* <!-- Our Contact --> */}
+      <section className="our-contact pb0 bgc-f7">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <span className="mt0">
-                يمكنكم الإعلان عن عقاركم مع قوشان عن طريق تعبئة جميع البيانات المطلوبة أدناه بحيث يمكنكم رفع أكثر من صورة أو فيديو , وبعد إرسال العقار سيقوم مستشارك العقاري بالتواصل معكم عن طريق معلومات التواصل المزودة من قبلكم.  
+            <div className="col-lg-7 col-xl-8">
+              <div className="form_grid">
+                <h4 className="mb5">راسلنا</h4>
+                <p>
+                فريق عمال قوشان جاهز لتقديم الخبرة و  النصيحة العقارية في كل ما يتعلق بالقطاع العقاري في المملكة الأردنية الهاشمية.
 
-في حال احتجتم إلى مساعدة أخرى يمكنكم زيارة صفحة تواصل معنا و التحدث مع أحد مستشاري قوشان.
-                </span>
+نرجو تعبئة النموذج أدناه وسيتم التواصل معكم من قبل مستشار قوشان.
+                </p>
+                <Form />
               </div>
             </div>
-          </div>
-          {/* End .row */}
+            {/* End .col */}
 
-          <div className="row">
-            <div className="col-lg-10 offset-lg-1">
-              <div className="faq_content">
-                <div className="faq_according">
-                  <FaqContent />
-                </div>
-              </div>
+            <div className="col-lg-5 col-xl-4">
+              <AddressSidebar />
             </div>
           </div>
           {/* End .row */}
         </div>
+        {/* End .container */}
       </section>
+
+      {/* <!-- Start Call to Action --> */}
+    
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one">

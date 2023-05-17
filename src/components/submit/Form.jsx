@@ -11,19 +11,14 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        'https://strapi-125841-0.cloudclusters.net/api/submissions',
+        'https://strapi-125841-0.cloudclusters.net/api/contacts',
         {
           data: {
-            Name: formData.get('name'),
+            name: formData.get('name'),
             phone: formData.get('phone'),
-            Email: formData.get('email'),
-            larea: formData.get('larea'),
-            Area: formData.get('area'),
-            type: formData.get('type'),
-            price: formData.get('price'),
-            city: formData.get('city'),
-            Address: formData.get('address'),
-
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
           },
         }
       );
@@ -46,11 +41,63 @@ const Form = () => {
     <div>
       <form className="contact_form" onSubmit={handleSubmit}>
 
-      
+      <div className="row">
+        <div className="col-md-6">
+          <div className="form-group">
+            <input
+              id="name"
+              name="name"
+              className="form-control"
+              required="required"
+              type="text"
+              placeholder="اسمك الكامل"
+            />
+          </div>
+        </div>
         {/* End .col */}
-        
+
+        <div className="col-md-6">
+          <div className="form-group">
+            <input
+              id="email"
+              name="email"
+              className="form-control required email"
+              required="required"
+              type="email"
+              placeholder="البريد الالكتروني"
+            />
+          </div>
+        </div>
         {/* End .col */}
-       
+
+        <div className="col-md-6">
+          <div className="form-group">
+            <input
+              id="phone"
+              name="phone"
+              className="form-control required phone"
+              required="required"
+              type="phone"
+              placeholder="هاتف"
+            />
+          </div>
+        </div>
+        {/* End .col */}
+
+        <div className="col-md-6">
+          <div className="form-group">
+            <input
+              id="subject"
+              name="subject"
+              className="form-control required"
+              required="required"
+              type="text"
+              placeholder="الموضوع"
+            />
+          </div>
+        </div>
+        {/* End .col */}
+
         <div className="col-sm-12">
           <div className="form-group">
           <textarea
@@ -103,3 +150,5 @@ const Form = () => {
 </div>
 );
 };
+
+export default Form;
