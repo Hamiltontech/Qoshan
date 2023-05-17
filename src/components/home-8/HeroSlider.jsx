@@ -171,8 +171,10 @@ console.log(arr)
                 {singleItem?.attributes?.Price?.slice(0,3)},{singleItem?.attributes?.Price?.slice(3)} دينار أردني
                 </p>      
 
+                {/* details */}
+                <Link href={`/details/${singleItem?.attributes?.URL}`}>
                 <button className="btn btn-thm" type="submit">تفاصيل</button>
-                            
+                </Link>
                   </div>
                 </div>
               </div>

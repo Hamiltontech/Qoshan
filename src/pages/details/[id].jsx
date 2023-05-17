@@ -26,7 +26,7 @@ const ListingDynamicDetailsV1 = () => {
    useEffect(()=>{
      axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((response)=>{
        const res = response.data.data
-       const prop = res?.find((item)=>item.id == id)
+       const prop = res?.find((item)=>item.attributes.URL == id)
        setProperty(prop)
      }).catch((error)=>{
        console.log(error)
