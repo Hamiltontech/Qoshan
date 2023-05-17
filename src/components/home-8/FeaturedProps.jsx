@@ -71,7 +71,7 @@ console.log(featured)
 
           {/* price */}
 
-          <Link href={`/details/${item?.attributes?.URL}`}>
+          <Link href={`/listing-details-v1/${item?.id}`}>
             <a className="fp_price">
             {item?.attributes?.Price?.slice(0,3)},{item?.attributes?.Price?.slice(3)} دينار أردني
 
@@ -85,7 +85,7 @@ console.log(featured)
           {/* type */}
           <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
           <h4>
-            <Link href={`/details/${item?.attributes?.URL}`}>
+            <Link href={`/listing-details-v1/${item?.id}`}>
               <a>{item?.attributes?.Name}</a>
             </Link>
           </h4>
