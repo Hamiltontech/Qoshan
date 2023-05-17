@@ -20,16 +20,13 @@ const GlobalFilter = ({ className = "" }) => {
   }, [])
 
 
-
-  console.log(area)
-
   area?.sort((a, b) => {
     console.log(a?.attributes?.Position - b?.attributes?.Position) ;
 });
 
   // submit handler
   const submitHandler = () => {
-    Router.push("/listing-grid-v1");
+    Router.push("/details");
   };
 
   return (
