@@ -139,7 +139,7 @@ console.log(arr)
                   </ul>
 
                   {/* title */}
-                    <div className="main_title" style={{fontSize: '40px'}}>{singleItem?.attributes?.Name}</div>
+                    <div className="main_title" style={{fontSize: '40px', fontFamily: 'Changa'}}>{singleItem?.attributes?.Name}</div>
                    
                   {/* details */}
                   <div style={{display: 'flex', justifyContent: 'start', gap: '20px'}}>

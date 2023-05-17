@@ -252,9 +252,9 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/listing-grid-3">
+        <Link href="/listing-grid-v3">
           <a
-            className={route.pathname === "/listing-grid-3" ? "ui-active" : undefined}
+            className={route.pathname === "/listing-grid-v3" ? "ui-active" : undefined}
           >
 جميع العقارات       </a>
         </Link>
