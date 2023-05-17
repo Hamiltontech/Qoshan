@@ -1,105 +1,349 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-
-const Form = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-
-    try {
-      const response = await axios.post(
-        'https://strapi-125841-0.cloudclusters.net/api/submissions',
-        {
-          data: {
-            Name: formData.get('name'),
-            phone: formData.get('phone'),
-            Email: formData.get('email'),
-            larea: formData.get('larea'),
-            Area: formData.get('area'),
-            type: formData.get('type'),
-            price: formData.get('price'),
-            city: formData.get('city'),
-            Address: formData.get('address'),
-
-          },
-        }
-      );
-
-      if (response.status === 200) {
-        setIsSubmitted(true);
-        console.log('Submission successful!');
-        // Reset the form or show a success message
-      } else {
-        console.error('Submission error:', response.statusText);
-        // Show an error message to the user
-      }
-    } catch (error) {
-      console.error('Fetch error:', error);
-      // Show an error message to the user
-    }
-  };
-
+const FaqContent = () => {
   return (
-    <div>
-      <form className="contact_form" onSubmit={handleSubmit}>
-
-      
-        {/* End .col */}
-        
-        {/* End .col */}
-       
-        <div className="col-sm-12">
-          <div className="form-group">
-          <textarea
-  id="message"
-  name="message"
-  className="form-control required"
-  rows="8"
-  required
-  placeholder="رسالتك"
-></textarea>
-
-          </div>
-          {/* End .col */}
-
-          <div className="form-group mb0">
-            <button type="submit" className="btn btn-lg btn-thm">
-              ارسال
+    <>
+      <div className="accordion" id="accordionExample">
+        <div className="card">
+          <div id="headingOne">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Contrary to popular belief, Lorem Ipsum is not simply
             </button>
           </div>
-          {/* End button submit */}
+          <div
+            id="collapseOne"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
         </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingTwo">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            >
+              There are many variations of passages of Lorem
+            </button>
+          </div>
+          <div
+            id="collapseTwo"
+            className="accordion-collapse collapse show"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingThree">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Model sentence structures, to generate
+            </button>
+          </div>
+          <div
+            id="collapseThree"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingFour">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              The first line of Lorem Ipsum
+            </button>
+          </div>
+          <div
+            id="collapseFour"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingFive">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Finibus Bonorum et Malorum by Cicero are also
+            </button>
+          </div>
+          <div
+            id="collapseFive"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingSix">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              Letraset sheets containing Lorem Ipsum passages
+            </button>
+          </div>
+          <div
+            id="collapseSix"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingSeven">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              Model sentence structures, to generate
+            </button>
+          </div>
+          <div
+            id="collapseSeven"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingEight">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              The first line of Lorem Ipsum
+            </button>
+          </div>
+          <div
+            id="collapseEight"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingNine">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              Finibus Bonorum et Malorum by Cicero are also
+            </button>
+          </div>
+          <div
+            id="collapseNine"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
+
+        <div className="card">
+          <div id="headingTen">
+            <button
+              className="btn btn-link accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
+              Letraset sheets containing Lorem Ipsum passages
+            </button>
+          </div>
+          <div
+            id="collapseTen"
+            className="accordion-collapse collapse"
+            aria-labelledby="headingTen"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="card-body">
+              <p>
+                Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                augue et ex congue, sed luctus lectus congue. Integer convallis
+                condimentum sem. Duis elementum tortor eget condimentum tempor.
+                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
+                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
+                amet, laborum qui nulla quae alias tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* End .card */}
       </div>
-      </form>
-
-{isSubmitted && (
-  <div className="success-message">
-    <p>تم ارسال الرسالة بنجاح</p>
-  </div>
-)}
-
-<style jsx>{`
-  .success-message {
-    background-color: #42c966;
-    color: #fff;
-    padding: 16px;
-    border-radius: 4px;
-    text-align: center;
-    animation: fade-in 0.5s ease;
-  }
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-`}</style>
-</div>
-);
+    </>
+  );
 };
+
+export default FaqContent;
