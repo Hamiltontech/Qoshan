@@ -153,7 +153,7 @@ return(
 <>
 {property?.map((item)=>(
 
-<Link href={`/details/${item?.attributes?.URL}`} >
+// {/* <Link href={`/details/${item?.attributes?.URL}`} > */}
 <div
 style={{cursor: 'pointer'}}
   className={`${
@@ -261,7 +261,7 @@ style={{cursor: 'pointer'}}
     </div>
   </div>
 </div>
-</Link>
+// </Link>
 ))}
 </>
 
