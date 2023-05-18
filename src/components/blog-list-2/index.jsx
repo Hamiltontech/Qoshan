@@ -2,7 +2,7 @@ import BlogSidebar from "../common/blog/BlogSidebar";
 import Pagination from "../common/blog/Pagination";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
-import Header from "../common/header/DefaultHeader";
+import Header from "../home-8/Header";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBlog from "./BreadCrumbBlog";
@@ -24,7 +24,7 @@ const index = () => {
       <section className="blog_post_container bgc-f7">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6">
+            <div className="col-xl-12">
               <BreadCrumbBlog />
             </div>
           </div>

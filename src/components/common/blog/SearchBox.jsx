@@ -4,12 +4,12 @@ const SearchBox = () => {
   };
 
   return (
-    <form onClick={handleSubmit}>
+    <form onClick={handleSubmit} style={{direction: 'rtl'}}>
       <div className="input-group">
         <input
           type="text"
           className="form-control"
-          placeholder="Search Here"
+          placeholder="ابحث هنا"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
           required

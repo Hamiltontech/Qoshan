@@ -13,12 +13,7 @@ const BlogSidebar = () => {
       </div>
       {/* End .sidebar_search_widget */}
 
-      <div className="terms_condition_widget">
-        <h4 className="title">Categories Property</h4>
-        <div className="widget_list">
-          <Categories />
-        </div>
-      </div>
+  
       {/* End .Categories widget */}
 
       <div className="sidebar_feature_listing">
@@ -27,10 +22,7 @@ const BlogSidebar = () => {
       </div>
       {/* End .sidebar_feature_listing */}
 
-      <div className="blog_tag_widget">
-        <h4 className="title">Tags</h4>
-        <TagList />
-      </div>
+    
       {/* End .blog_tag_widget */}
     </div>
   );

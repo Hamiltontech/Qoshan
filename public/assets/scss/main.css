@@ -5234,6 +5234,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
+  direction: rtl;
 }
 @media (max-width: 576px) {
   .feat_property.d-flex {

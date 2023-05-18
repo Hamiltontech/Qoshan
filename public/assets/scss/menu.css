@@ -109,6 +109,9 @@ header.stylehome1.home4 a {
   height: 2px;
   width: 15px;
 }
+.breadcrumb_title{
+  text-align: center;
+}
 .header a span {
   background: #54594f ;
   display: block;
