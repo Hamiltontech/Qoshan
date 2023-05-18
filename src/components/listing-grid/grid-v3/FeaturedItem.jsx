@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addLength } from "../../../features/properties/propertiesSlice";
 import properties from "../../../data/properties";
 import axios from "axios";
+import {TfiRulerAlt} from 'react-icons/tfi'
 
 const FeaturedItem = () => {
 
@@ -152,8 +153,9 @@ return(
 <>
 {property?.map((item)=>(
 
-
+<Link href={`/details/${item?.attributes?.URL}`} >
 <div
+style={{cursor: 'pointer'}}
   className={`${
     isGridOrList ? "col-12 feature-list" : "col-md-6 col-lg-6"
   } `}
@@ -164,6 +166,7 @@ return(
       isGridOrList && "d-flex align-items-center"
     }`}
   >
+    
     <div className="thumb">
       <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg" />
       <div className="thmb_cntnt">
@@ -187,27 +190,35 @@ return(
           </li>
         </ul> */}
 
-        <Link href={`/details/${item?.attributes?.URL}`}>
+        
           <a className="fp_price">
             ${item?.attributes?.Price}
             <small>/mo</small>
           </a>
-        </Link>
+        
+
       </div>
     </div>
     <div className="details">
       <div className="tc_content">
-        {/* <p className="text-thm">{item.type}</p> */}
+        <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
         <h4>
           <Link href={`/details/${item?.attributes?.URL}`}>
-            <a>{item?.attributes?.Name}</a>
+            <h5>{item?.attributes?.Name}</h5>
           </Link>
         </h4>
-        <p>
-          <span className="flaticon-placeholder"></span>
-          {item?.attributes?.Area}
-        </p>
 
+
+{/* location */}
+        <div style={{display: 'flex', gap: '2px', }}>
+                  <span className="flaticon-maps-and-flags" /> <p >{item?.attributes?.areas?.data?.attributes?.Name}</p>
+                  </div>
+
+
+        {/* area */}
+        <div style={{display: 'flex', gap: '2px', }}>
+                  <TfiRulerAlt size={20} /> <p>المساحة: {item?.attributes?.Area} متر مربع</p>
+                  </div>
         {/* <ul className="prop_details mb0">
           {item.itemDetails.map((val, i) => (
             <li className="list-inline-item" key={i}>
@@ -222,25 +233,35 @@ return(
 
       <div className="fp_footer">
         <ul className="fp_meta float-start mb0">
-          <li className="list-inline-item">
+          {/* <li className="list-inline-item">
             <Link href="/agent-v1">
               <a>
-                {/* <img src={item.posterAvatar} alt="pposter1.png" /> */}
+                <img src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="pposter1.png" />
               </a>
             </Link>
-          </li>
-          <li className="list-inline-item">
+          </li> */}
+          {/* <li className="list-inline-item">
             <Link href="/agent-v1">
               <a>{item?.attributes?.Name}</a>
             </Link>
-          </li>
+          </li> */}
+
+<ul className="tag ">
+  {item?.attributes?.property_tags?.data?.map((item)=>(
+ <li className="list-inline-item" style={{color: 'white', backgroundColor: '#c2b49a', paddingLeft: '10px',paddingRight: '10px', borderRadius: '6px'}}>
+ {item?.attributes?.Tag}
+</li>
+  ))} </ul>
+
         </ul>
         {/* <div className="fp_pdate float-end">{item.postedYear}</div> */}
       </div>
       {/* End .fp_footer */}
+      
     </div>
   </div>
 </div>
+</Link>
 ))}
 </>
 

@@ -3,7 +3,7 @@ const PropertyDetails = ({property}) => {
   console.log(property)
   return (
     <>
-      <div className="col-md-6 col-lg-6 col-xl-4">
+      <div className="col-md-6 col-lg-6 col-xl-6">
         <ul className="list-inline-item">
           <li>
             <p>
