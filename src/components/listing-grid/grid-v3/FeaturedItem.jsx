@@ -192,8 +192,8 @@ style={{cursor: 'pointer'}}
 
         
           <a className="fp_price">
-            ${item?.attributes?.Price}
-            <small>/mo</small>
+            {item?.attributes?.Price}
+            دينار اردني
           </a>
         
 
@@ -246,12 +246,12 @@ style={{cursor: 'pointer'}}
             </Link>
           </li> */}
 
-<ul className="tag ">
+{/* <ul className="tag ">
   {item?.attributes?.property_tags?.data?.map((item)=>(
  <li className="list-inline-item" style={{color: 'white', backgroundColor: '#c2b49a', paddingLeft: '10px',paddingRight: '10px', borderRadius: '6px'}}>
  {item?.attributes?.Tag}
 </li>
-  ))} </ul>
+  ))} </ul> */}
 
         </ul>
         {/* <div className="fp_pdate float-end">{item.postedYear}</div> */}
