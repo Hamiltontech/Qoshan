@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 
 const PropertyDescriptions = ({property}) => {
@@ -9,7 +10,7 @@ const PropertyDescriptions = ({property}) => {
 
   return (
     <>
-     <p>{property?.attributes?.Description}</p>
+     <p><ReactMarkdown>{property?.attributes?.Description}</ReactMarkdown></p>
     </>
   );
 };
