@@ -5,6 +5,8 @@ import { addLength } from "../../../features/properties/propertiesSlice";
 import properties from "../../../data/properties";
 import axios from "axios";
 import {TfiRulerAlt} from 'react-icons/tfi'
+import {BiBath} from 'react-icons/bi'
+import {IoBedOutline} from 'react-icons/io5'
 
 const FeaturedItem = () => {
 
@@ -192,8 +194,7 @@ style={{cursor: 'pointer'}}
 
         
           <a className="fp_price">
-            {item?.attributes?.Price}
-            دينار اردني
+          {item?.attributes?.Price?.slice(0,3)},{item?.attributes?.Price?.slice(3)} دينار أردني 
           </a>
         
 
@@ -203,9 +204,9 @@ style={{cursor: 'pointer'}}
       <div className="tc_content">
         {/* <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p> */}
         <h4>
-          <Link href={`/details/${item?.attributes?.URL}`}>
+          {/* <Link href={`/details/${item?.attributes?.URL}`}> */}
             <h5>{item?.attributes?.Name}</h5>
-          </Link>
+          {/* </Link> */}
         </h4>
 
 
@@ -214,11 +215,24 @@ style={{cursor: 'pointer'}}
                   <span className="flaticon-maps-and-flags" /> <p >{item?.attributes?.areas?.data?.attributes?.Name}</p>
                   </div>
 
-
-        {/* area */}
-        <div style={{display: 'flex', gap: '2px', }}>
-                  <TfiRulerAlt size={20} /> <p>المساحة: {item?.attributes?.Area} متر مربع</p>
+                  <div style={{display: 'flex', justifyContent: 'start', gap: '20px'}}>
+ {/* area */}
+ <div style={{display: 'flex', gap: '2px', }}>
+                  <TfiRulerAlt size={20} /> <p> {item?.attributes?.Area} متر مربع</p>
                   </div>
+
+            {/* bathrooms */}
+            
+            <div style={{display: 'flex', gap: '2px', }}>
+                  <BiBath size={20}/> <p style={{ fontSize: '16px'}}> {item?.attributes?.Bathrooms}</p>
+                  </div>  
+
+                    {/* bedrooms */}
+                  <div style={{display: 'flex', gap: '2px', }}>
+                  <IoBedOutline size={20} /> <p style={{fontSize: '16px'}}> {item?.attributes?.Bedrooms}</p>
+                  </div>
+                  </div>
+       
         {/* <ul className="prop_details mb0">
           {item.itemDetails.map((val, i) => (
             <li className="list-inline-item" key={i}>
@@ -232,7 +246,7 @@ style={{cursor: 'pointer'}}
       {/* End .tc_content */}
 
       <div className="fp_footer">
-        <ul className="fp_meta float-start mb0">
+        {/* <ul className="fp_meta float-start mb0"> */}
           {/* <li className="list-inline-item">
             <Link href="/agent-v1">
               <a>
@@ -246,6 +260,12 @@ style={{cursor: 'pointer'}}
             </Link>
           </li> */}
 
+
+{/* details */}
+<Link href={`/details/${item?.attributes?.URL}`}>
+                <button className="btn btn-thm" type="submit">تفاصيل</button>
+                </Link>
+
 {/* <ul className="tag ">
   {item?.attributes?.property_tags?.data?.map((item)=>(
  <li className="list-inline-item" style={{color: 'white', backgroundColor: '#c2b49a', paddingLeft: '10px',paddingRight: '10px', borderRadius: '6px'}}>
@@ -253,7 +273,7 @@ style={{cursor: 'pointer'}}
 </li>
   ))} </ul> */}
 
-        </ul>
+        {/* </ul> */}
         {/* <div className="fp_pdate float-end">{item.postedYear}</div> */}
       </div>
       {/* End .fp_footer */}
