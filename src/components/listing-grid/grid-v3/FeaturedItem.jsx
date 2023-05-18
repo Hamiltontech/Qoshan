@@ -201,7 +201,7 @@ style={{cursor: 'pointer'}}
     </div>
     <div className="details">
       <div className="tc_content">
-        <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
+        {/* <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p> */}
         <h4>
           <Link href={`/details/${item?.attributes?.URL}`}>
             <h5>{item?.attributes?.Name}</h5>
