@@ -19,12 +19,12 @@ const Sidebar = () => {
       </div>
       {/* End .sidebar_listing_list */}
 
-      {/* <div className="terms_condition_widget">
-        <h4 className="title">Featured Properties</h4>
+      <div className="terms_condition_widget">
+        {/* <h4 className="title">Featured Properties</h4> */}
         <div className="sidebar_feature_property_slider">
           <FeatureProperties />
         </div>
-      </div> */}
+      </div>
 
 
       {/* End .Featured Properties */}

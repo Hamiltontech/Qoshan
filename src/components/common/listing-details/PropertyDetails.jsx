@@ -12,7 +12,7 @@ const PropertyDetails = ({property}) => {
           </li>
           <li>
             <p>
-             السعر :  <span>{property?.attributes?.Prefix} {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني</span>
+             السعر :  <span><span style={{fontSize: '9px'}}>{property?.attributes?.Prefix}</span> {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني</span>
             </p>
           </li>
           <li>

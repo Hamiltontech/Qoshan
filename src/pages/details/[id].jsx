@@ -91,7 +91,7 @@ const ListingDynamicDetailsV1 = () => {
                   <div className="price float-start fn-400">
                     {/* price */}
                     <h2>
-                   {property?.attributes?.Prefix} {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني 
+                  <span style={{fontSize: '12px'}}>{property?.attributes?.Prefix}</span>  {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني 
                     </h2>
                   </div>
                  
