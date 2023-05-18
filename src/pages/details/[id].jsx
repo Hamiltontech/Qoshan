@@ -10,11 +10,17 @@ import DetailsContent from "../../components/listing-details-v1/DetailsContent";
 import Sidebar from "../../components/listing-details-v1/Sidebar";
 import axios from "axios";
 
+
+import Head from 'next/head';
+
 const ListingDynamicDetailsV1 = () => {
 
   const router = useRouter();
   const [property, setProperty] = useState({});
   const id = router.query.id;
+
+
+
 
 
 
@@ -34,6 +40,10 @@ const ListingDynamicDetailsV1 = () => {
 
   return (
     <>
+   <Head>
+        <title>{property?.attributes?.Name}</title>
+      </Head>
+
       {/* <!-- Main Header Nav --> */}
       {/* <Header /> */}
       {/* <!--  Mobile Menu --> */}
@@ -46,6 +56,18 @@ const ListingDynamicDetailsV1 = () => {
           <Gallery>
             <div className="row mb30">
               <div className="col-lg-7 col-xl-8">
+
+ {/* tags */}
+ <ul className="tag">
+  {property?.attributes?.property_tags?.data?.map((item)=>(
+    <>
+    <li className="list-inline-item" style={{color:'white',margin: '6px', backgroundColor: '#c2b49a', paddingLeft: '20px',paddingRight: '20px', borderRadius: '6px'}}>
+                      {item?.attributes?.Tag}
+     </li>
+    </>
+  ))}
+  </ul>
+
                 <div className="single_property_title mt30-767">
                
                   <h2>{property?.attributes?.Name}</h2>
@@ -69,7 +91,7 @@ const ListingDynamicDetailsV1 = () => {
                   <div className="price float-start fn-400">
                     {/* price */}
                     <h2>
-                    {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني 
+                   {property?.attributes?.Prefix} {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني 
                     </h2>
                   </div>
                  
