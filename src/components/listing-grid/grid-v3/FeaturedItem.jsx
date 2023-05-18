@@ -157,7 +157,7 @@ return(
 
 // {/* <Link href={`/details/${item?.attributes?.URL}`} > */}
 <div
-style={{cursor: 'pointer'}}
+
   className={`${
     isGridOrList ? "col-12 feature-list" : "col-md-6 col-lg-6"
   } `}
