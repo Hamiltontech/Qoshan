@@ -9,6 +9,7 @@ import MobileMenu from "../../components/common/header/MobileMenu";
 import DetailsContent from "../../components/listing-details-v1/DetailsContent";
 import Sidebar from "../../components/listing-details-v1/Sidebar";
 import axios from "axios";
+import Image from 'next/image'
 
 
 import Head from 'next/head';
@@ -18,11 +19,6 @@ const ListingDynamicDetailsV1 = () => {
   const router = useRouter();
   const [property, setProperty] = useState({});
   const id = router.query.id;
-
-
-
-
-
 
 
    // diala
@@ -44,12 +40,9 @@ const ListingDynamicDetailsV1 = () => {
         <title>{property?.attributes?.Name}</title>
 
 
-
-
         {/* meta */}
-
         {/* facebook */}
-        <meta property={`og:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
+ <meta property={`og:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
 <meta property={`og:${property?.attributes?.type?.data[0]?.attributes?.Name}`} content={property?.attributes?.type?.data[0]?.attributes?.Name}/>
 <meta property={`og:${'https://qoshan.vercel.app' + property?.attributes?.URL}`} content={'https://qoshan.vercel.app' + property?.attributes?.URL}/>
 <meta property={`og:${property?.attributes?.seo}`}
@@ -127,7 +120,11 @@ content={property?.attributes?.seo}/>
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="spls_style_two mb30-520">
-                      <Item
+                      <Image src={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
+                      width={752}
+                      height={450}
+                      />
+                      {/* <Item
                         original={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
                         thumbnail={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
                         width={752}
@@ -142,7 +139,7 @@ content={property?.attributes?.seo}/>
                             />
                           </div>
                         )}
-                      </Item>
+                      </Item> */}
                     </div>
                   </div>
                 </div>
