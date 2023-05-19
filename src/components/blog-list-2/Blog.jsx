@@ -34,7 +34,7 @@ const Blog = () => {
             <div className="details">
               <div className="tc_content">
                 <h4 className="mb15">
-                  <Link href={`/blog-details/${item.id}`}>
+                  <Link href={`/blog-details/${item?.attributes?.URL}`}>
                     <a>{item.attributes.Title}</a>
                   </Link>
                 </h4>
@@ -44,7 +44,7 @@ const Blog = () => {
                       <i className="flaticon-calendar"></i> 
                     </a>
                   </li>
-                  <li className="list-inline-item m-1">
+                  <li className="list-inline-item m-" style={{margin: 5,}}>
                   <a href="#"> {item.attributes?.createdAt.split('T')[0]} </a>
                   </li>
                 </ul>
