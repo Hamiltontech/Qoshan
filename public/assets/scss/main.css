@@ -8348,11 +8348,12 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .footer_one {
-  background-color: #24324a;
+  background-color: #404041;
+  direction: rtl;
 }
 
 .footer_middle_area {
-  background-color: #1d293e;
+  background-color: #35353F;
 }
 
 .footer_bottom_area {
