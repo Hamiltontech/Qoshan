@@ -3,7 +3,7 @@ import GlobalHeroFilter from "../common/GlobalHeroFilter";
 import MobileMenu from "../common/header/MobileMenu";
 import FeaturedProperties from "./FeaturedProperties";
 import FindProperties from "./FindProperties";
-import Header from "./Header";
+import Header from "../home-8/Header";
 import HeroSlider from "./HeroSlider";
 import LookingItem from "./LookingItem";
 import Team from "./Team";
@@ -14,6 +14,7 @@ import PopupSignInUp from "../common/PopupSignInUp";
 const index = () => {
   return (
     <>
+   
       {/* <!-- Main Header Nav --> */}
       <Header />
 
@@ -40,10 +41,9 @@ const index = () => {
             <div className="col-lg-12">
               <div className="home_content home4">
                 <div className="home-text text-center">
-                  <h2 className="fz55">Find Your Dream Home</h2>
+                  <h2 className="fz55">البحث المفصل</h2>
                   <p className="fz18 color-white">
-                    From as low as $10 per day with limited time offer
-                    discounts.
+                  في بحثنا المتقدم ، نوفر لك استخدام الميزات المتقدمة للبحث عن العقار المناسب لك.
                   </p>
                 </div>
                 <GlobalHeroFilter className="home4" />
@@ -53,7 +53,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <h4 className="text-center color-white fw600 mb25 mb0-520">
-                What are you looking for?
+                حسب نوع العقار
               </h4>
               <ul className="home4_iconbox mb0">
                 <LookingItem />

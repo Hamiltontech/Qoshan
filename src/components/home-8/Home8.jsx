@@ -129,65 +129,7 @@ const Home8 = () => {
       </section>
 
       {/* <!-- Home Design --> */}
-      <section className="home-two p0">
-        <div className="container-fluid p0">
-          <div className="home_two_map">
-            <div className="gmap_canvas pe-none">
-              <iframe
-                title="map"
-                className="gmap_iframe"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d193309.02147838814!2d-74.53513266718751!3d40.79602810000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1663993365939!5m2!1sen!2sbd"
-              ></iframe>
-              <img
-                className="location-finder"
-                src="/assets/images/location.png"
-                alt="location"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- Our Testimonials --> */}
-      <section id="our-testimonials" className="our-testimonials">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2 className="mt0">What Our Users Say</h2>
-                <p>
-                  Discover how Listable can you help you find everything you
-                  want.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-              <div className="testimonialsec slick-custom-as-nav">
-                <Testimonials />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- Our Partners --> */}
-      <section id="our-partners" className="our-partners">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Our Partners</h2>
-                <p>We only work with the best companies around the globe</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <Partners />
-          </div>
-        </div>
-      </section>
+     
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one home3">
