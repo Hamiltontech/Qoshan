@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import axios from "axios";
 import BreadCrumb2 from "../../components/blog-details/BreadCrumb2";
 import Comments from "../../components/blog-details/Comments";
 import Pagination from "../../components/blog-details/Pagination";
@@ -11,37 +12,39 @@ import BlogSidebar from "../../components/common/blog/BlogSidebar";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import Footer from "../../components/common/footer/Footer";
 import Social from "../../components/common/footer/Social";
-import Header from "../../components/common/header/DefaultHeader";
+import Header from "../../components/home-8/Header";
 import MobileMenu from "../../components/common/header/MobileMenu";
 import PopupSignInUp from "../../components/common/PopupSignInUp";
 import Seo from "../../components/common/seo";
-import blogs from "../../data/blogs";
+import Image from 'next/image'
 
 const BlogDetailsDynamic = () => {
   const router = useRouter();
-  const [blog, setBlogItem] = useState({});
-  const id = router.query.id;
+  const [article, setArticle] = useState({});
+  const { id } = router.query;
 
   useEffect(() => {
-    if (!id) <h1>Loading...</h1>;
-    else setBlogItem(blogs.find((item) => item.id == id));
-
-    return () => {};
+    axios
+      .get("https://strapi-125841-0.cloudclusters.net/api/articles?populate=*")
+      .then((response) => {
+        const res = response.data.data;
+        console.log("API Response:", res); // Check the API response data
+        const prop = res?.find((item) => item.attributes.URL === id);
+        console.log("Found Article:", prop); // Check the found article
+        setArticle(prop);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, [id]);
 
   return (
     <>
-      <Seo pageTitle={"Blog Details"} />
-      {/* <!-- Main Header Nav --> */}
+      <Seo pageTitle={article?.attributes?.Title} />
       <Header />
-
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
-
-      {/* <!-- Modal --> */}
       <PopupSignInUp />
 
-      {/* <!-- Main Blog Post Content --> */}
       <section className="blog_post_container bgc-f7">
         <div className="container">
           <div className="row">
@@ -49,197 +52,69 @@ const BlogDetailsDynamic = () => {
               <BreadCrumb2 />
             </div>
           </div>
-          {/* End .row */}
 
           <div className="row">
             <div className="col-lg-8">
-              <div className="main_blog_post_content">
-                <div className="mbp_thumb_post">
-                  <div className="blog_sp_tag">
-                    <a href="#">{blog?.postMeta}</a>
-                  </div>
-                  <h3 className="blog_sp_title">{blog?.title}</h3>
-                  <ul className="blog_sp_post_meta">
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <img
-                          src="/assets/images/property/pposter1.png"
-                          alt="pposter1.png"
-                        />
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">Ali Tufan</a>
-                    </li>
-                    <li className="list-inline-item">
-                      <span className="flaticon-calendar"></span>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">January 16, 2020</a>
-                    </li>
-                    <li className="list-inline-item">
-                      <span className="flaticon-view"></span>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#"> 341 views</a>
-                    </li>
-                    <li className="list-inline-item">
-                      <span className="flaticon-chat"></span>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">15</a>
-                    </li>
-                  </ul>
-                  <div className="thumb">
-                    <img
-                      className="img-fluid w-100"
-                      src={blog?.img}
-                      alt={blog?.img}
-                    />
-                  </div>
-
-                  <div className="details">
-                    <p className="mb30">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis mollis et sem sed sollicitudin. Donec non odio neque.
-                      Aliquam hendrerit sollicitudin purus, quis rutrum mi
-                      accumsan nec. Quisque bibendum orci ac nibh facilisis, at
-                      malesuada orci congue. Nullam tempus sollicitudin cursus.
-                      Ut et adipiscing erat. Curabitur this is a text link
-                      libero tempus congue.
-                    </p>
-                    <p className="mb30">
-                      Duis mattis laoreet neque, et ornare neque sollicitudin
-                      at. Proin sagittis dolor sed mi elementum pretium. Donec
-                      et justo ante. Vivamus egestas sodales est, eu rhoncus
-                      urna semper eu. Cum sociis natoque penatibus et magnis dis
-                      parturient montes, nascetur ridiculus mus. Integer
-                      tristique elit lobortis purus bibendum, quis dictum metus
-                      mattis. Phasellus posuere felis sed eros porttitor mattis.
-                      Curabitur massa magna, tempor in blandit id, porta in
-                      ligula. Aliquam laoreet nisl massa, at interdum mauris
-                      sollicitudin et.
-                    </p>
-                    <h4 className="mb15">
-                      Housing Markets That Changed the Most This Decade
-                    </h4>
-                    <p>
-                      Nullam tempus sollicitudin cursus. Nulla elit mauris,
-                      volutpat eu varius malesuada, pulvinar eu ligula. Ut et
-                      adipiscing erat. Curabitur adipiscing erat vel libero
-                      tempus congue. Nam pharetra interdum vestibulum. Aenean
-                      gravida mi non aliquet porttitor. Praesent dapibus, nisi a
-                      faucibus tincidunt, quam dolor condimentum metus, in
-                      convallis libero ligula ut eros.
-                    </p>
-                    <div className="mbp_blockquote">
-                      <div className="blockquote">
-                        <span className="font-italic">
-                          <i className="fa fa-quote-left"></i>
-                        </span>
-                        <br />
-                        <em className="mb-0">
-                          Duis mollis et sem sed sollicitudin. Donec non odio
-                          neque. Aliquam hendrerit sollicitudin purus, quis
-                          rutrum mi accumsan nec.
-                        </em>
-                      </div>
+              {article && article.attributes && (
+                <div className="main_blog_post_content">
+                  <div className="mbp_thumb_post">
+                    <div className="blog_sp_tag">
+        
                     </div>
-                    <p className="mb25">
-                      Curabitur massa magna, tempor in blandit id, porta in
-                      ligula. Aliquam laoreet nisl massa, at interdum mauris
-                      sollicitudin et. Mauris risus lectus, tristique at nisl
-                      at, pharetra tristique enim.
-                    </p>
-                    <p className="mb25">
-                      Nullam this is a link nibh facilisis, at malesuada orci
-                      congue. Nullam tempus sollicitudin cursus. Nulla elit
-                      mauris, volutpat eu varius malesuada, pulvinar eu ligula.
-                      Ut et adipiscing erat. Curabitur adipiscing erat vel
-                      libero tempus congue. Nam pharetra interdum vestibulum.
-                      Aenean gravida mi non aliquet porttitor. Praesent dapibus,
-                      nisi a faucibus tincidunt, quam dolor condimentum metus,
-                      in convallis libero ligula ut eros.
-                    </p>
-                  </div>
-                  <ul className="blog_post_share">
-                    <li>
-                      <p>Share</p>
-                    </li>
-                    <Social />
-                  </ul>
-                  {/* End .blog_post_share */}
-                </div>
-                {/* End .mbp_thumb_post */}
-
-                <div className="mbp_pagination_tab">
-                  <Pagination />
-                </div>
-                {/* End mbp_pagination_tab */}
-
-                <div className="product_single_content mb30">
-                  <div className="mbp_pagination_comments">
-                    <div className="total_review">
-                      <h4>896 Reviews</h4>
-                      <ul className="review_star_list mb0 pl10">
-                        <Ratings />
-                      </ul>
-                      <a className="tr_outoff pl10" href="#">
-                        ( 4.5 out of 5 )
-                      </a>
-                      <a className="write_review float-end fn-xsd" href="#">
-                        Write a Review
-                      </a>
+                    <h3 className="blog_sp_title">{article.attributes.Title}</h3>
+                    <ul className="blog_sp_post_meta">
+                      
+                      <li className="list-inline-item">
+                        <span className="flaticon-calendar"></span>
+                      </li>
+                      <li className="list-inline-item">
+                      <a href="#">{article.attributes?.createdAt.split('T')[0]}</a>
+                      </li>
+                                          
+                      
+                    </ul>
+                    <div className="thumb">
+                    <Image src={'https://strapi-125841-0.cloudclusters.net' + article?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
+                      width={752}
+                      height={450}
+                      />
                     </div>
-                    {/* End .total_review */}
 
-                    <Comments />
-                    <div className="custom_hr"></div>
+                    <div className="details">
+                      <p className="mb25">{article.attributes.Body}</p>
+                    </div>
+                    <ul className="blog_post_share">
+                      <li>
+                        <p>شارك المقال</p>
+                      </li>
+                      <Social />
+                    </ul>
                   </div>
+
+                  {/* <div className="mbp_pagination_tab">
+                    <Pagination />
+                  </div> */}
+
+                  
+
                 </div>
-                {/* End .product_single_content  */}
-
-                <div className="bsp_reveiw_wrt">
-                  <h4>Write a Review</h4>
-
-                  <ul className="review_star">
-                    <li className="list-inline-item">
-                      <span className="sspd_review">
-                        <ul>
-                          <Ratings />
-                        </ul>
-                      </span>
-                    </li>
-                    <li className="list-inline-item pr15">
-                      <p>Your Rating & Review</p>
-                    </li>
-                  </ul>
-                  <ReviewBox />
-                </div>
-                {/* End .bsp_reveiw_wrt */}
-              </div>
-              {/* End .main_blog_post_content */}
-
+              )}
+{/* 
               <div className="row">
                 <div className="col-lg-12 mb20">
-                  <h4>Related Posts</h4>
+                  <h4>مقالات مشابهة</h4>
                 </div>
                 <RelatedPost />
-              </div>
+              </div> */}
             </div>
-            {/* End .col */}
 
             <div className="col-lg-4">
               <BlogSidebar />
             </div>
-            {/* End Sidebar column */}
           </div>
-          {/* End .row */}
         </div>
-        {/* End .container */}
       </section>
 
-      {/* <!-- Our Footer --> */}
       <section className="footer_one">
         <div className="container">
           <div className="row">
@@ -248,7 +123,6 @@ const BlogDetailsDynamic = () => {
         </div>
       </section>
 
-      {/* <!-- Our Footer Bottom Area --> */}
       <section className="footer_middle_area pt40 pb40">
         <div className="container">
           <CopyrightFooter />

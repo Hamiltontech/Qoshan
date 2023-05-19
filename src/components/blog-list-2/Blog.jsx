@@ -54,7 +54,7 @@ const Blog = () => {
 
               <div className="fp_footer">
               
-                <a className=" text-thm" href="#">
+                <a className=" text-thm" href={`/blog-details/${item?.attributes?.URL}`}>
                   إقرأ المزيد <span className="flaticon-back"></span>
                 </a>
               </div>
