@@ -348,10 +348,10 @@ const MobileMenuContent = () => {
         </MenuItem>
           <MenuItem>
           
-            <Link href="/all">
+            <Link href="/all-properties">
               <a
                 className={
-                  route.pathname === "/all" ? "ui-active" : undefined
+                  route.pathname === "/all-properties" ? "ui-active" : undefined
                 }
               >
                 جميع العقارات

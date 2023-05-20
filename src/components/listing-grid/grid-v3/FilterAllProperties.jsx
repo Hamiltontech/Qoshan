@@ -8,6 +8,9 @@ import ShowFilter from "../../common/listing/ShowFilter";
 import SidebarListing2 from "../../common/listing/SidebarListing2";
 import Pagination from "../../common/blog/Pagination";
 
+import { useRouter } from "next/router";
+
+
 const FilterAllProperties = () =>{
     const [keyword, setKeyword] = useState("")
     const [location, setLocation] = useState("")
@@ -22,6 +25,13 @@ const FilterAllProperties = () =>{
     const [minprice, setMinprice] = useState('أقل سعر')
     const [maxprice, setMaxprice] = useState("أعلى سعر")
 
+
+    const router = useRouter();
+    const [homeLocation, sethomeLocation] = useState(router.query.location)
+  
+   
+
+    console.log(homeLocation)
 
 return(
 

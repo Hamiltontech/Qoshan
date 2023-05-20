@@ -160,7 +160,13 @@ item?.attributes?.Description?.toLowerCase().includes(keyword.toLowerCase()))
        
 
     {/* details */}
-    <Link href={`/details/${item?.attributes?.URL}`}>
+    <Link   href={{
+        pathname: `/details/${item?.attributes?.URL}`,
+        query: {
+            property: item?.attributes?.Name,
+        }
+    }}
+    >
         <button className="btn btn-thm" type="submit">تفاصيل</button>
     </Link>
 
