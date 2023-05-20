@@ -21,9 +21,6 @@ const GlobalFilter = ({ className = "" }) => {
   }, [])
 
 
-  area?.sort((a, b) => {
-    console.log(a?.attributes?.Position - b?.attributes?.Position) ;
-});
 
   // submit handler
   const submitHandler = () => {

@@ -11,7 +11,26 @@ import PopupSignInUp from "../../common/PopupSignInUp";
 import BreadCrumb2 from "./BreadCrumb2";
 import FeaturedItem from "./FeaturedItem";
 
+
+// search
+import { useState } from "react";
+
 const index = () => {
+  const [keyword, setKeyword] = useState("")
+  const [location, setLocation] = useState("")
+  const [status, setStatus] = useState("")
+  const [type, setType] = useState("")
+  const [bathrooms, setBathroom] = useState("")
+  const [bedrooms, setBedroom] = useState("")
+  const [garages, setGarages] = useState("")
+  const [age, setBuiltYear] = useState("")
+  const [minarea, setAreaMin] = useState('أقل مساحة')
+  const [maxarea, setAreaMax] = useState("أكبر مساحة")
+  const [minprice, setMinprice] = useState('أقل سعر')
+  const [maxprice, setMaxprice] = useState("أعلى سعر")
+
+
+
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -50,7 +69,33 @@ const index = () => {
           <div className="row" dir="rtl">
             <div className="col-lg-4 col-xl-4">
               <div className="sidebar-listing-wrapper">
-                <SidebarListing2 />
+                <SidebarListing2 
+                setKeyword={setKeyword}
+                setLocation={setLocation} 
+                setStatus={setStatus} 
+                setType={setType} 
+                setGarages={setGarages} 
+                setBathroom={setBathroom} 
+                setBedroom={setBedroom} 
+                setAreaMax={setAreaMax} 
+                setAreaMin={setAreaMin}
+                setBuiltYear={setBuiltYear}
+                setMinprice={setMinprice}
+                setMaxprice={setMaxprice}
+
+                keyword={keyword}
+                location={location} 
+                status={status} 
+                type={type} 
+                garages={garages} 
+                bathrooms={bathrooms} 
+                bedrooms={bedrooms} 
+                minarea={minarea} 
+                maxarea={maxarea}
+                age={age}
+                maxprice={maxprice}
+                minprice={minprice}
+                />
               </div>
               {/* End SidebarListing */}
 
@@ -88,16 +133,30 @@ const index = () => {
               {/* End .row */}
 
               <div className="row">
-                <FeaturedItem />
+                <FeaturedItem
+                keyword={keyword}
+                location={location} 
+                status={status} 
+                type={type} 
+                garages={garages} 
+                bathrooms={bathrooms} 
+                bedrooms={bedrooms} 
+                minarea={minarea} 
+                maxarea={maxarea}
+                age={age}
+                maxprice={maxprice}
+                minprice={minprice}
+
+                />
               </div>
               {/* End .row */}
 
               <div className="row">
-                <div className="col-lg-12 mt20">
+                {/* <div className="col-lg-12 mt20">
                   <div className="mbp_pagination">
                     <Pagination />
                   </div>
-                </div>
+                </div> */}
                 {/* End paginaion .col */}
               </div>
               {/* End .row */}
