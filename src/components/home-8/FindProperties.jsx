@@ -10,9 +10,9 @@ const FindProperties = () => {
         pathname: "all-properties",
         query: {
             location: item.name,
-            
         }
-    }}>
+    }}
+    >
             <a className="properti_city d-block">
               <div className="thumb">
                 <img className="img-fluid w100" src={item.img} alt="pc1.jpg" />

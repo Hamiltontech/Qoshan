@@ -1,6 +1,6 @@
 import FilteringItem from "./FilteringItem";
 
-const SidebarListing2 = ({keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMinprice, setMaxprice, setSort}) => {
+const SidebarListing2 = ({headerType, setHeaderType, keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMinprice, setMaxprice, setSort}) => {
   return (
     <div className="sidebar_listing_grid1">
       <div className="sidebar_listing_list">
@@ -32,6 +32,9 @@ const SidebarListing2 = ({keyword, location, status, type, garages, bathrooms, b
           maxprice={maxprice}
           minprice={minprice}
           setSort={setSort}
+
+          headerType={headerType} 
+          setHeaderType={setHeaderType}
           />
         </div>
       </div>

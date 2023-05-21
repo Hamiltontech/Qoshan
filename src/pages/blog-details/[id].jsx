@@ -59,6 +59,7 @@ const BlogDetailsDynamic = () => {
                 <div className="main_blog_post_content">
                   <div className="mbp_thumb_post">
                     <div className="blog_sp_tag">
+                      {article?.attributes?.categories?.data[0]?.attributes?.Category}
         
                     </div>
                     <h3 className="blog_sp_title">{article.attributes.Title}</h3>

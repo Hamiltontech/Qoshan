@@ -1,5 +1,6 @@
+import { useEffect } from "react";
 
-const FilteringItem = ({setSort, keyword, location, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice,  setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMaxprice, setMinprice}) => {
+const FilteringItem = ({headerType, setHeaderType, setSort, keyword, location, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice,  setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMaxprice, setMinprice}) => {
 
   // clear filter
   const clearHandler = () => {
@@ -15,6 +16,9 @@ const FilteringItem = ({setSort, keyword, location, type, garages, bathrooms, be
     setMaxprice("أعلى سعر")
     setSort("")
   };
+
+
+console.log(headerType)
 
   return (
     <ul className="sasw_list mb0">
@@ -114,18 +118,19 @@ const FilteringItem = ({setSort, keyword, location, type, garages, bathrooms, be
             value={type}
               onChange={(e) => setType(e.target.value)}
               className="selectpicker w100 show-tick form-select"
+              id="defaultType"
             >
               <option value="">نوع العقار</option>
-              <option value="استوديوهات">استوديوهات</option>
-              <option value="برج سكني">برج سكني</option>
-              <option value="شاليهات">شاليهات</option>
               <option value="شقق">شقق</option>
               <option value="شقق طابقية">شقق طابقية</option>
-              <option value="فلل">فلل</option>
               <option value="فلل متلاصقة">فلل متلاصقة</option>
-              <option value="قطع أراضي تجاري">قطع أراضي تجاري</option>
-              <option value="قطع أراضي سكني">قطع أراضي سكني</option>
-              <option value="قطع أراضي صناعي">قطع أراضي صناعي</option>
+              <option value="فلل">فلل</option>
+              <option value="قطع أراضي سكنية">قطع أراضي سكنية</option>
+              <option value="قطع أراضي تجارية">قطع أراضي تجارية</option>
+              <option value="قطع أراضي صناعية">قطع أراضي صناعية</option>
+              <option value="برج سكني">برج سكني</option>
+              <option value="استوديوهات">استوديوهات</option>
+              <option value="شاليهات">شاليهات</option>
             </select>
           </div>
         </div>

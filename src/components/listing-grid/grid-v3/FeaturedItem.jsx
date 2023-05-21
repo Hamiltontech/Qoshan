@@ -14,6 +14,8 @@ const [property, setProeprty] = useState([])
 
 
 
+
+
 useEffect(()=>{
   axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
     if(
@@ -40,9 +42,6 @@ useEffect(()=>{
     (state) => state.filter
   );
 
-
-  console.log(property)
-  
 
   // sorting
 

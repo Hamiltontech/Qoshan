@@ -7,6 +7,7 @@ import GridListButton from "../../common/listing/GridListButton";
 import ShowFilter from "../../common/listing/ShowFilter";
 import SidebarListing2 from "../../common/listing/SidebarListing2";
 import Pagination from "../../common/blog/Pagination";
+import { useEffect } from "react";
 
 import { useRouter } from "next/router";
 
@@ -33,9 +34,22 @@ const [count, setCount] = useState(0)
 const [sort, setSort] = useState("")
 
 
+
+// location filter from home page
     const router = useRouter();
     const [homeLocation, sethomeLocation] = useState(router.query.location)
-  
+
+    // type filter fro, header
+    const [headerType, setHeaderType] = useState(router.query.type)
+
+
+    // useEffect(()=>{
+    //   if(router.query.type !== "undefined"){
+    //     setType(headerType)
+    //     setHeaderType(router.query.type)
+    //   }
+    // }, [headerType])
+
 
 
 return(
@@ -93,6 +107,9 @@ return(
         maxprice={maxprice}
         minprice={minprice}
         setSort={setSort}
+
+        headerType={headerType} 
+        setHeaderType={setHeaderType}
         />
       </div>
       {/* End SidebarListing */}

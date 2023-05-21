@@ -223,17 +223,15 @@ const HeaderMenuContent = ({ float = "" }) => {
   ];
 
   const pages = [
-    { id: 1, name: "About Us", routerPath: "/about-us" },
-    { id: 2, name: "Gallery", routerPath: "/gallery" },
-    { id: 3, name: "Faq", routerPath: "/faq" },
-    { id: 4, name: "LogIn", routerPath: "/login" },
-    { id: 5, name: "Compare", routerPath: "/compare" },
-    { id: 6, name: "Membership", routerPath: "/membership" },
+    { id: 1, name: "شقق", routerPath: "/all-properties" },
+    { id: 2, name: "شقق طابقية", routerPath: "/all-properties" },
+    { id: 3, name: "فلل متلاصقة", routerPath: "/all-properties" },
+    { id: 4, name: "فلل", routerPath: "/all-properties" },
+    { id: 5, name: "مكاتب", routerPath: "/all-properties" },
+    { id: 6, name: "قطع اراضي سكنية", routerPath: "/all-properties" },
 
-    { id: 7, name: "Register", routerPath: "/register" },
-    { id: 8, name: "Service", routerPath: "/service" },
-    { id: 9, name: "404 Page", routerPath: "/404" },
-    { id: 10, name: "Terms & Conditions", routerPath: "/terms" },
+    { id: 7, name: "مشاريع قطع اراضي", routerPath: "/all-properties" },
+
   ];
 
   return (
@@ -242,6 +240,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       className="ace-responsive-menu text-end d-lg-block d-none"
       data-menu-style="horizontal"
     >
+
 
       <li className="last">
         <Link href="/">
@@ -259,6 +258,43 @@ const HeaderMenuContent = ({ float = "" }) => {
 جميع العقارات       </a>
         </Link>
       </li>
+
+{/* dropdown */}
+      <li className="dropitem" dir="rtl">
+        <a 
+          href="#"
+          className={
+            pages.some((page) => page.routerPath === route.pathname)
+              ? "ui-active"
+              : undefined
+          }
+        >
+          <span className="title"> حسب العقار </span>
+          <span className="arrow"></span>
+        </a>
+        <ul className="sub-menu " dir="rtl">
+          {pages.map((item) => (
+            <li key={item.id}>
+              <Link href={{
+        pathname: "all-properties",
+        query: {
+            type: item.name,
+        }
+    }}>
+                <a
+                  className={
+                    route.pathname === item.routerPath ? "ui-active" : undefined
+                  }
+                >
+                  {item.name}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </li>
+
+
       <li className="last">
         <Link href="/home-4">
           <a
