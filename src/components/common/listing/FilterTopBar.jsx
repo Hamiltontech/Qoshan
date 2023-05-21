@@ -6,11 +6,11 @@ import {
   addStatusType,
 } from "../../../features/filter/filterSlice";
 
-const FilterTopBar = ({count}) => {
+const FilterTopBar = ({count, sort, setSort}) => {
   const { length } = useSelector((state) => state.properties);
   const { statusType, featured } = useSelector((state) => state.filter);
   const [getStatus, setStatus] = useState(statusType);
-  const [getFeatured, setFeatured] = useState(featured);
+  // const [getFeatured, setFeatured] = useState(featured);
 
 
 
@@ -22,15 +22,15 @@ const FilterTopBar = ({count}) => {
   }, [dispatch, addStatusType, getStatus]);
 
   // add featured
-  useEffect(() => {
-    dispatch(addFeatured(getFeatured));
-  }, [dispatch, addFeatured, getFeatured]);
+  // useEffect(() => {
+  //   dispatch(addFeatured(getFeatured));
+  // }, [dispatch, addFeatured, getFeatured]);
 
   // clear filter
   useEffect(() => {
     statusType === "" && setStatus("");
-    featured === "" && setFeatured("");
-  }, [statusType, setStatus, featured, setFeatured]);
+    // featured === "" && setFeatured("");
+  }, [statusType, setStatus]);
 
   return (
     <>
@@ -38,7 +38,7 @@ const FilterTopBar = ({count}) => {
         <div className="left_area tac-xsd">
           <p>
             <span className={count === 0 ? "text-danger" : undefined}>
-              {count}{" "}
+              {count}
             </span>
             {count !== 0 ? (
               "عقار"
@@ -69,10 +69,11 @@ const FilterTopBar = ({count}) => {
               <span className="shrtby">ترتيب حسب:</span>
               <select
                 className="selectpicker show-tick"
-                onChange={(e) => setFeatured(e.target.value)}
-                value={getFeatured}
+                onChange={(e) => setSort(e.target.value)}
+                value={sort}
               >
-                <option value="">المميزة</option>
+                <option value="">جميع العقارات</option>
+                <option value="faetured">العقارات المميزة</option>
                 <option value="sale">للبيع</option>
                 <option value="rent">للايجار</option>
               </select>

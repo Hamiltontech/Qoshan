@@ -7,7 +7,7 @@ import {BiBath} from 'react-icons/bi'
 import {IoBedOutline} from 'react-icons/io5'
 import Highlighter from "react-highlight-words";
 
-const FeaturedItem = ({keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, count, setCount}) => {
+const FeaturedItem = ({keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, count, setCount, sort, setSort}) => {
 
   // diala
 const [property, setProeprty] = useState([])
@@ -27,6 +27,19 @@ useEffect(()=>{
   );
 
 
+  // sorting
+
+  const featuredHandler = (item) =>{
+    if(sort === "faetured"){
+      if(item?.attributes?.Promoted === true){
+        return item?.attributes?.Promoted
+      }
+    }else{
+      return item
+    }
+   
+  }
+  
     // area handler
     const areaHandler = (item) => {
       if (minarea !== 0 && maxarea !== 0) {
@@ -49,7 +62,6 @@ useEffect(()=>{
               parseInt(item?.attributes?.Price) >= minprice &&
               parseInt(item?.attributes?.Price) <= maxprice
             );
-          
         }
         return true;
       };
@@ -108,13 +120,13 @@ useEffect(()=>{
 
 
     useEffect(()=>{
-setCount((property?.filter(areaHandler)?.filter(priceHandler)?.filter(locationHandler)?.filter(typeHandler)?.filter(bathroomsHandler)?.filter(bedroomsHandler)?.filter(garagesHandler)?.filter(keywordHandler)).length)
+setCount((property?.filter(areaHandler)?.filter(priceHandler)?.filter(locationHandler)?.filter(typeHandler)?.filter(bathroomsHandler)?.filter(bedroomsHandler)?.filter(garagesHandler)?.filter(keywordHandler)?.filter(featuredHandler)).length)
     }), []
 
 
 return(
 <>
-{property?.filter(areaHandler)?.filter(priceHandler)?.filter(locationHandler)?.filter(typeHandler)?.filter(bathroomsHandler)?.filter(bedroomsHandler)?.filter(garagesHandler)?.filter(keywordHandler)?.map((item)=>{
+{property?.filter(areaHandler)?.filter(priceHandler)?.filter(locationHandler)?.filter(typeHandler)?.filter(bathroomsHandler)?.filter(bedroomsHandler)?.filter(garagesHandler)?.filter(keywordHandler)?.filter(featuredHandler)?.map((item)=>{
   
 
   return(

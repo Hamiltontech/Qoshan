@@ -25,9 +25,12 @@ const FilterAllProperties = () =>{
     const [minprice, setMinprice] = useState('أقل سعر')
     const [maxprice, setMaxprice] = useState("أعلى سعر")
 
-    // diala
+    // diala - top bar
 // filtered count
 const [count, setCount] = useState(0)
+
+// featured properties
+const [sort, setSort] = useState("")
 
 
     const router = useRouter();
@@ -89,6 +92,7 @@ return(
         age={age}
         maxprice={maxprice}
         minprice={minprice}
+        setSort={setSort}
         />
       </div>
       {/* End SidebarListing */}
@@ -120,7 +124,7 @@ return(
     <div className="col-md-12 col-lg-8">
       <div className="grid_list_search_result ">
         <div className="row align-items-center">
-          <FilterTopBar count={count}/>
+          <FilterTopBar count={count} sort={sort} setSort={setSort}/>
         </div>
       </div>
       {/* End .row */}
@@ -143,6 +147,8 @@ return(
 
         count={count}
         setCount={setCount}
+        sort={sort} 
+        setSort={setSort}
         />
       </div>
       {/* End .row */}

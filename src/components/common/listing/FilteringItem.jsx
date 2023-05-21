@@ -1,5 +1,5 @@
 
-const FilteringItem = ({keyword, location, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice,  setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMaxprice, setMinprice}) => {
+const FilteringItem = ({setSort, keyword, location, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice,  setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMaxprice, setMinprice}) => {
 
   // clear filter
   const clearHandler = () => {
@@ -13,6 +13,7 @@ const FilteringItem = ({keyword, location, type, garages, bathrooms, bedrooms, m
     setAreaMin('أقل مساحة')
     setMinprice('أقل سعر')
     setMaxprice("أعلى سعر")
+    setSort("")
   };
 
   return (
