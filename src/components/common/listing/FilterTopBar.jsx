@@ -6,11 +6,13 @@ import {
   addStatusType,
 } from "../../../features/filter/filterSlice";
 
-const FilterTopBar = () => {
+const FilterTopBar = ({count}) => {
   const { length } = useSelector((state) => state.properties);
   const { statusType, featured } = useSelector((state) => state.filter);
   const [getStatus, setStatus] = useState(statusType);
   const [getFeatured, setFeatured] = useState(featured);
+
+
 
   const dispatch = useDispatch();
 
@@ -35,13 +37,13 @@ const FilterTopBar = () => {
       <div className="col-sm-12 col-md-4 col-lg-4 col-xl-5">
         <div className="left_area tac-xsd">
           <p>
-            <span className={length === 0 ? "text-danger" : undefined}>
-              {length}{" "}
+            <span className={count === 0 ? "text-danger" : undefined}>
+              {count}{" "}
             </span>
-            {length !== 0 ? (
-              "Search results"
+            {count !== 0 ? (
+              "عقار"
             ) : (
-              <span className="text-danger">نتائج</span>
+              <span className="text-danger">عقار</span>
             )}
           </p>
         </div>

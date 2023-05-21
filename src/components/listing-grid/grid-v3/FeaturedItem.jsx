@@ -7,10 +7,12 @@ import {BiBath} from 'react-icons/bi'
 import {IoBedOutline} from 'react-icons/io5'
 import Highlighter from "react-highlight-words";
 
-const FeaturedItem = ({keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice}) => {
+const FeaturedItem = ({keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, count, setCount}) => {
 
   // diala
 const [property, setProeprty] = useState([])
+
+
 
 useEffect(()=>{
   axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
@@ -53,34 +55,67 @@ useEffect(()=>{
       };
 
 
+      // location filter
+      const locationHandler = (item) =>{
+        if(item?.attributes?.areas?.data?.attributes?.Name?.toLowerCase().includes(location.toLowerCase())){
+          return item?.attributes?.areas?.data?.attributes?.Name
+        }
+      }
+
+
+      // type filter
+      const typeHandler = (item) =>{
+        if(item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase())){
+          return item?.attributes?.type?.data?.attributes?.Name
+        }
+      }
+
+
+      // bathrooms filter
+      const bathroomsHandler = (item) =>{
+        if(item?.attributes?.Bathrooms?.toString().includes(bathrooms)){
+          return item?.attributes?.Bathrooms
+        }
+      }
+
+
+      // bedrooms filter
+      const bedroomsHandler = (item) =>{
+        if(item?.attributes?.Bedrooms?.toString().includes(bedrooms)){
+          return item?.attributes?.Bedrooms
+        }
+      }
+
+
+      // garages filter
+      const garagesHandler = (item) =>{
+        if(item?.attributes?.Garages?.toString().includes(garages)){
+          return item?.attributes?.Garages
+        }
+      }
+
+
+      // keyword filter
+      const keywordHandler = (item) =>{
+        if(item?.attributes?.Name?.toLowerCase().includes(keyword.toLowerCase())
+        ||
+        item?.attributes?.Description?.toLowerCase().includes(keyword.toLowerCase())){
+          return (
+            item?.attributes?.Name || item?.attributes?.Description
+          )
+        }
+      }
+
+
+    useEffect(()=>{
+setCount((property?.filter(areaHandler)?.filter(priceHandler)?.filter(locationHandler)?.filter(typeHandler)?.filter(bathroomsHandler)?.filter(bedroomsHandler)?.filter(garagesHandler)?.filter(keywordHandler)).length)
+    }), []
+
 
 return(
 <>
-{property?.filter(areaHandler)?.filter(priceHandler).map((item)=>{
+{property?.filter(areaHandler)?.filter(priceHandler)?.filter(locationHandler)?.filter(typeHandler)?.filter(bathroomsHandler)?.filter(bedroomsHandler)?.filter(garagesHandler)?.filter(keywordHandler)?.map((item)=>{
   
-if(
-
-// location filter
-item?.attributes?.areas?.data?.attributes?.Name?.toLowerCase().includes(location.toLowerCase()) &&
-
-// type filter
-item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase()) &&
-
-// bathrooms filter
-(item?.attributes?.Bathrooms?.toString().includes(bathrooms)) &&
-
-// bedrooms filter
-(item?.attributes?.Bedrooms?.toString().includes(bedrooms)) &&
-
-// garages filter
-(item?.attributes?.Garages?.toString().includes(garages)) &&
-
-// keyword filter
-(item?.attributes?.Name?.toLowerCase().includes(keyword.toLowerCase())
-||
-item?.attributes?.Description?.toLowerCase().includes(keyword.toLowerCase()))
-)
-{
 
   return(
     <>
@@ -110,12 +145,8 @@ item?.attributes?.Description?.toLowerCase().includes(keyword.toLowerCase()))
       <div className="tc_content">
 
         {/* type */}
-      <ul >
-        <li className="list-inline-item" style={{backgroundColor: '#404041', paddingLeft: '10px', paddingRight: '10px', color: 'white', fontSize: '11px', borderRadius: '30px'}}>
-          {item?.attributes?.type?.data?.attributes?.Name}
-        </li>
-      </ul>
-
+  
+      <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
       {/* name */}
       <Highlighter 
         class="YourHighlightClass"
@@ -177,9 +208,9 @@ item?.attributes?.Description?.toLowerCase().includes(keyword.toLowerCase()))
   </div>
 </div>
 </>
-)}
+)
 
- })}
+ }) }
 </>
 
 

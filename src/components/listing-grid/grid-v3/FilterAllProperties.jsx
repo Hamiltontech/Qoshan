@@ -25,20 +25,22 @@ const FilterAllProperties = () =>{
     const [minprice, setMinprice] = useState('أقل سعر')
     const [maxprice, setMaxprice] = useState("أعلى سعر")
 
+    // diala
+// filtered count
+const [count, setCount] = useState(0)
+
 
     const router = useRouter();
     const [homeLocation, sethomeLocation] = useState(router.query.location)
   
-   
 
-    console.log(homeLocation)
 
 return(
 
-<section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 " >
+<section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 " dir="rtl">
 <div className="container">
-  <div className="row">
-    <div className="col-lg-6">
+  <div className="row" >
+    <div className="col-lg-4">
       <BreadCrumb2 />
     </div>
     {/* End .col */}
@@ -49,9 +51,9 @@ return(
       </div>
       {/* End list grid */}
 
-      <div className="dn db-991 mt30 mb0">
+      {/* <div className="dn db-991 mt30 mb0">
         <ShowFilter />
-      </div>
+      </div> */}
       {/* ENd button for mobile sidebar show  */}
     </div>
     {/* End .col filter grid list */}
@@ -118,7 +120,7 @@ return(
     <div className="col-md-12 col-lg-8">
       <div className="grid_list_search_result ">
         <div className="row align-items-center">
-          <FilterTopBar />
+          <FilterTopBar count={count}/>
         </div>
       </div>
       {/* End .row */}
@@ -139,6 +141,8 @@ return(
         maxprice={maxprice}
         minprice={minprice}
 
+        count={count}
+        setCount={setCount}
         />
       </div>
       {/* End .row */}
