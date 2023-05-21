@@ -114,16 +114,13 @@ const Home8 = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Find a Place That Fits Your Comfort</h2>
-                <p>
-                  Explore the greates places in the city. You won’t be
-                  disappointed.
-                </p>
+                <h2>جميع العقارات</h2>
+               
               </div>
             </div>
           </div>
           <div className="row">
-            <ComfortPlace />
+            <ComfortPlace data={data}/>
           </div>
         </div>
       </section>

@@ -6287,7 +6287,8 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .icon_hvr_img_box:before {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: rgba(64, 64, 65, 0.60);
   bottom: 0;
   content: "";
   left: 0;

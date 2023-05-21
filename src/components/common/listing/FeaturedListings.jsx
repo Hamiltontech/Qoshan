@@ -32,7 +32,7 @@ const FeaturedListings = ({relatedType, relatedLocation}) => {
     <>
       {relatedProperteis?.filter(handleRelated)?.slice(0, 4).map((item) => (
         <div className="media d-flex" key={item?.id}>
-          <Link href={`/listing-details-v1/${item?.id}`}>
+          <Link href={`/detials/${item?.id}`}>
             <a>
               <img
                 className="align-self-start me-3"
