@@ -173,15 +173,22 @@ return(
       <div className="tc_content">
 
         {/* type */}
-  
+
+
       <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
+
       {/* name */}
+
+<h4>
+      <Link href={`/details/${item?.attributes?.URL}`}>
+        <a>
       <Highlighter 
         class="YourHighlightClass"
         searchWords={[keyword]}
         autoEscape={true}
         textToHighlight= {item?.attributes?.Name}
-        />
+        /></a>
+        </Link></h4>
 
     {/* location */}
       <div style={{display: 'flex', gap: '2px', }}>
