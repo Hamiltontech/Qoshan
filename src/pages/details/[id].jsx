@@ -21,6 +21,11 @@ const ListingDynamicDetailsV1 = () => {
   const id = router.query.id;
 
 
+// related articles states - props
+  const [relatedLocation, setRelatedLocation] = useState("")
+  const [relatedType, setRelatedType] = useState("")
+
+
    // diala
 
    useEffect(()=>{
@@ -28,11 +33,14 @@ const ListingDynamicDetailsV1 = () => {
        const res = response.data.data
        const prop = res?.find((item)=>item.attributes.URL == id)
        setProperty(prop)
+       setRelatedLocation(prop?.attributes?.areas?.data?.attributes?.Name)
+       setRelatedType(prop?.attributes?.type?.data?.attributes?.Name)
      }).catch((error)=>{
        console.log(error)
      })
    }, [id])
   
+
 
   return (
     <>
@@ -188,8 +196,10 @@ content={property?.attributes?.seo}/>
             </div>
             {/* End details content .col-lg-8 */}
 
+            
+
             <div className="col-lg-4 col-xl-4">
-              <Sidebar />
+              <Sidebar relatedLocation={relatedLocation} relatedType={relatedType}/>
             </div>
             {/* End sidebar content .col-lg-4 */}
           </div>

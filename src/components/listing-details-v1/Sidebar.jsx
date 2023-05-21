@@ -4,7 +4,9 @@ import ListingCreator from "../common/listing/ListingCreator";
 import FeaturedListings from "../common/listing/FeaturedListings";
 import FeatureProperties from "../common/listing/FeatureProperties";
 
-const Sidebar = () => {
+const Sidebar = ({relatedType, relatedLocation}) => {
+
+
   return (
     <>
       <div className="sidebar_listing_list" dir="rtl">
@@ -39,10 +41,10 @@ const Sidebar = () => {
       </div> */}
       {/* End .Categories Property */}
 
-      {/* <div className="sidebar_feature_listing">
-        <h4 className="title">Recently Viewed</h4>
-        <FeaturedListings />
-      </div> */}
+      <div className="sidebar_feature_listing">
+        <h4 className="title">عقارات مشابهة</h4>
+        <FeaturedListings relatedLocation={relatedLocation} relatedType={relatedType}/>
+      </div>
       
       {/* End .Recently Viewed */}
     </>

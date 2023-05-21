@@ -19795,3 +19795,7 @@ object-fit: cover;
     font-weight: bold;
   }
   
+
+  .sidebar_recent_product .media .media-body .post_title a:hover, .sidebar_feature_listing .media .media-body .post_title a:hover {
+    color: #c2b49a;
+}

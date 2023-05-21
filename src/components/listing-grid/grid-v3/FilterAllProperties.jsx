@@ -37,23 +37,25 @@ const [sort, setSort] = useState("")
 
 // location filter from home page
     const router = useRouter();
-    const [homeLocation, sethomeLocation] = useState(router.query.location)
+    // const [homeLocation, sethomeLocation] = useState(router.query.location)
 
     // type filter fro, header
-    const [headerType, setHeaderType] = useState(router.query.type)
-
+    const [headerType, setHeaderType] = useState("")
 
     // useEffect(()=>{
-    //   if(router.query.type !== "undefined"){
-    //     setType(headerType)
+    //   if(headerType !== "undefined"){
     //     setHeaderType(router.query.type)
+    //     setType(headerType)
+        
     //   }
-    // }, [headerType])
+    // }, [router.query.type])
 
+    useEffect(()=>{
+      setHeaderType(router.query.type)
+    }, [])
 
-
+    console.log(headerType)
 return(
-
 <section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 " dir="rtl">
 <div className="container">
   <div className="row" >

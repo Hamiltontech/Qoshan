@@ -227,10 +227,14 @@ const HeaderMenuContent = ({ float = "" }) => {
     { id: 2, name: "شقق طابقية", routerPath: "/all-properties" },
     { id: 3, name: "فلل متلاصقة", routerPath: "/all-properties" },
     { id: 4, name: "فلل", routerPath: "/all-properties" },
-    { id: 5, name: "مكاتب", routerPath: "/all-properties" },
-    { id: 6, name: "قطع اراضي سكنية", routerPath: "/all-properties" },
+    { id: 5, name: "قطع اراضي سكنية", routerPath: "/all-properties" },
+    { id: 6, name: "قطع أراضي تجارية", routerPath: "/all-properties" },
+    { id: 7, name: "قطع أراضي صناعية", routerPath: "/all-properties" },
+    { id: 8, name: "برج سكني", routerPath: "/all-properties" },
+    { id: 9, name: "استوديوهات", routerPath: "/all-properties" },
+    { id: 10, name: "شاليهات", routerPath: "/all-properties" },
 
-    { id: 7, name: "مشاريع قطع اراضي", routerPath: "/all-properties" },
+
 
   ];
 
