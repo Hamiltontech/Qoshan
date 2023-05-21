@@ -132,7 +132,7 @@ const GlobalFilter = ({ className = "" }) => {
         {/* End li */}
 
         <li className="custome_fields_520 list-inline-item">
-          <div className="navbered">
+          {/* <div className="navbered">
             <div className="mega-dropdown ">
               <span
                 className="dropbtn"
@@ -151,7 +151,7 @@ const GlobalFilter = ({ className = "" }) => {
 
                   <CheckBoxFilter />
                 </div>
-                {/* End .row */}
+          
 
                 <div className="row p15 pt0-xsd">
                   <div className="col-lg-12 col-xl-12">
@@ -160,11 +160,11 @@ const GlobalFilter = ({ className = "" }) => {
                     </ul>
                   </div>
                 </div>
-                {/* End .row */}
+  
               </div>
-              {/* End .dropdown-menu */}
+             
             </div>
-          </div>
+          </div> */}
         </li>
         {/* End li */}
 

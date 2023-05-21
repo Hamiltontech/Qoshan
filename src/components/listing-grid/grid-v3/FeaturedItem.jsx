@@ -16,16 +16,33 @@ const [property, setProeprty] = useState([])
 
 useEffect(()=>{
   axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
-    setProeprty(res?.data?.data)
+    if(
+          sort === "lowPrice"
+    ){
+      let arr = res?.data?.data?.sort((a, b) => parseFloat(a?.attributes?.Price) - parseFloat(b?.attributes?.Price));
+      setProeprty(arr)
+    }else if(
+      sort === "recent"
+    ){
+      let arr = res?.data?.data?.sort((a, b) => new Date(b?.attributes?.updatedAt) - new Date(a?.attributes?.updatedAt));
+      setProeprty(arr)
+    }
+    else{
+      setProeprty(res?.data?.data)
+    }
+
 }).catch((err)=>{
   console.log(err)
 })
-}, [])
+}, [sort])
 
   const {isGridOrList } = useSelector(
     (state) => state.filter
   );
 
+
+  console.log(property)
+  
 
   // sorting
 

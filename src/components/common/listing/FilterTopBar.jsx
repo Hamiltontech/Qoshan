@@ -38,12 +38,12 @@ const FilterTopBar = ({count, sort, setSort}) => {
         <div className="left_area tac-xsd">
           <p>
             <span className={count === 0 ? "text-danger" : undefined}>
-              {count}
+              {count}{" "}
             </span>
             {count !== 0 ? (
-              "عقار"
+              "  عقارات    "
             ) : (
-              <span className="text-danger">عقار</span>
+              <span className="text-danger">لا يوجد نتائج </span>
             )}
           </p>
         </div>
@@ -74,8 +74,8 @@ const FilterTopBar = ({count, sort, setSort}) => {
               >
                 <option value="">جميع العقارات</option>
                 <option value="faetured">العقارات المميزة</option>
-                <option value="sale">للبيع</option>
-                <option value="rent">للايجار</option>
+                <option value="lowPrice">الأقل سعرا</option>
+                <option value="recent">أحدث العقارات</option>
               </select>
             </li>
           </ul>
