@@ -121,7 +121,7 @@ const Home8 = () => {
               </div>
             </div>
           </div>
-          <div className="row" dir="rtl" >
+          <div className="row" dir="rtl">
             <ComfortPlace data={data} featured={featured}/>
           </div>
         </div>

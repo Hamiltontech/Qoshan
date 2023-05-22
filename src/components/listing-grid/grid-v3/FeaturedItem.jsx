@@ -93,7 +93,9 @@ useEffect(()=>{
 
       // type filter
       const typeHandler = (item) =>{
-        if(item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase())){
+        if((item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase())) &&
+        (item?.attributes?.type?.data?.attributes?.Name !== "شقق طابقية")
+        ){
           return item?.attributes?.type?.data?.attributes?.Name
         }
       }

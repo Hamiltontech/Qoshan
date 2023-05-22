@@ -50,20 +50,20 @@ const ListingDynamicDetailsV1 = () => {
 
         {/* meta */}
         {/* facebook */}
- <meta property={`og:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
+ {/* <meta property={`og:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
 <meta property={`og:${property?.attributes?.type?.data[0]?.attributes?.Name}`} content={property?.attributes?.type?.data[0]?.attributes?.Name}/>
 <meta property={`og:${'https://qoshan.vercel.app' + property?.attributes?.URL}`} content={'https://qoshan.vercel.app' + property?.attributes?.URL}/>
 <meta property={`og:${property?.attributes?.seo}`}
 content={property?.attributes?.seo}/>
-<meta property={`og:${'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Socialimage?.data?.attributes?.ul}`} content={`'https://strapi-125841-0.cloudclusters.net' + ${property?.attributes?.Socialimage?.data?.attributes?.ul}`}/>
+<meta property={`og:${'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Socialimage?.data?.attributes?.ul}`} content={`'https://strapi-125841-0.cloudclusters.net' + ${property?.attributes?.Socialimage?.data?.attributes?.ul}`}/> */}
 
 
 {/* twitter */}
-er
-<meta property={`twitter:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
+
+{/* <meta property={`twitter:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
 <meta property={`twitter:${property?.attributes?.seo}`}
 content={property?.attributes?.seo}/>
-<meta property={`twitter:${'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Socialimage?.data?.attributes?.ul}`} content={`'https://strapi-125841-0.cloudclusters.net' + ${property?.attributes?.Socialimage?.data?.attributes?.ul}`}/>
+<meta property={`twitter:${'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Socialimage?.data?.attributes?.ul}`} content={`'https://strapi-125841-0.cloudclusters.net' + ${property?.attributes?.Socialimage?.data?.attributes?.ul}`}/> */}
 
       </Head>
 

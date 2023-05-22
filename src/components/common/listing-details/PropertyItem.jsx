@@ -1,6 +1,5 @@
 const PropertyItem = ({property}) => {
 
-  console.log(property)
   return (
     <ul className="mb0" dir="rtl">
       <li className="list-inline-item">
