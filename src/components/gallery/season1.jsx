@@ -30,10 +30,10 @@ const Season1 = () => {
   };
 
   return (
-    <div className="playlist-container">
+    <div className="playlist-container" dir='rtl'>
       <h1>الموسم الآول</h1>
       <div className="video-grid">
-        {playlistData.map((item) => (
+        {playlistData.map((item) => ( 
           <div key={item.id} className="video-item" onClick={() => handleVideoClick(item.snippet.resourceId.videoId)}>
             <div className="thumbnail">
               <img src={item.snippet.thumbnails.medium.url} alt={item.snippet.title} />

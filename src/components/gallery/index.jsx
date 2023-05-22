@@ -27,9 +27,14 @@ const index = () => {
       <section className="pb30">
         <div className="container">
           <div className="row">
-          <Season3/>
+          <Season1/>
+          <br></br>
+          <br></br>
             <Season2/>
-            <Season1/>
+            <br></br>
+            <br></br>
+          <Season3/>
+            
           </div>
         </div>
       </section>
