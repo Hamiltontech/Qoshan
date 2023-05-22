@@ -20,12 +20,12 @@ const Header = () => {
 
   return (
     <div className="top-header d-flex align-items-center justify-content-between py-2 px-3" style={{ backgroundColor: "#232323" }}>
+       <WhatsAppButton />
       <div className="social-media-links" style={{ backgroundColor: "#1f1f1f", padding: "10px 0", position: "absolute", zIndex: 2, top: 0, left: 0, right: 0, display: "none" }}>
         {/* Add your social media links here */}
         {/* Example: */}
 
-        <WhatsAppButton />
-
+      
 
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">Twitter</a>
