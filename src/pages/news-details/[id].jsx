@@ -105,12 +105,12 @@ const BlogDetailsDynamic = () => {
                 </div>
               )}
 
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-lg-12 mb20">
                   <h4>مقالات مشابهة</h4>
                 </div>
                 <RelatedPost />
-              </div>
+              </div> */}
             </div>
 
             <div className="col-lg-4">

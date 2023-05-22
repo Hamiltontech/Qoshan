@@ -29,7 +29,7 @@ const Blog = () => {
                   <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg"/>
                 </a>
               </Link>
-              <div className="blog_tag"> <p >{item?.attributes?.category?.data?.attributes?.Category}</p></div>
+              <div className="blog_tag"> <p style={{color: "white"}}>{item?.attributes?.category?.data?.attributes?.Category}</p></div>
             </div>
             {/* End .thumb */}
 

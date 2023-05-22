@@ -324,9 +324,9 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/contact">
+        <Link href="/gallery">
           <a
-            className={route.pathname === "/contact" ? "ui-active" : undefined}
+            className={route.pathname === "/gallery" ? "ui-active" : undefined}
           >
 شاهد قوشان         </a>
         </Link>
