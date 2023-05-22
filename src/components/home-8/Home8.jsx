@@ -133,7 +133,7 @@ const Home8 = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
-                <h2>آخر الأخبار</h2>
+                <h2>أخبارك من قوشان </h2>
                 {/* <p>Handpicked properties by our team.</p> */}
               </div>
             </div>
