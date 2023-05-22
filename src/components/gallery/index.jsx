@@ -27,13 +27,13 @@ const index = () => {
       <section className="pb30">
         <div className="container">
           <div className="row">
-          <Season1/>
+          <Season3/>
           <br></br>
           <br></br>
             <Season2/>
             <br></br>
             <br></br>
-          <Season3/>
+          <Season1/>
             
           </div>
         </div>
