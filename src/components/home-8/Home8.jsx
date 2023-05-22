@@ -111,7 +111,7 @@ const Home8 = () => {
       </section>
 
       {/* <!-- Find Comfort Place --> */}
-      <section id="comfort-place" className="comfort-place pb30 bb1">
+      <section id="comfort-place" className="comfort-place pb30 bb1" >
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -121,8 +121,8 @@ const Home8 = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <ComfortPlace data={data}/>
+          <div className="row" dir="rtl" >
+            <ComfortPlace data={data} featured={featured}/>
           </div>
         </div>
       </section>
