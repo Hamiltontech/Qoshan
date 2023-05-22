@@ -10,6 +10,7 @@ import Team from "./Team";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
 import PopupSignInUp from "../common/PopupSignInUp";
+import CategoriesCards from "./CategoriesCards";
 
 const index = () => {
   return (
@@ -25,7 +26,7 @@ const index = () => {
       <PopupSignInUp />
 
       {/* <!-- 4th Home Slider --> */}
-      <div className="home-four ">
+      <div className="home-four " dir="rtl">
         <div className="container-fluid p0">
           <div className="main-banner-wrapper">
             <div className="arrow-style-2 banner-style-one ">
@@ -50,7 +51,7 @@ const index = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-12">
               <h4 className="text-center color-white fw600 mb25 mb0-520">
                 حسب نوع العقار
@@ -59,7 +60,7 @@ const index = () => {
                 <LookingItem />
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -69,23 +70,24 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
-                <h2>Featured Properties</h2>
+                <h2>عقارات حسب النوع</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12">
+          <CategoriesCards />
+            {/* <div className="col-lg-12">
               <div className="best_property_slider gutter-x15">
                 <FeaturedProperties />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* <!-- Property Cities --> */}
-      <section id="property-city" className="property-city pb30">
+      {/* <section id="property-city" className="property-city pb30">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -99,7 +101,7 @@ const index = () => {
             <FindProperties />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Blog --> */}
       <section className="our-blog bgc-f7 pb30">
@@ -107,7 +109,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Articles & Tips</h2>
+                <h2>جميع العقارات</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
@@ -119,7 +121,7 @@ const index = () => {
       </section>
 
       {/* <!-- Our Team --> */}
-      <section className="our-team">
+      {/* <section className="our-team">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -137,7 +139,7 @@ const index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one">
