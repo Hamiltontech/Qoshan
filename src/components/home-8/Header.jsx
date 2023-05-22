@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import HeaderMenuContent from "../common/header/HeaderMenuContent";
+import WhatsAppButton from './whatsapp'
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -22,6 +23,10 @@ const Header = () => {
       <div className="social-media-links" style={{ backgroundColor: "#1f1f1f", padding: "10px 0", position: "absolute", zIndex: 2, top: 0, left: 0, right: 0, display: "none" }}>
         {/* Add your social media links here */}
         {/* Example: */}
+
+        <WhatsAppButton />
+
+
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://example.com" target="_blank" rel="noopener noreferrer">Twitter</a>
         {/* Add more social media links as needed */}
