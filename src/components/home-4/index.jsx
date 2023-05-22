@@ -71,7 +71,7 @@ const index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
                 <h2>عقارات حسب النوع</h2>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+                <p>قم بالبحث عن عقارك بشكل مفصل من قائمة عقار قوشان حيث يتم تحديثها أولاً بأول</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
                 <h2>جميع العقارات</h2>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+                <p>يمكنكم التواصل معنا في حال احتجتم إلى مساعدة و يمكنكم أن تعلنوا عن عقاركم من خلال صفحة أعلن عن عقارك</p>
               </div>
             </div>
           </div>
