@@ -71,7 +71,7 @@ const index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
                 <h2>عقارات حسب النوع</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
                 <h2>جميع العقارات</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
               </div>
             </div>
           </div>

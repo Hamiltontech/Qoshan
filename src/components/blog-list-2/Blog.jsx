@@ -24,7 +24,7 @@ const Blog = () => {
         <div className="col-lg-6" key={item.id}>
           <div className="for_blog feat_property">
             <div className="thumb">
-              <Link href={`/news-details/${item.id}`}>
+              <Link href={`/news-details/${item?.attributes?.URL}`}>
                 <a>
                   <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg"/>
                 </a>

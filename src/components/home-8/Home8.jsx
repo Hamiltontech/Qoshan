@@ -1,6 +1,6 @@
 import MobileMenu from "../common/header/MobileMenu";
 import Header from "./Header";
-import FeaturedProperties from "./FeaturedProperties";
+// import FeaturedProperties from "./FeaturedProperties";
 import FindProperties from "./FindProperties";
 import Footer from "../common/footer/Footer";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
@@ -11,6 +11,8 @@ import HeroSlider from "./HeroSlider";
 import PopupSignInUp from "../common/PopupSignInUp";
 import FeaturedProps from "./FeaturedProps";
 import HeroFilter from "./HeroFilter";
+
+import FeaturedProperties from "../home/FeaturedProperties";
 
 
 
@@ -121,6 +123,25 @@ const Home8 = () => {
           </div>
           <div className="row">
             <ComfortPlace data={data}/>
+          </div>
+        </div>
+      </section>
+
+            {/* <!-- Feature news --> */}
+            <section id="feature-property" className="feature-property bgc-f7">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 offset-lg-3">
+              <div className="main-title text-center mb40">
+                <h2>آخر الأخبار</h2>
+                {/* <p>Handpicked properties by our team.</p> */}
+              </div>
+            </div>
+            <div className="col-lg-12">
+              <div className="feature_property_slider gutter-x15">
+                <FeaturedProperties />
+              </div>
+            </div>
           </div>
         </div>
       </section>
