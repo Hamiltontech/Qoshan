@@ -12,10 +12,6 @@ const FeaturedItem = ({keyword, location, status, type, garages, bathrooms, bedr
   // diala
 const [property, setProeprty] = useState([])
 
-
-
-
-
 useEffect(()=>{
   axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((res)=>{
     if(
@@ -93,8 +89,7 @@ useEffect(()=>{
 
       // type filter
       const typeHandler = (item) =>{
-        if((item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase())) &&
-        (item?.attributes?.type?.data?.attributes?.Name !== "شقق طابقية")
+        if(item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase())
         ){
           return item?.attributes?.type?.data?.attributes?.Name
         }

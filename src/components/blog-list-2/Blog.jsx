@@ -1,26 +1,20 @@
 import Link from "next/link";
-import blogContent from "../../data/blogs";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { array } from "yup";
 
-const Blog = () => {
-  const [articles, setArticles] = useState([])
+const Blog = ({articles, keyword, setKeyword}) => {
 
-      useEffect(()=>{
-        axios.get("https://strapi-125841-0.cloudclusters.net/api/articles?populate=*").then((res)=>{
-          setArticles(res?.data?.data)
-      }).catch((err)=>{
-        console.log(err)
-      })
-      }, [])
 
-    console.log(articles)
+  const handleSearch = (item)=>{
+    if(item?.attributes?.Title?.toLowerCase().includes(keyword.toLowerCase())
+        ||
+        item?.attributes?.Body?.toLowerCase().includes(keyword.toLowerCase())){
+          return (
+            item?.attributes?.Title || item?.attributes?.Body
+          )
+        }
+  }
   return (
-    
     <>
-{articles?.map((item)=>(
+{articles?.filter(handleSearch)?.map((item)=>(
         <div className="col-lg-6" key={item.id}>
           <div className="for_blog feat_property">
             <div className="thumb">
