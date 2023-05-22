@@ -18,25 +18,29 @@ import PopupSignInUp from "../../components/common/PopupSignInUp";
 import Seo from "../../components/common/seo";
 import Image from 'next/image'
 
+
 const BlogDetailsDynamic = () => {
   const router = useRouter();
   const [article, setArticle] = useState({});
   const { id } = router.query;
+
+  const [relatedCtegory, setRelatedCategory]= useState("")
 
   useEffect(() => {
     axios
       .get("https://strapi-125841-0.cloudclusters.net/api/articles?populate=*")
       .then((response) => {
         const res = response.data.data;
-        console.log("API Response:", res); // Check the API response data
         const prop = res?.find((item) => item.attributes.URL === id);
-        console.log("Found Article:", prop); // Check the found article
         setArticle(prop);
+        setRelatedCategory(prop?.attributes?.category?.data?.attributes?.Category)
       })
       .catch((error) => {
         console.log(error);
       });
   }, [id]);
+
+
 
   return (
     <>
@@ -58,12 +62,12 @@ const BlogDetailsDynamic = () => {
               {article && article.attributes && (
                 <div className="main_blog_post_content">
                   <div className="mbp_thumb_post">
-                    <div className="blog_sp_tag">
-                      {article?.attributes?.categories?.data[0]?.attributes?.Category}
+                    <div className="blog_sp_tag" style={{color: "white"}}>
+                      {article?.attributes?.category?.data?.attributes?.Category}
         
                     </div>
-                    <h3 className="blog_sp_title">{article.attributes.Title}</h3>
-                    <ul className="blog_sp_post_meta">
+                    <h3 className="blog_sp_title">{article?.attributes?.Title}</h3>
+                    <ul className="blog_sp_post_meta" style={{gap: '10px', display: "flex"}}>
                       
                       <li className="list-inline-item">
                         <span className="flaticon-calendar"></span>
@@ -82,7 +86,7 @@ const BlogDetailsDynamic = () => {
                     </div>
 
                     <div className="details">
-                      <p className="mb25">{article.attributes.Body}</p>
+                      <p className="mb25">{article?.attributes?.Body}</p>
                     </div>
                     <ul className="blog_post_share">
                       <li>
@@ -100,17 +104,17 @@ const BlogDetailsDynamic = () => {
 
                 </div>
               )}
-{/* 
+
               <div className="row">
                 <div className="col-lg-12 mb20">
                   <h4>مقالات مشابهة</h4>
                 </div>
                 <RelatedPost />
-              </div> */}
+              </div>
             </div>
 
             <div className="col-lg-4">
-              <BlogSidebar />
+              <BlogSidebar relatedCtegory={relatedCtegory} setRelatedCategory={setRelatedCategory}/>
             </div>
           </div>
         </div>

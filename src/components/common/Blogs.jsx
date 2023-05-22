@@ -35,6 +35,8 @@ const Blogs = () => {
             <div className="details">
               <div className="tc_content">
                 {/* <p className="text-thm">{item.postMeta}</p> */}
+
+                <p className="text-thm">{item?.attributes?.type?.data?.attributes?.Name}</p>
                 <h4>
                   <Link href={`/details/${item?.attributes?.URL}`}>
                     <a>{item?.attributes?.Name}</a>

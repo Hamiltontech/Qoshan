@@ -15,6 +15,8 @@ const Blog = () => {
         console.log(err)
       })
       }, [])
+
+    console.log(articles)
   return (
     
     <>
@@ -22,19 +24,19 @@ const Blog = () => {
         <div className="col-lg-6" key={item.id}>
           <div className="for_blog feat_property">
             <div className="thumb">
-              <Link href={`/blog-details/${item.id}`}>
+              <Link href={`/news-details/${item.id}`}>
                 <a>
                   <img className="img-whp" src={'https://strapi-125841-0.cloudclusters.net' + item?.attributes?.Featured?.data?.attributes?.formats?.large?.url} alt="fp1.jpg"/>
                 </a>
               </Link>
-              <div className="blog_tag"> <p >{item?.attributes?.categories?.data[0]?.attributes?.Category}</p></div>
+              <div className="blog_tag"> <p >{item?.attributes?.category?.data?.attributes?.Category}</p></div>
             </div>
             {/* End .thumb */}
 
             <div className="details">
               <div className="tc_content">
                 <h4 className="mb15">
-                  <Link href={`/blog-details/${item?.attributes?.URL}`}>
+                  <Link href={`/news-details/${item?.attributes?.URL}`}>
                     <a>{item.attributes.Title}</a>
                   </Link>
                 </h4>
@@ -48,13 +50,13 @@ const Blog = () => {
                   <a href="#"> {item.attributes?.createdAt.split('T')[0]} </a>
                   </li>
                 </ul>
-                <p>{item.attributes.Body.slice(0, 100)}</p>
+                <p>{item?.attributes?.Body?.slice(0, 100)}</p>
               </div>
               {/* End .tc_content */}
 
               <div className="fp_footer">
               
-                <a className=" text-thm" href={`/blog-details/${item?.attributes?.URL}`}>
+                <a className=" text-thm" href={`/news-details/${item?.attributes?.URL}`}>
                   إقرأ المزيد <span className="flaticon-back"></span>
                 </a>
               </div>

@@ -16,7 +16,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       name: "Home 3",
       routerPath: "/home-3",
     },
-    { id: 4, name: "Home 4", routerPath: "/home-4" },
+    { id: 4, name: "Home 4", routerPath: "/detailed-search" },
     { id: 5, name: "Home 5", routerPath: "/home-5" },
     { id: 6, name: "Home 6", routerPath: "/home-6" },
     { id: 7, name: "Home 7", routerPath: "/home-7" },
@@ -213,12 +213,12 @@ const HeaderMenuContent = ({ float = "" }) => {
 
   const blog = [
     { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-    { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
+    { id: 2, name: "Blog List 2", routerPath: "/news" },
     { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
     {
       id: 4,
       name: "Blog Details",
-      routerPath: "/blog-details",
+      routerPath: "/news-details",
     },
   ];
 
@@ -300,9 +300,9 @@ const HeaderMenuContent = ({ float = "" }) => {
 
 
       <li className="last">
-        <Link href="/home-4">
+        <Link href="/detailed-search">
           <a
-            className={route.pathname === "/home-4" ? "ui-active" : undefined}
+            className={route.pathname === "/detailed-search" ? "ui-active" : undefined}
           >
 البحث المفصل        </a>
         </Link>
@@ -316,9 +316,9 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/blog-list-2">
+        <Link href="/news">
           <a
-            className={route.pathname === "/blog-list-2" ? "ui-active" : undefined}
+            className={route.pathname === "/news" ? "ui-active" : undefined}
           >
 الآخبار         </a>
         </Link>
