@@ -6,23 +6,9 @@ import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import SingleService from "./SingleService";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
 const index = () => {
-  const [data, setData] = useState({});
-  useEffect(() => {
-    axios
-      .get("https://strapi-125841-0.cloudclusters.net/api/qoshan-shorts?populate=*")
-      .then((response) => {
-        const res = response.data.data;
-        setData(res);
-        console.log(data)
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+
   return (
     <>
       {/* <!-- Main Header Nav --> */}
