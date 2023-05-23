@@ -1,13 +1,28 @@
 import CallToAction from "../common/CallToAction";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
-import Header from "../common/header/DefaultHeader";
+import Header from "../home-8/Header";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import SingleService from "./SingleService";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const index = () => {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    axios
+      .get("https://strapi-125841-0.cloudclusters.net/api/qoshan-shorts?populate=*")
+      .then((response) => {
+        const res = response.data.data;
+        setData(res);
+        console.log(data)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -17,7 +32,6 @@ const index = () => {
       <MobileMenu />
 
       {/* <!-- Modal --> */}
-      <PopupSignInUp />
 
       {/* <!-- Inner Page Breadcrumb --> */}
       <BreadCrumbBanner />
@@ -32,11 +46,6 @@ const index = () => {
       </section>
 
       {/* <!-- Start Call to Action --> */}
-      <section className="start-partners bgc-thm pt50 pb50">
-        <div className="container">
-          <CallToAction />
-        </div>
-      </section>
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one">
