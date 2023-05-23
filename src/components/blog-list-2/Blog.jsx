@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Blog = ({articles, keyword, setKeyword}) => {
+const Blog = ({articles, keyword, setKeyword, categ, setCateg}) => {
 
 
   const handleSearch = (item)=>{
@@ -12,9 +12,17 @@ const Blog = ({articles, keyword, setKeyword}) => {
           )
         }
   }
+
+  const handleCategory = (item) =>{
+    if(categ === "جميع الاخبار"){
+      return item?.attributes?.category?.data?.attributes?.Category
+    } else if(item?.attributes?.category?.data?.attributes?.Category === categ){
+      return item?.attributes?.category?.data?.attributes?.Category
+    }
+  }
   return (
     <>
-{articles?.filter(handleSearch)?.map((item)=>(
+{articles?.filter(handleSearch)?.filter(handleCategory)?.map((item)=>(
         <div className="col-lg-6" key={item.id}>
           <div className="for_blog feat_property">
             <div className="thumb">
