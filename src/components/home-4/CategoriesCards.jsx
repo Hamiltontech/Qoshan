@@ -1,12 +1,22 @@
 import Link from "next/link";
 import comfortPlace from "../../data/comfortPlace";
+import { useState } from "react";
 
 const CategoriesCards = () => {
+const [keyword, setKeyword] = useState("")
+
   return (
     <>
       {comfortPlace.map((item) => (
         <div className="col-sm-6 col-lg-3" key={item.id}>
-          <Link href="/all-properties">
+          <Link  href={{
+              pathname: "all-properties",
+              query: {
+                  type: "all",
+                  keyword: item.name,
+                  
+              }
+          }}>
             <a
               className="icon_hvr_img_box image-1 d-block"
               style={{
