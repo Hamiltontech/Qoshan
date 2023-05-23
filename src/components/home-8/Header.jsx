@@ -65,7 +65,7 @@ const Header = () => {
                   {/* <img className="logo img-fluid winner" src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp" alt="header-logo2.svg" style={{ height: 80 }} /> */}
                   <Image src={'https://strapi-125841-0.cloudclusters.net' + data?.attributes?.advert?.data?.attributes?.url}
                       width={200}
-                      height={80}
+                      height={100}
                       />                                </a>
               </a>
             </div>

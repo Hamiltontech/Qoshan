@@ -12,7 +12,7 @@ import PopupSignInUp from "../common/PopupSignInUp";
 import FeaturedProps from "./FeaturedProps";
 import HeroFilter from "./HeroFilter";
 import CategoriesFilter from "../blog-list-2/CategoriesFilter";
-
+import Advert from "./advert";
 import FeaturedProperties from "../home/FeaturedProperties";
 
 
@@ -60,9 +60,13 @@ const Home8 = () => {
         <div className="row posr">
           <div className="col-lg-12">
             <HeroFilter />
+            <div className="text-center mt10">
+        {featured.length > 0 && <Advert/>}
+      </div>
           </div>
         </div>
       </div>
+      
       {/* End .container */}
 
       <div className="mouse_scroll">
@@ -71,10 +75,14 @@ const Home8 = () => {
         </a>
       </div>
     </section>
+
       <section id="feature-property" className="feature-property "  style={{marginLeft: 30, marginRight: 30}}>
         <div className="row">
           <div className="col-lg-12">
+          
+
             <div className="main-title mb40">
+
               <h2>عقارات مميزة</h2>
               <p>
               <a className="float-start" href="#">
