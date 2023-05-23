@@ -4,6 +4,8 @@ import SearchBox from "./SearchBox";
 import TagList from "./TagList";
 import RelatedNews from './RelatedNews'
 import {TfiSearch} from 'react-icons/tfi'
+import Advert from '../listing/advert'
+import Advert2 from '../listing/advert-two'
 
 const BlogSidebar = ({relatedCtegory, setRelatedCategory, keyword, setKeyword}) => {
   return (
@@ -30,9 +32,19 @@ const BlogSidebar = ({relatedCtegory, setRelatedCategory, keyword, setKeyword}) 
      
       {/* End .sidebar_feature_listing */}
 
-    
+      <div className="sidebar_feature_listing" dir="rtl">
+        {/* <FeaturedListings/> */}
+
+        <Advert/>
+      </div>
+      <div className="sidebar_feature_listing" dir="rtl">
+        {/* <FeaturedListings/> */}
+
+        <Advert2/>
+      </div>
       {/* End .blog_tag_widget */}
     </div>
+    
   );
 };
 

@@ -4,6 +4,7 @@ import ListingCreator from "../common/listing/ListingCreator";
 import FeaturedListings from "../common/listing/FeaturedListings";
 import FeatureProperties from "../common/listing/FeatureProperties";
 import Advert from "../common/listing/advert";
+import Advert2 from "../common/listing/advert-two";
 const Sidebar = ({relatedType, relatedLocation}) => {
 
 
@@ -49,6 +50,12 @@ const Sidebar = ({relatedType, relatedLocation}) => {
         {/* <h4 className="title">Featured Properties</h4> */}
         <div className="sidebar_feature_property_slider">
           <Advert />
+        </div>
+      </div>
+      <div className="terms_condition_widget">
+        {/* <h4 className="title">Featured Properties</h4> */}
+        <div className="sidebar_feature_property_slider">
+          <Advert2 />
         </div>
       </div>
       {/* End .Recently Viewed */}
