@@ -37,22 +37,14 @@ const [sort, setSort] = useState("")
 
 // location filter from home page
     const router = useRouter();
-    // const [homeLocation, sethomeLocation] = useState(router.query.location)
+    const typeParams = router.query.type
 
     // type filter fro, header
     const [headerType, setHeaderType] = useState("")
 
-    // useEffect(()=>{
-    //   if(headerType !== "undefined"){
-    //     setHeaderType(router.query.type)
-    //     setType(headerType)
-        
-    //   }
-    // }, [router.query.type])
-
     useEffect(()=>{
-      setHeaderType(router.query.type)
-    }, [])
+      setType(typeParams)
+    }, [typeParams])
 
     console.log(headerType)
 return(
