@@ -45,6 +45,8 @@ const [sort, setSort] = useState("")
     const maxpriceParams = router.query.maxPrice
     const keywordParams = router.query.keyword
 
+    const locationcardParams = router.query.location
+
 
     // type filter fro, header
     const [headerType, setHeaderType] = useState("")
@@ -64,7 +66,10 @@ const [sort, setSort] = useState("")
      if(keywordParams){
       setKeyword(keywordParams)
      }
-    }, [typeParams,areaParams, minpriceParams, maxpriceParams, keywordParams])
+     if(locationcardParams){
+      setLocation(locationcardParams)
+     }
+    }, [typeParams,areaParams, minpriceParams, maxpriceParams, keywordParams, locationcardParams])
 
 
  

@@ -165,7 +165,6 @@ const handleError = ()=>{
                   type: type,
                   minPrice: minPrice,
                   maxPrice: maxPrice
-                 
               }
           }}>
             <button

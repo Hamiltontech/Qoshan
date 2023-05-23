@@ -1,5 +1,6 @@
 import Link from "next/link";
 import findProperties from "../../data/findProperties";
+import { all } from "axios";
 
 const FindProperties = () => {
   return (
@@ -9,6 +10,7 @@ const FindProperties = () => {
           <Link href={{
         pathname: "all-properties",
         query: {
+            type: "all",
             location: item.name,
         }
     }}
