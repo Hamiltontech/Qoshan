@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import HeaderMenuContent from "../common/header/HeaderMenuContent";
-import WhatsAppButton from './whatsapp'
+import WhatsAppButton from "./whatsapp";
+import axios from "axios";
+import Image from "next/image";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+  const [data, setData] = useState({});
 
   const changeBackground = () => {
     if (window.scrollY >= 95) {
@@ -13,22 +16,32 @@ const Header = () => {
       setNavbar(false);
     }
   };
-
   useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
+    axios
+      .get("https://strapi-125841-0.cloudclusters.net/api/header-ad?populate=*")
+      .then((response) => {
+        const res = response.data.data;
+        setData(res);
+        console.log(data)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
+  
 
   return (
     <div className="top-header d-flex align-items-center justify-content-between py-2 px-3" style={{ backgroundColor: "#232323" }}>
-       <WhatsAppButton />
+      <WhatsAppButton />
       <div className="social-media-links" style={{ backgroundColor: "#1f1f1f", padding: "10px 0", position: "absolute", zIndex: 2, top: 0, left: 0, right: 0, display: "none" }}>
         {/* Add your social media links here */}
         {/* Example: */}
-
-      
-
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          Twitter
+        </a>
         {/* Add more social media links as needed */}
       </div>
 
@@ -39,30 +52,27 @@ const Header = () => {
             <div className="d-flex align-items-center">
               <Link href="/">
                 <a className="me-3">
-                  <img
-                    className="logo1 img-fluid"
-                    src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257816/header-logo2_bawqi1.svg"
-                    alt="header-logo2.svg"
-                    style={{ height: 80 }}
-                  />
+                  <img className="logo1 img-fluid" src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257816/header-logo2_bawqi1.svg" alt="header-logo2.svg" style={{ height: 80 }} />
                 </a>
               </Link>
               <Link href="/">
                 <a className="position-relative" style={{ marginRight: 15, marginLeft: 15 }}>
-                  <img
-                    className="logo img-fluid winner"
-                    src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp"
-                    alt="header-logo2.svg"
-                    style={{ height: 80 }}
-                  />
+                  <img className="logo img-fluid winner" src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp" alt="header-logo2.svg" style={{ height: 80 }} />
                 </a>
               </Link>
+              <a href={data?.attributes?.URL}>
+                <a className="position-relative" style={{ marginRight: 15, marginLeft: 15 }}>
+                  {/* <img className="logo img-fluid winner" src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp" alt="header-logo2.svg" style={{ height: 80 }} /> */}
+                  <Image src={'https://strapi-125841-0.cloudclusters.net' + data?.attributes?.advert?.data?.attributes?.url}
+                      width={200}
+                      height={80}
+                      />                                </a>
+              </a>
             </div>
             <nav className="d-flex align-items-center justify-content-center" style={{ flex: 1 }}>
               <HeaderMenuContent />
             </nav>
           </div>
-          {/* End .navbar */}
         </div>
       </header>
     </div>
