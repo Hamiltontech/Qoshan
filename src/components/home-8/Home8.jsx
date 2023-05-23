@@ -11,6 +11,7 @@ import HeroSlider from "./HeroSlider";
 import PopupSignInUp from "../common/PopupSignInUp";
 import FeaturedProps from "./FeaturedProps";
 import HeroFilter from "./HeroFilter";
+import CategoriesFilter from "../blog-list-2/CategoriesFilter";
 
 import FeaturedProperties from "../home/FeaturedProperties";
 
@@ -137,6 +138,9 @@ const Home8 = () => {
                 {/* <p>Handpicked properties by our team.</p> */}
               </div>
             </div>
+            <div className="lsd_list">
+          <CategoriesFilter/>
+        </div> 
             <div className="col-lg-12">
               <div className="feature_property_slider gutter-x15">
                 <FeaturedProperties />
