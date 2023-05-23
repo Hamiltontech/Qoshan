@@ -33,7 +33,7 @@ const Season1 = () => {
     <div className="playlist-container" dir='rtl'>
       <h1>الموسم الآول</h1>
       <div className="video-grid">
-        {playlistData.map((item) => ( 
+        {playlistData.map((item) => (
           <div key={item.id} className="video-item" onClick={() => handleVideoClick(item.snippet.resourceId.videoId)}>
             <div className="thumbnail">
               <img src={item.snippet.thumbnails.medium.url} alt={item.snippet.title} />
@@ -49,9 +49,9 @@ const Season1 = () => {
       {selectedVideo && (
         <div className="popup">
           <div className="popup-inner">
-            <YouTube videoId={selectedVideo} opts={{ width: '100%', height: '100%', playerVars: { autoplay: 1 } }} />
+            <YouTube videoId={selectedVideo} opts={{ width: '600', height: '400', playerVars: { autoplay: 1 } }} style={{width: '100%', height: '100%'}}/>
             <button className="close-button" onClick={handleClosePopup}>
-              Close
+              اغلاق
             </button>
           </div>
         </div>
@@ -60,6 +60,7 @@ const Season1 = () => {
       <style jsx>{`
         .playlist-container {
           padding: 20px;
+          direction: rtl;
         }
 
         .video-grid {
@@ -101,6 +102,7 @@ const Season1 = () => {
           display: flex;
           justify-content: center;
           align-items: center;
+          background: #222;
         }
 
         .popup-inner {
@@ -108,8 +110,8 @@ const Season1 = () => {
           width: 80%;
           max-width: 800px;
           max-height: 80%;
-          background-color: #fff;
-          padding: 20px;
+          background-color: #222;
+          padding: 0px;
           overflow: auto;
           display: flex;
           flex-direction: column;
@@ -128,6 +130,7 @@ const Season1 = () => {
           }
         }
       `}</style>
+  
     </div>
   );
 };

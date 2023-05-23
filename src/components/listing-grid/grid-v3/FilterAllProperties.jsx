@@ -47,6 +47,13 @@ const [sort, setSort] = useState("")
 
     const locationcardParams = router.query.location
 
+  // filter from detailed search
+  const bedroomsParams = router.query.bedrooms
+  const bathroomsParams = router.query.bathrooms
+  const garagesParams = router.query.garages
+  const minAreaParams = router.query.minArea
+  const maxAreaParams = router.query.maxArea
+
 
     // type filter fro, header
     const [headerType, setHeaderType] = useState("")
@@ -69,7 +76,23 @@ const [sort, setSort] = useState("")
      if(locationcardParams){
       setLocation(locationcardParams)
      }
-    }, [typeParams,areaParams, minpriceParams, maxpriceParams, keywordParams, locationcardParams])
+
+     if(bedroomsParams){
+      setBedroom(bedroomsParams)
+     }
+     if(bathroomsParams){
+      setBathroom(bathroomsParams)
+     }
+     if(garagesParams){
+      setGarages(garagesParams)
+     }
+     if(minAreaParams){
+      setAreaMin(minAreaParams)
+     }
+     if(maxAreaParams){
+      setAreaMax(maxAreaParams)
+     }
+    }, [typeParams,areaParams, minpriceParams, maxpriceParams, keywordParams, locationcardParams, maxAreaParams, minAreaParams, garagesParams, bathroomsParams, bedroomsParams])
 
 
  

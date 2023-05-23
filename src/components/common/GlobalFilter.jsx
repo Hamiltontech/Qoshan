@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react'
 import Link from "next/link";
 import axios from "axios";
 
-const GlobalFilter = ({ className = "" }) => {
+const GlobalFilter = ({ className = "", pageRoute }) => {
   const [area, setArea] = useState([])
   useEffect(()=>{
     axios.get("https://strapi-125841-0.cloudclusters.net/api/areas?pagination[start]=0&pagination[limit]=1000").then((response)=>{
@@ -21,6 +21,13 @@ const [location, setLocation] = useState("")
 const [keyword, setKeyword] = useState("")
 const [minPrice, setMinPrice] = useState("أقل سعر")
 const [maxPrice, setMaxPrice] = useState("أعلى سعر")
+
+const [bedrooms, setBedrooms] = useState("")
+const [bathrooms, setBathrooms] = useState("")
+const [garages, setGarages] = useState("")
+const [minArea, setMinArea] = useState("أقل مساحة")
+const [maxArea, setMaxArea] = useState("أكبر مساحة")
+
 
 
 const handleError = ()=>{
@@ -93,28 +100,79 @@ const handleError = ()=>{
         </li>
    
 
-       {/* price */}
-        {/* <li className="list-inline-item">
-          <div className="small_dropdown2">
-            <div
-              id="prncgs"
-              className="btn dd_btn"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              <span>السعر</span>
-              <label htmlFor="InputEmail2">
-                <span className="fa fa-angle-down"></span>
-              </label>
-            </div>
-            <div className="dd_content2 dropdown-menu">
-              <div className="pricing_acontent">
-                <PricingRangeSlider />
-              </div>
-            </div>
-          </div>
-        </li> */}
+{pageRoute? <>
+  {/* bedrooms */}
+  <li className=" list-inline-item" style={{marginBottom: "10px"}}>
+        <div className="form-group ">
+          <input
+          value={bedrooms}
+            type="number"
+            className="form-control"
+            placeholder="غرف النوم"
+            onChange={(e) => setBedrooms(e.target.value)}
+          />
+        </div>
+      </li>
+
+
+     {/* bathrooms */}
+     <li className=" list-inline-item">
+        <div className="form-group ">
+          <input
+          value={bathrooms}
+            type="number"
+            className="form-control"
+            placeholder="الحمامات "
+            onChange={(e) => setBathrooms(e.target.value)}
+          />
+        </div>
+      </li>
+
+           {/* garages */}
+     <li className=" list-inline-item">
+        <div className="form-group ">
+          <input
+          value={garages}
+            type="number"
+            className="form-control"
+            placeholder=" الكراجات"
+            onChange={(e) => setGarages(e.target.value)}
+          />
+        </div>
+      </li>
+
+
+       {/* area range */}
+     <li className=" list-inline-item">
+        <div className="form-group ">
+          <input
+          value={minArea}
+            type="number"
+            className="form-control"
+            placeholder=" أقل مساحة"
+            onChange={(e) => setMinArea(e.target.value)}
+          />
+        </div>
+      </li>
+
+      <li className="list-inline-item">
+        <div className="form-group">
+          <input
+          value={maxArea}
+            type="number"
+            className="form-control"
+            id="exampleInputName3"
+            placeholder=" أكبر مساحة"
+            onChange={(e) => setMaxArea(e.target.value)}
+          />
+        </div>
+      </li>
+</>
+:
+<></>
+}
+   
+
 
 
 
@@ -132,9 +190,6 @@ const handleError = ()=>{
           />
         </div>
       </li>
-      {/* End li */}
-
-
 
       <li className="list-inline-item">
         <div className="form-group">
@@ -148,7 +203,7 @@ const handleError = ()=>{
           />
         </div>
       </li>
-      {/* End li */}
+
 
       <li className="custome_fields_520 list-inline-item"></li>
 
@@ -164,7 +219,13 @@ const handleError = ()=>{
                   area: location,
                   type: type,
                   minPrice: minPrice,
-                  maxPrice: maxPrice
+                  maxPrice: maxPrice,
+
+                  bedrooms: bedrooms,
+                  bathrooms: bathrooms,
+                  garages: garages,
+                  minArea: minArea,
+                  maxArea: maxArea
               }
           }}>
             <button

@@ -113,6 +113,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 body {
   background-attachment: fixed;
   background-color: #ffffff;
@@ -2769,9 +2771,10 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   border-radius: 25px;
 }
 
+
 .home_adv_srch_opt.home4 .home1_adsrchfrm {
   border-radius: 45px;
-  height: 90px;
+  height: 210px;
   padding: 20px;
 }
 
@@ -5273,7 +5276,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   position: absolute;
   text-align: center;
   top: 10px;
-  max-width: 110px;
+  max-width: 200px;
   padding: 0 10px;
   text-transform: capitalize;
 }
