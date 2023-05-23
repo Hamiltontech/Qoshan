@@ -38,7 +38,12 @@ const [sort, setSort] = useState("")
 // location filter from home page
     const router = useRouter();
     const typeParams = router.query.type
-
+  
+    // search from home
+    const areaParams = router.query.area
+    const minpriceParams = router.query.minPrice
+    const maxpriceParams = router.query.maxPrice
+    const keywordParams = router.query.keyword
 
 
     // type filter fro, header
@@ -47,16 +52,28 @@ const [sort, setSort] = useState("")
 
       useEffect(()=>{
      setType(typeParams)
-    }, [typeParams])
+     if(areaParams){
+      setLocation(areaParams)
+     }
+     if(minpriceParams){
+      setMinprice(minpriceParams)
+     }
+     if(maxpriceParams){
+      setMaxprice(maxpriceParams)
+     }
+     if(keywordParams){
+      setKeyword(keywordParams)
+     }
+    }, [typeParams,areaParams, minpriceParams, maxpriceParams, keywordParams])
 
 
-    console.log(type)
+ 
 return(
 <section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 " dir="rtl">
 <div className="container">
   <div className="row" >
     <div className="col-lg-4">
-      <BreadCrumb2 />
+      <BreadCrumb2 typeParams={typeParams}/>
     </div>
     {/* End .col */}
 
@@ -164,6 +181,7 @@ return(
         setCount={setCount}
         sort={sort} 
         setSort={setSort}
+        headerType={headerType}
         />
       </div>
       {/* End .row */}

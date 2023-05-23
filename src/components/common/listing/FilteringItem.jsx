@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Link from "next/link";
 
 const FilteringItem = ({headerType, setHeaderType, setSort, keyword, location, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice,  setKeyword, setLocation, setStatus, setType, setGarages, setBathroom, setBedroom, setAreaMax, setAreaMin, setBuiltYear, setMaxprice, setMinprice}) => {
 
@@ -15,6 +16,7 @@ const FilteringItem = ({headerType, setHeaderType, setSort, keyword, location, t
     setMinprice('أقل سعر')
     setMaxprice("أعلى سعر")
     setSort("")
+    
   };
 
 
@@ -120,7 +122,7 @@ console.log(headerType)
               className="selectpicker w100 show-tick form-select"
               id="defaultType"
             >
-              <option value="">نوع العقار</option>
+              <option value="all">نوع العقار</option>
               <option value="شقق">شقق</option>
               <option value="شقق طابقية">شقق طابقية</option>
               <option value="فلل متلاصقة">فلل متلاصقة</option>
@@ -371,6 +373,12 @@ console.log(headerType)
 
       <li>
         <div className="search_option_button">
+          <Link href={{
+            pathname: "all-properties",
+            query: {
+              type : "all"
+            }
+          }}>
           <button
             // clear
             onClick={clearHandler}
@@ -378,7 +386,7 @@ console.log(headerType)
             className="btn btn-block btn-thm w-100"
           >
             تصفية البحث
-          </button>
+          </button></Link>
         </div>
       </li>
       {/* End li */}

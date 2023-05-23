@@ -7,7 +7,7 @@ import {BiBath} from 'react-icons/bi'
 import {IoBedOutline} from 'react-icons/io5'
 import Highlighter from "react-highlight-words";
 
-const FeaturedItem = ({keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, count, setCount, sort, setSort}) => {
+const FeaturedItem = ({headerType, keyword, location, status, type, garages, bathrooms, bedrooms, minarea, maxarea, age, minprice, maxprice, count, setCount, sort, setSort}) => {
 
   // diala
 const [property, setProeprty] = useState([])
@@ -68,7 +68,6 @@ useEffect(()=>{
 
       // price handler
       const priceHandler = (item) => {
-        
           if (minprice !== "أقل سعر" && maxprice !== "أعلى سعر") {
             return (
               parseInt(item?.attributes?.Price) >= minprice &&
@@ -81,7 +80,7 @@ useEffect(()=>{
 
       // location filter
       const locationHandler = (item) =>{
-        if(item?.attributes?.areas?.data?.attributes?.Name?.toLowerCase().includes(location.toLowerCase())){
+       if(item?.attributes?.areas?.data?.attributes?.Name?.toLowerCase().includes(location.toLowerCase())){
           return item?.attributes?.areas?.data?.attributes?.Name
         }
       }
@@ -95,6 +94,7 @@ useEffect(()=>{
           ){
             return item?.attributes?.type?.data?.attributes?.Name
           }
+       
       }
 
 

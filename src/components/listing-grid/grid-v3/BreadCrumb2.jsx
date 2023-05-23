@@ -1,9 +1,9 @@
 import BreadCrumb from "../../common/BreadCrumb";
 
-const BreadCrumb2 = () => {
+const BreadCrumb2 = ({typeParams}) => {
   return (
     <div className="breadcrumb_content style2" dir="rtl">
-      <h2 className="breadcrumb_title">جميع العقارات</h2>
+      <h2 className="breadcrumb_title"> {typeParams == "all"? <>جميع العقارات</> : typeParams}</h2>
     </div>
   );
 };

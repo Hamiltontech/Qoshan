@@ -17,14 +17,14 @@ const GlobalHeroFilter = ({ className = "" }) => {
                 >
                     <GlobalFilter />
                 </div>
-                <div
+                {/* <div
                     className="tab-pane fade"
                     id="pills-profile"
                     role="tabpanel"
                     aria-labelledby="pills-profile-tab"
                 >
                     <GlobalFilter />
-                </div>
+                </div> */}
             </div>
         </div>
     );
