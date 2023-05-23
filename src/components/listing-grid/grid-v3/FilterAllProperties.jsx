@@ -16,7 +16,7 @@ const FilterAllProperties = () =>{
     const [keyword, setKeyword] = useState("")
     const [location, setLocation] = useState("")
     const [status, setStatus] = useState("")
-    const [type, setType] = useState("")
+    const [type, setType] = useState("all")
     const [bathrooms, setBathroom] = useState("")
     const [bedrooms, setBedroom] = useState("")
     const [garages, setGarages] = useState("")
@@ -39,14 +39,18 @@ const [sort, setSort] = useState("")
     const router = useRouter();
     const typeParams = router.query.type
 
+
+
     // type filter fro, header
     const [headerType, setHeaderType] = useState("")
 
-    useEffect(()=>{
-      setType(typeParams)
+
+      useEffect(()=>{
+     setType(typeParams)
     }, [typeParams])
 
-    console.log(headerType)
+
+    console.log(type)
 return(
 <section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 " dir="rtl">
 <div className="container">

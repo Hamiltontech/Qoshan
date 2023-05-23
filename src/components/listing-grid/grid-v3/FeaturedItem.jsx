@@ -89,10 +89,12 @@ useEffect(()=>{
 
       // type filter
       const typeHandler = (item) =>{
-        if(item?.attributes?.type?.data?.attributes?.Name?.toLowerCase().includes(type.toLowerCase())
-        ){
+        if (type === "all"){
           return item?.attributes?.type?.data?.attributes?.Name
-        }
+        }else if(item?.attributes?.type?.data?.attributes?.Name?.toLowerCase() === type?.toLowerCase()
+          ){
+            return item?.attributes?.type?.data?.attributes?.Name
+          }
       }
 
 

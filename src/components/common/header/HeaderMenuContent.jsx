@@ -40,7 +40,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         },
         {
           name: "Grid v3",
-          routerPath: "/all-properties",
+          routerPath: "/all-properties/type=all",
         },
         {
           name: "Grid v4",
@@ -255,9 +255,9 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/all-properties">
+        <Link href="/all-properties?type=all">
           <a
-            className={route.pathname === "/all-properties" ? "ui-active" : undefined}
+            className={route.pathname === "/all-properties?type=all" ? "ui-active" : undefined}
           >
 جميع العقارات       </a>
         </Link>

@@ -6,7 +6,7 @@ const FilteringItem = ({headerType, setHeaderType, setSort, keyword, location, t
   const clearHandler = () => {
     setKeyword("")
     setLocation("") 
-    setType("")
+    setType("all")
     setGarages("")
     setBathroom("")
     setBedroom("") 
