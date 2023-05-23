@@ -316,9 +316,9 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/news">
+        <Link href="/news?category=جميع+الاخبار">
           <a
-            className={route.pathname === "/news" ? "ui-active" : undefined}
+            className={route.pathname === "/news?category=جميع-الاخبار" ? "ui-active" : undefined}
           >
 الآخبار         </a>
         </Link>
