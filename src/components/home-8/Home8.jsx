@@ -13,7 +13,6 @@ import FeaturedProps from "./FeaturedProps";
 import HeroFilter from "./HeroFilter";
 import CategoriesFilter from "../blog-list-2/CategoriesFilter";
 import Advert from "./advert";
-import Watchqoshan from "./Watchqoshan";
 
 import FeaturedProperties from "../home/FeaturedProperties";
 // import Watchqoshan from './Watchqoshan'
@@ -161,7 +160,7 @@ const Home8 = () => {
       </section>
 
       {/* <!-- Home Design --> */}
-      <section id="feature-property" className="feature-property "  style={{marginLeft: 0, marginRight: 0}}>
+      {/* <section id="feature-property" className="feature-property "  style={{marginLeft: 0, marginRight: 0}}>
 
  <div className="row">
 
@@ -177,7 +176,7 @@ const Home8 = () => {
 
  </div>
 
- </section>
+ </section> */}
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one home3">
