@@ -358,27 +358,6 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-      {/* <li className={`list-inline-item list_s ${float}`}>
-        <a
-          href="#"
-          className="btn flaticon-user"
-          data-bs-toggle="modal"
-          data-bs-target=".bd-example-modal-lg"
-        >
-          <span className="dn-lg">Login/Register</span>
-        </a>
-      </li> */}
-      {/* End .dropitem */}
-
-      {/* <li className={`list-inline-item add_listing ${float}`}>
-        <Link href="/create-listing">
-          <a>
-            <span className="flaticon-plus"></span>
-            <span className="dn-lg"> Create Listing</span>
-          </a>
-        </Link>
-      </li> */}
-      {/* End .dropitem */}
     </ul>
   );
 };

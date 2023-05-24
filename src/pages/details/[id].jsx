@@ -25,12 +25,17 @@ const ListingDynamicDetailsV1 = () => {
   const [relatedLocation, setRelatedLocation] = useState("")
   const [relatedType, setRelatedType] = useState("")
 
+  // featured 
+  const [featured, setFeatured] = useState([])
+
 
    // diala
 
    useEffect(()=>{
      axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((response)=>{
-       const res = response.data.data
+       const res = response?.data?.data
+       const feat = res?.filter((item)=>item.attributes.Promoted == true)
+       setFeatured(feat)
        const prop = res?.find((item)=>item.attributes.URL == id)
        setProperty(prop)
        setRelatedLocation(prop?.attributes?.areas?.data?.attributes?.Name)
@@ -40,7 +45,6 @@ const ListingDynamicDetailsV1 = () => {
      })
    }, [id])
   
-
 
   return (
     <>
@@ -199,7 +203,7 @@ content={property?.attributes?.seo}/>
             
 
             <div className="col-lg-4 col-xl-4">
-              <Sidebar relatedLocation={relatedLocation} relatedType={relatedType}/>
+              <Sidebar featured={featured} relatedLocation={relatedLocation} relatedType={relatedType}/>
             </div>
             {/* End sidebar content .col-lg-4 */}
           </div>

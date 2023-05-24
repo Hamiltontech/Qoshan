@@ -1,11 +1,11 @@
 import ContactWithAgent from "../common/agent-view/ContactWithAgent";
-import Categorie from "../common/listing/Categorie";
+import Featured from "../common/listing/Featured";
 import ListingCreator from "../common/listing/ListingCreator";
 import FeaturedListings from "../common/listing/FeaturedListings";
 import FeatureProperties from "../common/listing/FeatureProperties";
 import Advert from "../common/listing/advert";
 import Advert2 from "../common/listing/advert-two";
-const Sidebar = ({relatedType, relatedLocation}) => {
+const Sidebar = ({relatedType, relatedLocation, featured}) => {
 
 
   return (
@@ -32,14 +32,16 @@ const Sidebar = ({relatedType, relatedLocation}) => {
 
       {/* End .Featured Properties */}
 
-      {/* <div className="terms_condition_widget">
-        <h4 className="title">Categories Property</h4>
+      <div className="terms_condition_widget">
+        <h4 className="title">عقارات مميزة</h4>
         <div className="widget_list">
           <ul className="list_details">
-            <Categorie />
+            <Featured featured={featured}/>
+
+            
           </ul>
         </div>
-      </div> */}
+      </div>
       {/* End .Categories Property */}
 
       <div className="sidebar_feature_listing">
