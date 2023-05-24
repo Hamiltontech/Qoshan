@@ -17,7 +17,6 @@ if(page === "/detailed-search"){
 }, [page])
 
 
-console.log(pageRoute)
     return (
         <div className={`home_adv_srch_opt ${className}`}>
             <ul className="nav nav-pills" id="pills-tab" role="tablist">             

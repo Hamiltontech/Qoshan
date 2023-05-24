@@ -18,7 +18,7 @@ const FeaturedListings = ({relatedType, relatedLocation}) => {
     })
   }, [])
 
-  console.log(relatedProperteis)
+
 
 
 

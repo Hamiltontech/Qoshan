@@ -90,9 +90,7 @@ const handleError = ()=>{
               className="selectpicker w100 form-select show-tick">
                 <option value="">جميع المناطق</option>
                 {area?.map((item)=>(
-                  <>
-                  <option value={item?.attributes?.Name}>{item?.attributes?.Name}</option>
-                  </>
+                  <option key={item?.id} value={item?.attributes?.Name}>{item?.attributes?.Name}</option>
                 ))}
               </select>
             </div>

@@ -56,12 +56,10 @@ const ComfortPlaces = ({featured, data}) => {
           {/* tags */}
           <ul className="tag ">
   {item?.attributes?.property_tags?.data?.map((item)=>(
-    <>
-    <li className="list-inline-item" style={{width: "150px"}}>
+    <li key={item?.id} className="list-inline-item" style={{width: "150px"}}>
         <a>{item?.attributes?.Tag}</a>
      </li>
-     
-    </>
+ 
   ))}
   </ul>
 

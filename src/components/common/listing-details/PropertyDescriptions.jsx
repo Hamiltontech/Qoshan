@@ -6,7 +6,7 @@ const PropertyDescriptions = ({property}) => {
   // const [click, setClick] = useState(true);
   // const handleClick = () => setClick(!click);
 
-  console.log(property)
+
 
   return (
     <>

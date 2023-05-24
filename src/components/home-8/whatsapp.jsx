@@ -20,7 +20,7 @@ const WhatsAppButton = () => {
         zIndex: '999',
       }}
     >
-      <a href="javascript:void(0);" onClick={handleWhatsAppClick}>
+      <a href="#!" onClick={handleWhatsAppClick}>
         <img
           src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684695479/whatsapp_cru5zb.png" 
           alt="WhatsApp"

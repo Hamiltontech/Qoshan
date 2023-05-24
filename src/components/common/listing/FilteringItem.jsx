@@ -20,7 +20,7 @@ const FilteringItem = ({headerType, setHeaderType, setSort, keyword, location, t
   };
 
 
-console.log(headerType)
+
 
   return (
     <ul className="sasw_list mb0">

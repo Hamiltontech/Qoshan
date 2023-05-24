@@ -22,7 +22,6 @@ const Header = () => {
       .then((response) => {
         const res = response.data.data;
         setData(res);
-        console.log(data)
       })
       .catch((error) => {
         console.log(error);
@@ -50,14 +49,14 @@ const Header = () => {
                   <img className="logo img-fluid winner" src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp" alt="header-logo2.svg" style={{ height: 80 }} />
                 </a>
               </Link>
-              <a href={data?.attributes?.URL}>
-                <a className="position-relative" style={{ marginRight: 15, marginLeft: 15 }}>
+              {/* <a > */}
+                <a href={data?.attributes?.URL} className="position-relative" style={{ marginRight: 15, marginLeft: 15 }}>
                   {/* <img className="logo img-fluid winner" src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257815/winner-land_jm56zk.webp" alt="header-logo2.svg" style={{ height: 80 }} /> */}
                   <Image src={'https://strapi-125841-0.cloudclusters.net' + data?.attributes?.advert?.data?.attributes?.url}
                       width={200}
                       height={100}
                       />                                </a>
-              </a>
+              {/* </a> */}
             </div>
             <nav className="d-flex align-items-center justify-content-center" style={{ flex: 1 }}>
               <HeaderMenuContent />

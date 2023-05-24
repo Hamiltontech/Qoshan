@@ -11,7 +11,6 @@ const FindProperties = () => {
           .then((response) => {
             const res = response.data.data;
             setData(res);
-            console.log(data)
           })
           .catch((error) => {
             console.log(error);

@@ -1,6 +1,6 @@
 const PropertyDetails = ({property}) => {
 
-  console.log(property)
+
   return (
     <>
       <div className="col-md-6 col-lg-6 col-xl-6">

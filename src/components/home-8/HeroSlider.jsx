@@ -24,7 +24,7 @@ useEffect(()=>{
 // diala - to find only the featured then slice them to only 3
 let arr = data?.filter((ele) => ele?.attributes?.Slider === true) 
 // const ar = arr?.slice(Math.max(arr?.length - 3, 1))
-console.log(arr)
+
 
   const settings = {
     dots: true,

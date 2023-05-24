@@ -4,7 +4,6 @@ import {TfiRulerAlt} from 'react-icons/tfi'
 
 
 const FeaturedProperties = ({featured}) => {
-console.log(featured)
 
 
   const settings = {
