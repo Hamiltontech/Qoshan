@@ -34,7 +34,7 @@ const ListingDynamicDetailsV1 = () => {
    useEffect(()=>{
      axios.get("https://strapi-125841-0.cloudclusters.net/api/proerties?populate=*").then((response)=>{
        const res = response?.data?.data
-       const feat = res?.filter((item)=>item.attributes.Promoted == true)
+       const feat = res?.filter((item)=>item?.attributes?.Promoted == true)
        setFeatured(feat)
        const prop = res?.find((item)=>item.attributes.URL == id)
        setProperty(prop)
