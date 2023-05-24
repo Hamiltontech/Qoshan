@@ -16,7 +16,7 @@ const Featured = ({featured}) => {
     return (
         <>
             <Slider {...settings} arrows={false}>
-                {featured?.slice(0, 5).map((item) => (
+                {featured?.slice(0, 5)?.map((item) => (
                     <div className="item" key={item?.id}>
                          <a href={`/details/${item?.attributes?.URL}`}>
                         <div className="feat_property home7">
