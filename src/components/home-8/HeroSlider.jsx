@@ -24,7 +24,7 @@ useEffect(()=>{
 // diala - to find only the featured then slice them to only 3
 let arr = data?.filter((ele) => ele?.attributes?.Slider === true) 
 // const ar = arr?.slice(Math.max(arr?.length - 3, 1))
-console.log(arr)
+
 
   const settings = {
     dots: true,
@@ -129,17 +129,20 @@ console.log(arr)
                   <div className="col-md-7 col-lg-8">
 
                     {/* tags */}
-                  <ul className="tag">
-                    <li className="list-inline-item" style={{margin: '6px', backgroundColor: '#c2b49a', paddingLeft: '20px',paddingRight: '20px', borderRadius: '6px'}}>
-                      مميز
-                    </li>
-                    <li className="list-inline-item" style={{ backgroundColor: '#404041', paddingLeft: '20px',paddingRight: '20px' , borderRadius: '6px'}}>
-                      للبيع
-                    </li>
-                  </ul>
+                    <ul className="tag">
+                    {singleItem?.attributes?.property_tags?.data?.map((item)=>(
+                          <>
+                        <li className="list-inline-item" style={{color:'white',margin: '6px', backgroundColor: '#404041', paddingLeft: '20px',paddingRight: '20px', borderRadius: '6px'}}>
+                      {item?.attributes?.Tag}
+                        </li>
+                          </>
+                       ))}
+                    </ul>
+  
+                 
 
                   {/* title */}
-                    <div className="main_title" style={{fontSize: '40px'}}>{singleItem?.attributes?.Name}</div>
+                    <div className="main_title" style={{fontSize: '40px', fontFamily: 'Changa'}}>{singleItem?.attributes?.Name}</div>
                    
                   {/* details */}
                   <div style={{display: 'flex', justifyContent: 'start', gap: '20px'}}>

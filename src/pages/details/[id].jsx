@@ -4,13 +4,15 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import Footer from "../../components/common/footer/Footer";
-import Header from "../../components/common/header/DefaultHeader";
+import Header from "../../components/home-8/Header";
 import MobileMenu from "../../components/common/header/MobileMenu";
-import PopupSignInUp from "../../components/common/PopupSignInUp";
-// import properties from "../../data/properties";
 import DetailsContent from "../../components/listing-details-v1/DetailsContent";
 import Sidebar from "../../components/listing-details-v1/Sidebar";
 import axios from "axios";
+import Image from 'next/image'
+
+
+import Head from 'next/head';
 
 const ListingDynamicDetailsV1 = () => {
 
@@ -19,6 +21,9 @@ const ListingDynamicDetailsV1 = () => {
   const id = router.query.id;
 
 
+// related articles states - props
+  const [relatedLocation, setRelatedLocation] = useState("")
+  const [relatedType, setRelatedType] = useState("")
 
 
    // diala
@@ -28,29 +33,64 @@ const ListingDynamicDetailsV1 = () => {
        const res = response.data.data
        const prop = res?.find((item)=>item.attributes.URL == id)
        setProperty(prop)
+       setRelatedLocation(prop?.attributes?.areas?.data?.attributes?.Name)
+       setRelatedType(prop?.attributes?.type?.data?.attributes?.Name)
      }).catch((error)=>{
        console.log(error)
      })
    }, [id])
   
 
+
   return (
     <>
+   <Head>
+        <title>{property?.attributes?.Name}</title>
+
+
+        {/* meta */}
+        {/* facebook */}
+ {/* <meta property={`og:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
+<meta property={`og:${property?.attributes?.type?.data[0]?.attributes?.Name}`} content={property?.attributes?.type?.data[0]?.attributes?.Name}/>
+<meta property={`og:${'https://qoshan.vercel.app' + property?.attributes?.URL}`} content={'https://qoshan.vercel.app' + property?.attributes?.URL}/>
+<meta property={`og:${property?.attributes?.seo}`}
+content={property?.attributes?.seo}/>
+<meta property={`og:${'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Socialimage?.data?.attributes?.ul}`} content={`'https://strapi-125841-0.cloudclusters.net' + ${property?.attributes?.Socialimage?.data?.attributes?.ul}`}/> */}
+
+
+{/* twitter */}
+
+{/* <meta property={`twitter:${property?.attributes?.Name}`} content={property?.attributes?.Name}/>
+<meta property={`twitter:${property?.attributes?.seo}`}
+content={property?.attributes?.seo}/>
+<meta property={`twitter:${'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Socialimage?.data?.attributes?.ul}`} content={`'https://strapi-125841-0.cloudclusters.net' + ${property?.attributes?.Socialimage?.data?.attributes?.ul}`}/> */}
+
+      </Head>
+
       {/* <!-- Main Header Nav --> */}
       {/* <Header /> */}
-
       {/* <!--  Mobile Menu --> */}
+      
+      <Header/>
       <MobileMenu />
-
-      {/* <!-- Modal --> */}
-      <PopupSignInUp />
-
       {/* <!-- Listing Single Property --> */}
       <section className="listing-title-area mt85 md-mt0" dir="rtl">
         <div className="container">
           <Gallery>
             <div className="row mb30">
               <div className="col-lg-7 col-xl-8">
+
+ {/* tags */}
+ <ul className="tag">
+  {property?.attributes?.property_tags?.data?.map((item)=>(
+    <>
+    <li className="list-inline-item" style={{color:'white',margin: '6px', backgroundColor: '#c2b49a', paddingLeft: '20px',paddingRight: '20px', borderRadius: '6px'}}>
+                      {item?.attributes?.Tag}
+     </li>
+    </>
+  ))}
+  </ul>
+
                 <div className="single_property_title mt30-767">
                
                   <h2>{property?.attributes?.Name}</h2>
@@ -74,7 +114,7 @@ const ListingDynamicDetailsV1 = () => {
                   <div className="price float-start fn-400">
                     {/* price */}
                     <h2>
-                    {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني 
+                  <span style={{fontSize: '12px'}}>{property?.attributes?.Prefix}</span>  {property?.attributes?.Price?.slice(0,3)},{property?.attributes?.Price?.slice(3)} دينار أردني 
                     </h2>
                   </div>
                  
@@ -88,7 +128,11 @@ const ListingDynamicDetailsV1 = () => {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="spls_style_two mb30-520">
-                      <Item
+                      <Image src={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
+                      width={752}
+                      height={450}
+                      />
+                      {/* <Item
                         original={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
                         thumbnail={'https://strapi-125841-0.cloudclusters.net' + property?.attributes?.Featured?.data?.attributes?.formats?.large?.url}
                         width={752}
@@ -103,7 +147,7 @@ const ListingDynamicDetailsV1 = () => {
                             />
                           </div>
                         )}
-                      </Item>
+                      </Item> */}
                     </div>
                   </div>
                 </div>
@@ -152,8 +196,10 @@ const ListingDynamicDetailsV1 = () => {
             </div>
             {/* End details content .col-lg-8 */}
 
+            
+
             <div className="col-lg-4 col-xl-4">
-              <Sidebar />
+              <Sidebar relatedLocation={relatedLocation} relatedType={relatedType}/>
             </div>
             {/* End sidebar content .col-lg-4 */}
           </div>

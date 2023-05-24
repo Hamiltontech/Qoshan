@@ -110,7 +110,10 @@
 /*== Typography ==*/
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
+
+
 
 body {
   background-attachment: fixed;
@@ -202,7 +205,7 @@ a img {
 }
 .property-search{
   color: #404041;
-  background-image: url("https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684146604/1-7_glnwhu.jpg");
+  background-image: url("https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684258724/1-7_glnwhu_tvustj.webp");
 }
 .property-search-inner{
   color: #404041;
@@ -282,6 +285,7 @@ h6 .small,
   line-height: 1;
   color: #484848;
   font-weight: 400;
+  font-family: "Changa", Changa;
 }
 
 h1 a,
@@ -298,6 +302,7 @@ h6 a,
 .h6 a {
   color: #484848;
   font-weight: 400;
+  font-family: "Changa", Changa;
 }
 
 h1,
@@ -316,6 +321,7 @@ h6,
 .h5,
 .h6 {
   font-weight: bold;
+  font-family: "Changa", Changa;
 }
 
 h1,
@@ -357,6 +363,7 @@ dd,
 blockquote,
 address {
   margin: 0 0 10px;
+  font-family: "Changa", Changa;
 }
 
 .ff-Changa {
@@ -468,7 +475,10 @@ address {
   flex-shrink: 0;
   position: relative;
 }
-
+.pro-sidebar > .pro-sidebar-inner > .pro-sidebar-layout .pro-sidebar-content {
+  flex-grow: 1;
+  text-align: right;
+}
 .cart > li:hover .dropdown_content {
   opacity: 1;
   visibility: visible;
@@ -573,7 +583,10 @@ address {
   border: 1px solid transparent;
   margin-right: 10px;
 }
-
+.about-section{
+  background-color: #404041;
+  color: white;
+}
 .dropdown_content .list_content .cart_btns:hover {
   background-color: #2ac4ea;
   border: 1px solid #2ac4ea;
@@ -1171,12 +1184,12 @@ nav button {
 }
 
 header.header-nav {
-  padding: 30px 0px;
+  padding: 9px 0px;
   direction: rtl;;
 }
 
 header.header-nav.dashbord_pages {
-  padding: 0 5px 0 15px;
+  padding: 0 8px 0 15px;
 }
 
 header.header-nav a.navbar_brand {
@@ -2754,13 +2767,18 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   transform: rotate(45deg);
 }
 
+section#feature-property {
+  padding: 0px !important;
+}
+
 .home_adv_srch_opt.home4 .nav-pills li.nav-item a.nav-link {
   border-radius: 25px;
 }
 
+
 .home_adv_srch_opt.home4 .home1_adsrchfrm {
   border-radius: 45px;
-  height: 90px;
+  height: 210px;
   padding: 20px;
 }
 
@@ -3001,6 +3019,9 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   border: 1px solid var(--color-primary);
 }
 
+select {
+  font-family: "Changa", Changa !important;
+}
 .home1-advnc-search.home3 ul li .search_option_button button:hover {
   background-color: #ffffff;
   border: 1px solid #3e4c66;
@@ -3015,6 +3036,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   border-radius: 8px;
   border: 1px solid rgb(255, 101, 101);
   color: #ffffff;
+  font-family: "Changa", Changa;
   height: 50px;
 }
 
@@ -3986,6 +4008,9 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   .home-seven {
     height: auto;
   }
+  header.header-nav.menu_style_home_one.style2{
+    display: none !important;
+  }
 }
 .home-nine {
   background-image: url(../images/background/12.jpg);
@@ -4135,8 +4160,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home-four .banner-style-one .slide:before {
-  background-image: linear-gradient(to right, rgba(62, 62, 165) 0%, rgba(255, 90, 95) 100%);
-  left: 0;
+  background-image: linear-gradient(to right, rgb(194 180 154) 0%, rgb(71 62 63) 100%);  left: 0;
   opacity: 0.902;
   position: absolute;
   right: 0;
@@ -5217,6 +5241,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
+  direction: rtl;
 }
 @media (max-width: 576px) {
   .feat_property.d-flex {
@@ -5255,7 +5280,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   position: absolute;
   text-align: center;
   top: 10px;
-  max-width: 110px;
+  max-width: 200px;
   padding: 0 10px;
   text-transform: capitalize;
 }
@@ -6270,7 +6295,8 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .icon_hvr_img_box:before {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: rgba(64, 64, 65, 0.60);
   bottom: 0;
   content: "";
   left: 0;
@@ -8330,11 +8356,12 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .footer_one {
-  background-color: #24324a;
+  background-color: #404041;
+  direction: rtl;
 }
 
 .footer_middle_area {
-  background-color: #1d293e;
+  background-color: #35353F;
 }
 
 .footer_bottom_area {
@@ -8413,7 +8440,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .footer_about_widget p {
   font-size: 14px;
   font-family: "Changa";
-  color: #8a99b3;
+  color: #c2b49a;
   line-height: 2.143;
   margin-bottom: 0;
 }
@@ -8495,7 +8522,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .footer_contact_widget li a {
   font-size: 14px;
   font-family: "Changa";
-  color: #8a99b3;
+  color: #c2b49a;
   line-height: 2.429;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -8775,11 +8802,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 /*== Inner Pages Breadcrumb ==*/
 .inner_page_breadcrumb {
-  background-image: url(../images/background/inner-pagebg.jpg);
+  background-image: url(https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684269734/Untitled-1_y2etq0.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 370px;
   margin-top: 88px;
   position: relative;
+  direction: rtl;
 }
 @media (max-width: 576px) {
   .inner_page_breadcrumb {
@@ -8822,12 +8851,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .inner_page_breadcrumb .breadcrumb_title {
   font-size: 40px;
   font-family: "Changa";
-  color: #ffffff;
+  color: #C2B49A;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
 }
-
+.about-platform{
+  color: #C2B49A !important;
+}
 .inner_page_breadcrumb .breadcrumb_title li:first-child {
   color: #7f7f7f;
 }
@@ -8856,7 +8887,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 /*== About Page About Content ==*/
 .about_content p.large {
-  color: #484848;
+  color: white;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
@@ -10843,6 +10874,7 @@ a.btn.btn_error {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   padding: 30px;
+  direction: rtl;
 }
 
 .faq_according .panel .panel-body {
@@ -11689,6 +11721,7 @@ legend span {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 30px;
+  direction: rtl;
 }
 
 .main_blog_post_content .mbp_thumb_post .details {
@@ -15196,6 +15229,7 @@ legend span {
   border-radius: 8px;
   border: 1px solid #ebebeb;
   padding: 30px;
+  direction: rtl;
 }
 
 .form_grid h4 {
@@ -15257,6 +15291,7 @@ legend span {
   border-radius: 8px;
   padding: 30px;
   position: relative;
+  direction: rtl;
 }
 
 .contact_localtion h4 {
@@ -19765,3 +19800,11 @@ object-fit: cover;
   
   }
 
+  .YourHighlightClass{
+    font-weight: bold;
+  }
+  
+
+  .sidebar_recent_product .media .media-body .post_title a:hover, .sidebar_feature_listing .media .media-body .post_title a:hover {
+    color: #c2b49a;
+}

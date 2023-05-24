@@ -4,7 +4,6 @@ import {TfiRulerAlt} from 'react-icons/tfi'
 
 
 const FeaturedProperties = ({featured}) => {
-console.log(featured)
 
 
   const settings = {
@@ -52,11 +51,16 @@ console.log(featured)
         <div className="thmb_cntnt">
 
           {/* tags */}
-          <ul className="tag mb0">
-          <li className="list-inline-item">
-            <a href="#">!Tags Here</a>
-          </li>
-          </ul>
+          <ul className="tag ">
+  {item?.attributes?.property_tags?.data?.map((item)=>(
+    <>
+    <li className="list-inline-item" style={{width: "150px"}}>
+        <a>{item?.attributes?.Tag}</a>
+     </li>
+     
+    </>
+  ))}
+  </ul>
 
           {/* {properties.map((it)=>(
             <ul className="tag mb0">

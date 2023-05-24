@@ -3,8 +3,11 @@ import Categorie from "../common/listing/Categorie";
 import ListingCreator from "../common/listing/ListingCreator";
 import FeaturedListings from "../common/listing/FeaturedListings";
 import FeatureProperties from "../common/listing/FeatureProperties";
+import Advert from "../common/listing/advert";
+import Advert2 from "../common/listing/advert-two";
+const Sidebar = ({relatedType, relatedLocation}) => {
 
-const Sidebar = () => {
+
   return (
     <>
       <div className="sidebar_listing_list" dir="rtl">
@@ -19,12 +22,12 @@ const Sidebar = () => {
       </div>
       {/* End .sidebar_listing_list */}
 
-      {/* <div className="terms_condition_widget">
-        <h4 className="title">Featured Properties</h4>
+      <div className="terms_condition_widget">
+        {/* <h4 className="title">Featured Properties</h4> */}
         <div className="sidebar_feature_property_slider">
           <FeatureProperties />
         </div>
-      </div> */}
+      </div>
 
 
       {/* End .Featured Properties */}
@@ -39,11 +42,22 @@ const Sidebar = () => {
       </div> */}
       {/* End .Categories Property */}
 
-      {/* <div className="sidebar_feature_listing">
-        <h4 className="title">Recently Viewed</h4>
-        <FeaturedListings />
-      </div> */}
-      
+      <div className="sidebar_feature_listing">
+        <h4 className="title">عقارات مشابهة</h4>
+        <FeaturedListings relatedLocation={relatedLocation} relatedType={relatedType}/>
+      </div>
+      <div className="terms_condition_widget">
+        {/* <h4 className="title">Featured Properties</h4> */}
+        <div className="sidebar_feature_property_slider">
+          <Advert />
+        </div>
+      </div>
+      <div className="terms_condition_widget">
+        {/* <h4 className="title">Featured Properties</h4> */}
+        <div className="sidebar_feature_property_slider">
+          <Advert2 />
+        </div>
+      </div>
       {/* End .Recently Viewed */}
     </>
   );

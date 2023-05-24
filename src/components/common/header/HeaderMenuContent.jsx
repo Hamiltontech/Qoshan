@@ -16,7 +16,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       name: "Home 3",
       routerPath: "/home-3",
     },
-    { id: 4, name: "Home 4", routerPath: "/home-4" },
+    { id: 4, name: "Home 4", routerPath: "/detailed-search" },
     { id: 5, name: "Home 5", routerPath: "/home-5" },
     { id: 6, name: "Home 6", routerPath: "/home-6" },
     { id: 7, name: "Home 7", routerPath: "/home-7" },
@@ -40,7 +40,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         },
         {
           name: "Grid v3",
-          routerPath: "/listing-grid-v3",
+          routerPath: "/all-properties/type=all",
         },
         {
           name: "Grid v4",
@@ -213,27 +213,29 @@ const HeaderMenuContent = ({ float = "" }) => {
 
   const blog = [
     { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-    { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
+    { id: 2, name: "Blog List 2", routerPath: "/news" },
     { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
     {
       id: 4,
       name: "Blog Details",
-      routerPath: "/blog-details",
+      routerPath: "/news-details",
     },
   ];
 
   const pages = [
-    { id: 1, name: "About Us", routerPath: "/about-us" },
-    { id: 2, name: "Gallery", routerPath: "/gallery" },
-    { id: 3, name: "Faq", routerPath: "/faq" },
-    { id: 4, name: "LogIn", routerPath: "/login" },
-    { id: 5, name: "Compare", routerPath: "/compare" },
-    { id: 6, name: "Membership", routerPath: "/membership" },
+    { id: 1, name: "شقق", routerPath: "/all-properties" },
+    { id: 2, name: "شقق طابقية", routerPath: "/all-properties" },
+    { id: 3, name: "فلل متلاصقة", routerPath: "/all-properties" },
+    { id: 4, name: "فلل", routerPath: "/all-properties" },
+    { id: 5, name: "قطع اراضي سكنية", routerPath: "/all-properties" },
+    { id: 6, name: "قطع أراضي تجارية", routerPath: "/all-properties" },
+    { id: 7, name: "قطع أراضي صناعية", routerPath: "/all-properties" },
+    { id: 8, name: "برج سكني", routerPath: "/all-properties" },
+    { id: 9, name: "استوديوهات", routerPath: "/all-properties" },
+    { id: 10, name: "شاليهات", routerPath: "/all-properties" },
 
-    { id: 7, name: "Register", routerPath: "/register" },
-    { id: 8, name: "Service", routerPath: "/service" },
-    { id: 9, name: "404 Page", routerPath: "/404" },
-    { id: 10, name: "Terms & Conditions", routerPath: "/terms" },
+
+
   ];
 
   return (
@@ -242,6 +244,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       className="ace-responsive-menu text-end d-lg-block d-none"
       data-menu-style="horizontal"
     >
+
 
       <li className="last">
         <Link href="/">
@@ -252,17 +255,54 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/listing-grid-3">
+        <Link href="/all-properties?type=all">
           <a
-            className={route.pathname === "/listing-grid-3" ? "ui-active" : undefined}
+            className={route.pathname === "/all-properties?type=all" ? "ui-active" : undefined}
           >
 جميع العقارات       </a>
         </Link>
       </li>
+
+{/* dropdown */}
+      <li className="dropitem" dir="rtl">
+        <a 
+          href="#"
+          className={
+            pages.some((page) => page.routerPath === route.pathname)
+              ? "ui-active"
+              : undefined
+          }
+        >
+          <span className="title"> حسب العقار </span>
+          <span className="arrow"></span>
+        </a>
+        <ul className="sub-menu " dir="rtl">
+          {pages.map((item) => (
+            <li key={item.id}>
+              <Link href={{
+        pathname: "all-properties",
+        query: {
+            type: item.name,
+        }
+    }}>
+                <a
+                  className={
+                    route.pathname === item.routerPath ? "ui-active" : undefined
+                  }
+                >
+                  {item.name}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </li>
+
+
       <li className="last">
-        <Link href="/home-4">
+        <Link href="/detailed-search">
           <a
-            className={route.pathname === "/home-4" ? "ui-active" : undefined}
+            className={route.pathname === "/detailed-search" ? "ui-active" : undefined}
           >
 البحث المفصل        </a>
         </Link>
@@ -276,25 +316,33 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       <li className="last">
-        <Link href="/blog-list-2">
+        <Link href="/news?category=جميع+الاخبار">
           <a
-            className={route.pathname === "/blog-list-2" ? "ui-active" : undefined}
+            className={route.pathname === "/news?category=جميع-الاخبار" ? "ui-active" : undefined}
           >
 الآخبار         </a>
         </Link>
       </li>
       <li className="last">
-        <Link href="/contact">
+        <Link href="/watch-qoshan">
           <a
-            className={route.pathname === "/contact" ? "ui-active" : undefined}
+            className={route.pathname === "/watch-qoshan" ? "ui-active" : undefined}
           >
 شاهد قوشان         </a>
         </Link>
       </li>
       <li className="last">
-        <Link href="/contact">
+        <Link href="/shorts">
           <a
-            className={route.pathname === "/contact" ? "ui-active" : undefined}
+            className={route.pathname === "/watch-qoshan" ? "ui-active" : undefined}
+          >
+نصائح عقارية        </a>
+        </Link>
+      </li>
+      <li className="last">
+        <Link href="/faq">
+          <a
+            className={route.pathname === "/faq" ? "ui-active" : undefined}
           >
 آعلن عن عقارك          </a>
         </Link>
