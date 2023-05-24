@@ -15,7 +15,7 @@ import CategoriesFilter from "../blog-list-2/CategoriesFilter";
 import Advert from "./advert";
 
 import FeaturedProperties from "../home/FeaturedProperties";
-import Watchqoshan from './Watchqoshan'
+// import Watchqoshan from './Watchqoshan'
 
 
 
@@ -168,7 +168,7 @@ const Home8 = () => {
 
  <div className="main-title mb40">
 
-<Watchqoshan/>
+{/* <Watchqoshan/> */}
 
 </div>
 
