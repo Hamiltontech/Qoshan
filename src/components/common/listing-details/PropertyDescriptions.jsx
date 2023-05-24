@@ -10,7 +10,7 @@ const PropertyDescriptions = ({property}) => {
 
   return (
     <>
-     <p><ReactMarkdown>{property?.attributes?.Description}</ReactMarkdown></p>
+     <ReactMarkdown>{property?.attributes?.Description}</ReactMarkdown>
     </>
   );
 };

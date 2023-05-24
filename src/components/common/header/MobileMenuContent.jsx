@@ -309,7 +309,7 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid mt20"
-                src="/assets/images/logo-mob.svg"
+                src="https://res.cloudinary.com/dhk7qsnfv/image/upload/v1684257816/header-logo2_bawqi1.svg"
                 alt="header-logo.svg"
               />
               

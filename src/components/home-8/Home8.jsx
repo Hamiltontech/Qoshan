@@ -13,8 +13,9 @@ import FeaturedProps from "./FeaturedProps";
 import HeroFilter from "./HeroFilter";
 import CategoriesFilter from "../blog-list-2/CategoriesFilter";
 import Advert from "./advert";
-import FeaturedProperties from "../home/FeaturedProperties";
 
+import FeaturedProperties from "../home/FeaturedProperties";
+import Watchqoshan from './Watchqoshan'
 
 
 
@@ -159,7 +160,23 @@ const Home8 = () => {
       </section>
 
       {/* <!-- Home Design --> */}
-     
+      <section id="feature-property" className="feature-property "  style={{marginLeft: 0, marginRight: 0}}>
+
+ <div className="row">
+
+ <div className="col-lg-12">
+
+ <div className="main-title mb40">
+
+<Watchqoshan/>
+
+</div>
+
+ </div>
+
+ </div>
+
+ </section>
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one home3">

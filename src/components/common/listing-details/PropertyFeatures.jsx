@@ -1,5 +1,4 @@
 const PropertyFeatures = ({property}) => {
-  console.log(property)
   const propertyFeatures = [
     {
       id: 1,
@@ -17,7 +16,7 @@ const PropertyFeatures = ({property}) => {
   return (
     <>
       {property?.attributes?.features?.data?.map((item) => (
-        <div className="col-sm-6 col-md-6 col-lg-4" key={item.id} dir="rtl">
+        <div className="col-sm-6 col-md-6 col-lg-4" key={item?.id} dir="rtl">
           <ul className="order_list list-inline-item" dir="ltr">
             <li>
             

@@ -2767,6 +2767,10 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   transform: rotate(45deg);
 }
 
+section#feature-property {
+  padding: 0px !important;
+}
+
 .home_adv_srch_opt.home4 .nav-pills li.nav-item a.nav-link {
   border-radius: 25px;
 }
